@@ -1,0 +1,23 @@
+.nav {
+    display: flex;
+    background-color: #011657;
+    color: #fff;
+    height: 148px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px
+}
+
+
+.links {
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.links li {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+}
