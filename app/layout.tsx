@@ -1,5 +1,13 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import NavMenu from './NavMenu'
+import {Roboto_Slab} from 'next/font/google'
+import Home from './page'
+import Footer from './footer'
+const rslab = Roboto_Slab({
+  subsets: ['latin'],
+  variable: '--rslab'
+})
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={rslab.className}>
+        <NavMenu/>
+        {children}
+        <Footer/>
+        </body>
     </html>
   )
 }
