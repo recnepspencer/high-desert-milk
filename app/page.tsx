@@ -11,10 +11,10 @@ export default function Home() {
         />
       </div>
       <div className="relative flex flex-col">
-        <div className="self-center">
-          <p className="m-0 opacity-50 leading-none text-4xl text-white">∨</p>
-          <p className="m-0 opacity-50 leading-none text-4xl text-white">∨</p>
-          <p className="m-0 opacity-50 leading-none text-4xl text-white">∨</p>
+        <div className="self-center animate-pulse">
+          <p className="mt-[-15px] opacity-80 leading-none text-4xl text-white">∨</p>
+          <p className="mt-[-15px] opacity-80 leading-none text-4xl text-white">∨</p>
+          <p className="mt-[-15px] opacity-80 leading-none text-4xl text-white">∨</p>
         </div>
         <p className="mt-40 ml-20 bg-white p-3 w-fit text-5xl rounded ">
           Pristine by Nature.
@@ -56,7 +56,17 @@ export default function Home() {
             </button>
           </div>
         </div>
-
+        <div className="bg-white p-20">
+                  <div className="flex justify-center border-t-4 border-black pr-20 pl-20 pt-20">
+          <img src="idaho-preferred.svg" alt="" className="w-4/12"/>
+          <img src="brogs.svg" alt="" className="ml-20 w-4/12"/>
+          <img src="real.svg" alt="" className="ml-20 w-4/12"/>
+          </div>
+          <div className="flex justify-center mt-10 pr-20 pl-20">
+          <img src="m.svg" alt="" className="w-4/12"/>
+          <img src="k.svg" alt="" className="ml-20 w-4/12"/>
+          </div>
+        </div>
       </div>
     </main>
     
