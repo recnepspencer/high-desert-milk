@@ -20,6 +20,11 @@ module.exports = {
         home: {
           blue: "#011657",
           orange: "#E07D28",
+          productBlue: "#67ADF4",
+          productYellow: "#EAC52B",
+          recipeRed: "#CE2229",
+          recipeOrange: "#E07D28",
+          recipeBlue: "#67ADF4"
         },
       },
       fontFamily: {
