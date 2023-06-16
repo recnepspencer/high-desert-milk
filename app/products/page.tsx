@@ -1,7 +1,8 @@
 import Link from "next/link";
-import RecipeCard from "../Components/RecipeCard";
+import RecipeCard, {RecipeData} from "@/app/Components/RecipeCard"
 
 export default function OurProducts() {
+  const mainFeature = RecipeData.filter(recipe => recipe.isMainFeature)
   return (
     <>
       <div className=" font-sans">
@@ -18,7 +19,12 @@ export default function OurProducts() {
                 alt=""
                 className=" w-4/6 h-4/6  object-cover  overflow-hidden self-center"
               />
-              <p className="h-auto max-w-full">Butter</p>
+              <Link
+                href="products/butter"
+                className="h-auto max-w-full hover:underline"
+              >
+                Butter
+              </Link>
             </div>
             <div className="flex flex-col pr-40">
               <img
@@ -26,7 +32,12 @@ export default function OurProducts() {
                 alt=""
                 className=" w-4/6 h-4/6  object-cover  overflow-hidden self-center"
               />
-              <p className="h-auto max-w-full">Powder</p>
+              <Link
+                href="products/powder"
+                className="h-auto hover:underline max-w-full"
+              >
+                Powder
+              </Link>
             </div>
           </div>
         </div>
@@ -45,12 +56,14 @@ export default function OurProducts() {
               className="align-middle mt-[20%]"
             />
             <div className="flex justify-center mt-10">
-              <label className="text-white text-2xl font-light justify-center pr-3">
-                Butter
-              </label>
-              <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
-                &gt;
-              </button>
+              <Link href="products/butter">
+                <label className="text-white text-2xl font-light justify-center pr-3 hover:underline cursor-pointer">
+                  Butter
+                </label>
+                <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
+                  &gt;
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -61,12 +74,14 @@ export default function OurProducts() {
               className="align-middle"
             />
             <div className="flex justify-center mt-10">
-              <label className="text-white text-2xl font-light justify-center pr-3">
-                Powder
-              </label>
-              <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
-                &gt;
-              </button>
+              <Link href="products/powder">
+                <label className="text-white text-2xl font-light justify-center pr-3 hover:underline cursor-pointer">
+                  Powder
+                </label>
+                <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
+                  &gt;
+                </button>
+              </Link>
             </div>
           </div>
           <div className="w-full flex justify-center items-center">
@@ -87,26 +102,11 @@ export default function OurProducts() {
             </button>
           </div>
 
-          <div className="grid grid-cols-3 gap-2 p-3">
-          <RecipeCard
-          recipeName="Buttermilk Mashed Potatoes"
-          imageUrl="products/mashed-potatoes.png"
-          backgroundColor="bg-home-recipeOrange"
-          recipeUrl=""
-        />
-                    <RecipeCard
-          recipeName="Avacado Salad Dressing"
-          imageUrl="products/salad-dressing.png"
-          backgroundColor="bg-home-recipeBlue"
-          recipeUrl=""
-        />
-            <RecipeCard
-          recipeName="Blue Ribbon Butter Cake"
-          imageUrl="products/butter-cake.png"
-          backgroundColor="bg-home-recipeRed"
-          recipeUrl=""
-        />
-          </div>
+          <div className="grid grid-cols-3 pb-10">
+        {mainFeature.map((recipe, index) => (
+          <RecipeCard key={index} recipe={recipe} />
+        ))}
+      </div>
         </div>
       </div>
     </>

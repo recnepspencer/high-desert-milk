@@ -34,7 +34,7 @@ export default function Home() {
               className="w-[100%] ml-auto mr-auto"
             />
             <button className="absolute top-[85%] left-[-6%] pl-[40%] pr-2 flex justify-center align-middle bg-home-blue text-white font-light rounded hover:bg-blue-900 active:text-home-blue active:bg-white">
-              <span className="mt-auto mb-auto pr-2">Our Products </span>{" "}
+              <span className="mt-auto mb-auto pr-2">Our Story </span>{" "}
               <span className="text-4xl mb-2"> &gt; </span>
             </button>
           </div>
