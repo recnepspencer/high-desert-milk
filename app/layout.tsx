@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={rslab.className}>
+      <body className={`${rslab.className} min-w-[600px]`}>
         <NavMenu/>
         {children}
         <Footer/>

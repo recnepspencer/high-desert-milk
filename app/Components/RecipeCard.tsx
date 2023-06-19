@@ -155,7 +155,7 @@ export const RecipeData: Recipe[] = [
     recipeUrl: 'https://www.tasteofhome.com/recipes/bake-sale-lemon-bars/',
     isMainFeature: false,
     isButterFeature: false,
-    isButtermilkFeature: false,
+    isButtermilkFeature: true,
     isButter: false,
     isButtermilk: true,
   },{
@@ -165,7 +165,7 @@ export const RecipeData: Recipe[] = [
     recipeUrl: 'https://www.tasteofhome.com/recipes/bake-sale-lemon-bars/',
     isMainFeature: false,
     isButterFeature: false,
-    isButtermilkFeature: false,
+    isButtermilkFeature: true,
     isButter: false,
     isButtermilk: true,
   },{
@@ -225,7 +225,7 @@ export const RecipeData: Recipe[] = [
     recipeUrl: 'https://www.tasteofhome.com/recipes/bake-sale-lemon-bars/',
     isMainFeature: false,
     isButterFeature: false,
-    isButtermilkFeature: false,
+    isButtermilkFeature: true,
     isButter: false,
     isButtermilk: true,
   },{

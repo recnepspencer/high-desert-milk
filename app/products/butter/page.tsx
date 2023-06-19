@@ -1,4 +1,5 @@
 import RecipeCard, { RecipeData } from "@/app/Components/RecipeCard";
+import Link from "next/link";
 
 export default function ProductButter() {
   const featuredButter = RecipeData.filter(recipe => recipe.isButterFeature)
@@ -8,8 +9,9 @@ export default function ProductButter() {
         <div className="pt-[148px]"></div>
         <div className="flex flex-col justify-center bg-white align-middle text-center text-home-blue">
             <div className="flex justify-center align-middle m-10">
-                <h4>Butter</h4>
+                                <h4>Butter</h4>
                 <img src="../down-arrow.svg" alt=""  className="bg-home-blue rounded h-5 ml-2"/>
+
             </div>
             <div className="grid grid-cols-2 mt-16 mb-10 mr-28 ml-28">
                 <div className="flex flex-col align-middle">
@@ -29,9 +31,9 @@ export default function ProductButter() {
               className="align-middle mt-[20%]"
             />
             <div className="flex justify-center mt-10">
-              <label className="text-white text-2xl font-light justify-center pr-3">
+              <Link href="/products/butter/salted" className="text-white text-2xl font-light justify-center pr-3">
                 Salted
-              </label>
+              </Link>
               <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
                 &gt;
               </button>
@@ -44,9 +46,9 @@ export default function ProductButter() {
               className="align-middle mt-[20%]"
             />
             <div className="flex justify-center mt-10">
-              <label className="text-white text-2xl font-light justify-center pr-3">
+              <Link href="products/butter/unsalted" className="text-white text-2xl font-light justify-center pr-3">
                 Unsalted
-              </label>
+              </Link>
               <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
                 &gt;
               </button>
