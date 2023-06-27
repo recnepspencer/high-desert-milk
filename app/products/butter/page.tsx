@@ -65,16 +65,16 @@ export default function ProductButter() {
             </button>
           </div>
 
-          <div className="grid grid-cols-3 gap-2 p-3">
-
-
-          </div>
-          <div className="grid grid-cols-3 pb-10">
-        {featuredButter.map((recipe, index) => (
+          <div className="grid grid-cols-3 gap-3 pb-10 p-3">
+          {featuredButter.map((recipe, index) => (
           <RecipeCard key={index} recipe={recipe} />
         ))}
-      </div>
-      <button className="relative mb-10 pl-32 bg-home-blue text-white rounded pr-3 pt-1 pb-1 font-light hover:underline cursor-pointer">Butter for your business <span className="ml-2 font-bold text-xl">&gt;</span></button>
+
+          </div>
+          <Link href="products/bulk">
+                <button className="relative mb-10 pl-32 bg-home-blue text-white rounded pr-3 pt-1 pb-1 font-light hover:underline cursor-pointer">Butter for your business <span className="ml-2 font-bold text-xl">&gt;</span></button>
+          </Link>
+
         </div>
 
       </div>

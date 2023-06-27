@@ -1,3 +1,4 @@
+import Sustainability, { SustainData } from "@/app/Components/Sustainability";
 import Link from "next/link";
 
 export default function OurStory() {
@@ -139,15 +140,19 @@ export default function OurStory() {
             ways that High Desert and its owners have been able to take care of our planet Earth
             thus far.</p>
         </div>
-        <div>
-          <div className="flex">
-            <h2 className="text-2xl">Compost</h2>
-            <img src="" alt="" />
-          </div>
-          
-        </div>
+        <Sustainability />
+        <p className="text-[10px] pl-32 w-16 text-gray-400">https://www.northwestfcs.com/ag-industries/industry-insights/dairy</p>
+      </div>
+      <div className="flex justify-end">
+        <Link href="">
+          <button className="flex bg-home-blue pl-6 pr-12 pt-1 pb-1 text-white font-light text-xl mt-10 mb-20 rounded font-sans hover:underline decoration-white">
+            See How We Impact Our Community <img src="../side-arrow.png" className="w-8" />
+          </button>
+        </Link>
 
       </div>
+
+
 
     </div>
   );

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -33,12 +34,15 @@ export default function Home() {
               alt="cute cows"
               className="w-[100%] ml-auto mr-auto"
             />
-            <button className="absolute top-[85%] left-[-6%] pl-[40%] pr-2 flex justify-center align-middle bg-home-blue text-white font-light rounded hover:bg-blue-900 active:text-home-blue active:bg-white">
+            <Link href="/impact">
+                        <button className="absolute top-[85%] left-[-6%] pl-[40%] pr-2 flex justify-center align-middle bg-home-blue text-white font-light rounded hover:bg-blue-900 active:text-home-blue active:bg-white">
               <span className="mt-auto mb-auto pr-2">Our Story </span>{" "}
               <span className="text-4xl mb-2"> &gt; </span>
             </button>
-          </div>
+            </Link>
 
+          </div>
+          
           <div className="relative flex flex-col justify-around w-6/12">
             <img
               src="/home-milk.png"
@@ -50,10 +54,13 @@ export default function Home() {
               alt="cows"
               className="w-8/12 ml-auto mr-auto mb-20"
             />
-            <button className="absolute top-[85%] right-[-6%] pr-[40%] pl-2 flex justify-center align-middle bg-home-blue text-white font-light rounded hover:bg-blue-900 active:text-home-blue active:bg-white">
+            <Link href="/products">
+                        <button className="absolute top-[85%] right-[-6%] pr-[40%] pl-2 flex justify-center align-middle bg-home-blue text-white font-light rounded hover:bg-blue-900 active:text-home-blue active:bg-white">
               <span className="mt-auto mb-auto pr-2">Our Products </span>{" "}
               <span className="text-4xl mb-2"> &gt; </span>
             </button>
+            </Link>
+
           </div>
         </div>
         <div className="bg-white p-20">

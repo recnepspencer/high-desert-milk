@@ -19,7 +19,7 @@ export default function Impact() {
         </p>
 
         <h4 className="mt-16 text-white text-2xl">Our story</h4>
-        <Link href={"impact/our-story"}>
+        <Link href="impact/our-story">
           <img src="side-arrow.png" alt=""  className="w-8 bg-home-blue rounded mb-16 mt-4"/>
         </Link>
       </div>

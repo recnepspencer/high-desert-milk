@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import { prisma } from "@/app/db";
 import Link from "next/link";
 import React from "react";
@@ -8,22 +8,22 @@ import { useRouter } from 'next/navigation';
 
 export default async function Bulk({user }: any) {
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [company, setCompany] = useState("");
-  const [message, setMessage] = useState("");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [company, setCompany] = useState("");
+  // const [message, setMessage] = useState("");
 
-  const sendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    await prisma.inquiry.create({
-      data: {
-        name,
-        email,
-        company,
-        message,
-      },
-    });
-  };
+  // const sendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   await prisma.inquiry.create({
+  //     data: {
+  //       name,
+  //       email,
+  //       company,
+  //       message,
+  //     },
+  //   });
+  // };
   
 
   return (
@@ -113,7 +113,7 @@ export default async function Bulk({user }: any) {
           </p>
         </div>
         <div className="bg-home-productBlue flex flex-col">
-          <form className="bg-slate-300 rounded w-[45%] ml-auto mr-auto flex flex-col justify-center align-middle text-center mt-10 mb-10 border-black"
+          {/* <form className="bg-slate-300 rounded w-[45%] ml-auto mr-auto flex flex-col justify-center align-middle text-center mt-10 mb-10 border-black"
           onSubmit={sendMessage}>
             <h1 className="mt-3 mb-3 text-xl font-bold">Contact Us:</h1>
             <img
@@ -148,7 +148,7 @@ export default async function Bulk({user }: any) {
               onChange={(e) => setMessage(e.target.value)}
             />
             <button type="submit">Submit</button>
-          </form>
+          </form> */}
         </div>
       </div>
     </>

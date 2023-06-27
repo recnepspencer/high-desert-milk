@@ -274,7 +274,7 @@ export const RecipeData: Recipe[] = [
 
 const RecipeCard: React.FC<RecipeCardProps> = ({recipe}) => {
   return (
-    <div className="flex flex-col p-3">
+    <div className="flex flex-col">
       <img src={recipe.imageUrl} alt="" className="w-full" />
       <div className={`flex ${recipe.backgroundColor} justify-center p-2`}>
         <Link href={recipe.recipeUrl} className="text-l flex text-white font-light text-center p-2 hover:underline">

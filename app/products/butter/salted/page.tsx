@@ -54,7 +54,7 @@ out, enhancing any recipe. Pinky promise.</p>
             <img src="../../ridleys.png" alt="" className="object-contain w-full"/>
           </div>
           <div className="flex justify-center  pt-6 pb-36">
-            <Link href="/" className="text-xs underline text-home-blue cursor-pointer">
+            <Link href="products/bulk" className="text-xs underline text-home-blue cursor-pointer">
               <p>Click here to see business options.</p>
             </Link>
           </div>

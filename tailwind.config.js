@@ -32,9 +32,6 @@ module.exports = {
       fontFamily: {
         home: "var(--rslab)",
       },
-      gridTemplateColumns: {
-        '3': "2/5, 1/5, 2/5"
-      }
     },
   },
   plugins: [],

@@ -102,7 +102,7 @@ export default function OurProducts() {
             </button>
           </div>
 
-          <div className="grid grid-cols-3 pb-10">
+          <div className="grid grid-cols-3 gap-3 p-3 pb-10">
         {mainFeature.map((recipe, index) => (
           <RecipeCard key={index} recipe={recipe} />
         ))}
