@@ -25,7 +25,8 @@ module.exports = {
           recipeRed: "#CE2229",
           recipeOrange: "#E07D28",
           recipeBlue: "#67ADF4",
-          impactYellow: "#EAC52B"
+          impactYellow: "#EAC52B",
+          sustainGreen: "#47B526"
         },
       },
       fontFamily: {
