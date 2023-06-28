@@ -87,7 +87,7 @@ export const RecipeData: Recipe[] = [
     isButter: true,
     isButtermilk: false
   }, {
-    recipeName: "Aunt Rose's Fantastic Butter Toffee",
+    recipeName: 'Aunt Rose&apos;s Fantastic Butter Toffee',
     imageUrl: '/recipes/butter-toffee.png',
     backgroundColor: 'bg-home-recipeBlue',
     recipeUrl: 'recipe-url-1',
@@ -249,7 +249,7 @@ export const RecipeData: Recipe[] = [
     isButter: false,
     isButtermilk: true,
   },{
-    recipeName: "Devil's Food Snack Cake",
+    recipeName: 'Devil&apos;s Food Snack Cake',
     imageUrl: '/recipes/devil-cake.png',
     backgroundColor: 'bg-home-recipeOrange',
     recipeUrl: 'https://www.tasteofhome.com/recipes/bake-sale-lemon-bars/',
