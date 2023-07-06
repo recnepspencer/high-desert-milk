@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col min-w-[640px] sm:ml-auto sm:mr-auto">
       <div className="flex flex-col w-[100%] mt-[148px] h-[100%]">
         <img src="background.svg" className="fixed" />
         <img
           src="background-logo.svg"
-          className="relative ml-[16.6%] mr-[16.6%] mt-[4%] w-4/6 h-[100%]"
+          className="relative ml-[16.6%] mr-[16.6%] mt-[4%] w-4/6 h-[100%] sm:w-[300px] sm:m-auto sm:mt-[4%] md:w-[500px]"
         />
       </div>
       <div className="relative flex flex-col">

@@ -41,7 +41,7 @@ export default function NavMenu() {
           </li>
           <li>
             <Link
-              href="/"
+              href="/contact"
               className={
                 "p-2 hover:bg-blue-900 rounded active:text-home-blue active:bg-white"}>
               Contact

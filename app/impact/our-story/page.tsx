@@ -144,7 +144,7 @@ export default function OurStory() {
         <p className="text-[10px] pl-32 w-16 text-gray-400">https://www.northwestfcs.com/ag-industries/industry-insights/dairy</p>
       </div>
       <div className="flex justify-end">
-        <Link href="">
+        <Link href="impact/our-community">
           <button className="flex bg-home-blue pl-6 pr-12 pt-1 pb-1 text-white font-light text-xl mt-10 mb-20 rounded font-sans hover:underline decoration-white">
             See How We Impact Our Community <img src="../side-arrow.png" className="w-8" />
           </button>
