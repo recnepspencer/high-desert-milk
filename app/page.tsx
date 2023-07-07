@@ -1,31 +1,29 @@
 import Image from "next/image";
 import Link from "next/link";
+import AnimatedText from "./Components/AnimatedText";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-w-[640px] sm:ml-auto sm:mr-auto">
+    <main className="flex flex-col min-w-[640px] overflow-hidden">
       <div className="flex flex-col w-[100%] mt-[148px] h-[100%]">
-        <img src="background.svg" className="fixed" />
+        <img src="background.svg" className="fixed w-full min-w-[700px]" />
         <img
           src="background-logo.svg"
-          className="relative ml-[16.6%] mr-[16.6%] mt-[4%] w-4/6 h-[100%] sm:w-[300px] sm:m-auto sm:mt-[4%] md:w-[500px]"
+          className="relative m-auto mt-[4%]  h-[100%] w-7/12"
         />
       </div>
-      <div className="relative flex flex-col">
-        <div className="self-center animate-pulse">
-          <p className="mt-[-15px] opacity-80 leading-none text-4xl text-white">∨</p>
-          <p className="mt-[-15px] opacity-80 leading-none text-4xl text-white">∨</p>
-          <p className="mt-[-15px] opacity-80 leading-none text-4xl text-white">∨</p>
-        </div>
-        <p className="mt-40 ml-20 bg-white p-3 w-fit text-5xl rounded ">
+      <div className="relative flex flex-col pt-[10px]">
+      <AnimatedText size="4xl" color="white" marginTop={-15} animate={true}/>
+          <p className="mt-40 ml-20 bg-white p-3 w-fit rounded  sm:text-3xl md:text-4xl lg:text-5xl">
           Pristine by Nature.
         </p>
-        <p className="mt-40 text-right mr-20 bg-white p-3 text-5xl rounded w-fit self-end">
+        <p className="mt-40 text-right mr-20 bg-white p-3 sm:text-3xl md:text-4xl lg:text-5xl rounded w-fit self-end">
           Clean by Routine.
         </p>
-        <p className="mt-40 ml-20 bg-white p-3 text-5xl rounded w-fit mb-40">
+        <p className="mt-40 ml-20 bg-white p-3 sm:text-3xl md:text-4xl lg:text-5xl rounded w-fit mb-40">
           Consistent by Design.
         </p>
+        
 
         <div className="flex justify-around bg-orange-500 w-[100%] m-0 pl-4 pr-4">
           <div className="relative w-6/12">

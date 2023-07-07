@@ -1,11 +1,12 @@
 import Link from "next/link";
 import RecipeCard, {RecipeData} from "@/app/Components/RecipeCard"
+import SideArrowButton from "../Components/Buttons";
 
 export default function OurProducts() {
   const mainFeature = RecipeData.filter(recipe => recipe.isMainFeature)
   return (
     <>
-      <div className=" font-sans">
+      <div className=" font-sans min-w-[640px] lg:pl-[5vw] lg:pr-[5vw]">
         <div className="pt-[148px]"></div>
         <div className="flex flex-col justify-center bg-white align-middle text-center text-home-blue">
           <h1 className="text-5xl font-light mt-[20px]">Our Products</h1>
@@ -17,7 +18,7 @@ export default function OurProducts() {
               <img
                 src="products/butter.png"
                 alt=""
-                className=" w-4/6 h-4/6  object-cover  overflow-hidden self-center"
+                className=" w-4/6 h-4/6  object-cover  overflow-hidden self-center min-w-[170px]"
               />
               <Link
                 href="products/butter"
@@ -30,7 +31,7 @@ export default function OurProducts() {
               <img
                 src="products/powder.png"
                 alt=""
-                className=" w-4/6 h-4/6  object-cover  overflow-hidden self-center"
+                className=" w-4/6 h-4/6  object-cover  overflow-hidden self-center min-w-[170px]"
               />
               <Link
                 href="products/powder"
@@ -56,13 +57,11 @@ export default function OurProducts() {
               className="align-middle mt-[20%]"
             />
             <div className="flex justify-center mt-10">
-              <Link href="products/butter">
+              <Link href="products/butter" className="flex">
                 <label className="text-white text-2xl font-light justify-center pr-3 hover:underline cursor-pointer">
                   Butter
                 </label>
-                <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
-                  &gt;
-                </button>
+                <SideArrowButton width='8' />
               </Link>
             </div>
           </div>
@@ -74,13 +73,11 @@ export default function OurProducts() {
               className="align-middle"
             />
             <div className="flex justify-center mt-10">
-              <Link href="products/powder">
+              <Link href="products/powder" className="flex">
                 <label className="text-white text-2xl font-light justify-center pr-3 hover:underline cursor-pointer">
                   Powder
                 </label>
-                <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
-                  &gt;
-                </button>
+                <SideArrowButton width="8"/>
               </Link>
             </div>
           </div>
@@ -94,12 +91,13 @@ export default function OurProducts() {
         </div>
         <div className="bg-home-productYellow ">
           <div className="flex justify-center p-4 pt-8">
-            <label className="pr-2 text-home-blue text-xl ">
+            <Link href="products/recipes" className="flex">
+                          <label className="pr-2 text-home-blue text-xl ">
               Try these recipes
             </label>
-            <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 cursor-default">
-              &gt;
-            </button>
+            <SideArrowButton width="8"/>
+            </Link>
+
           </div>
 
           <div className="grid grid-cols-3 gap-3 p-3 pb-10">

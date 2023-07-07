@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Impact() {
   return (
-    <div className="font-sans">
+    <div className="font-sans pl-8 pr-8 min-w-[640px] lg:pl-[5vw] lg:pr-[5vw]">
       <div className="pt-[148px]"></div>
       <div>
         <img
@@ -20,18 +20,18 @@ export default function Impact() {
 
         <h4 className="mt-16 text-white text-2xl">Our story</h4>
         <Link href="impact/our-story">
-          <img src="side-arrow.png" alt=""  className="w-8 bg-home-blue rounded mb-16 mt-4"/>
+          <img src="side-arrow.png" alt="" className="w-8 bg-home-blue rounded mb-16 mt-4" />
         </Link>
       </div>
       <div className="flex">
         <div>
-            <img src="impact/community.png" alt="" className="w-[140vh]"/>
+          <img src="impact/community.png" alt="" className="w-[140vh]" />
         </div>
         <div className="bg-home-orange flex flex-col items-center justify-center align-middle w-full pb-auto pt-auto">
-            <h1 className="text-white font-light text-xl mt-10 ">Our Community</h1>
-            <Link href={"impact/our-community"}>
-          <img src="side-arrow.png" alt=""  className="w-8 bg-home-blue rounded mb-16 mt-4"/>
-        </Link>
+          <h1 className="text-white font-light text-xl mt-10 ">Our Community</h1>
+          <Link href={"impact/our-community"}>
+            <img src="side-arrow.png" alt="" className="w-8 bg-home-blue rounded mb-16 mt-4" />
+          </Link>
         </div>
       </div>
       <img src="impact/community-2.png" className="w-full bg-home-impactYellow p-8" />

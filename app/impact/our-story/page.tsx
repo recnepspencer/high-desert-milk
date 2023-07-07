@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function OurStory() {
   return (
-    <div>
+    <div className="min-w-[640px] lg:pl-[5vw] lg:pr-[5vw] overflow-hidden">
       <div className="pt-[148px]"></div>
       <div className="flex">
         <div className="flex flex-col items-center w-full justify-center align-middle text-home-blue">
