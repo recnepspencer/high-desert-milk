@@ -9,7 +9,7 @@ export default function Home() {
         <img src="background.svg" className="fixed w-full min-w-[700px]" />
         <img
           src="background-logo.svg"
-          className="relative m-auto mt-[4%]  h-[100%] w-7/12"
+          className="relative m-auto mt-[4%]  h-[100%] w-6/12"
         />
       </div>
       <div className="relative flex flex-col pt-[10px]">

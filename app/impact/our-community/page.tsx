@@ -3,7 +3,7 @@ import Students from "@/app/Components/Scholarships";
 export default function OurCommunity() {
 
     return (
-        <div>
+        <div className="min-w-[640px] lg:pl-[5vw] lg:pr-[5vw]">
             <div className="pt-[148px]"></div>
             <div className="relative">
                 <img src="../impact/our-community-page/our-community-bg.png" alt="" className="w-full" />
@@ -15,7 +15,7 @@ export default function OurCommunity() {
                 </h1>
                 <button className="flex bg-home-blue items-center text-white text-md font-light pl-40 rounded-r-md hover:bg-blue-900 active:text-home-blue active:bg-white active:border-home-blue active:border-2">Apply For 2023 Here <img src="../side-arrow.png" className="w-8" /></button>
             </div>
-            <div className="p-24 grid grid-cols-[250px_250px_250px] gap-5 text-[10px] leading-tight justify-center grid-cols- font-sans text-home-blue">
+            <div className="p-24 grid sm:grid-cols-[150px_150px_150px] md:grid-cols-[250px_250px_250px] gap-5 text-[10px] leading-tight justify-center grid-cols- font-sans text-home-blue">
                 <Students />
             </div>
             <div className="bg-home-orange text-home-blue">
