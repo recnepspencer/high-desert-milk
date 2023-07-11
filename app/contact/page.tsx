@@ -1,6 +1,6 @@
 "use client"
+'use strict'
 import React from "react";
-import axios from "axios";
 import { useState } from "react";
 export default function ContactUs() {
     const [firstName, setFirstName] = useState("");
@@ -10,7 +10,7 @@ export default function ContactUs() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
       
       
@@ -23,23 +23,27 @@ export default function ContactUs() {
             message 
         };
 
-      console.log(payload)
-      
-      async function sendDataToAPI() {
         try {
-          const response = await axios.post('/api/form', payload);
+          const response = await fetch('/api/contact', { 
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(payload),
+          });
     
-          if (response.status === 200) {
-            console.log('Payload sent successfully!');
+          if (response.ok) {
+              console.log('Payload sent successfully!');
           } else {
-            console.error('Error sending payload:', response.status);
+              console.error('Error sending payload:', response.status);
           }
-        } catch (error) {
+      } catch (error) {
           console.error('Error sending payload:', error);
-        }
       }
-      sendDataToAPI()
     }
+
+        
+
 
     return (
         <div>
