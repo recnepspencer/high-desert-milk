@@ -1,31 +1,35 @@
-'use client'
 import { NextResponse, NextRequest } from "next/server";
+export async function POST(req: NextRequest, res: NextResponse) {
+  console.log(req)
+  console.log(req.body)
+  const payload = await req.body
+  console.log(payload)
 
-export default async function handler(req: NextRequest) {
-  const body = await req.json();
-  const { firstName, lastName, company, phoneNumber, email, message } = body;
+  const nodeMailer = require('nodemailer')
 
-  const nodemailer = require('nodemailer');
-  const transporter = nodemailer.createTransport({
-    host: "smtp.forwardemail.net",
-    port: 465,
-    secure: true,
-    auth: {
-      user: 'high.desert.test165@gmail.com',
-      pass: 'Idaho2023!'
-    }
-  }); 
+  try {
+    const transporter = nodeMailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
+      auth: {
+        user: 'high.desert.test165@gmail.com',
+        pass: "kakwvtonypqtzzji",
+      }
+    })
 
-  async function main() {
     const info = await transporter.sendMail({
-        from: `${firstName} ${lastName} <${email}>`, // sender address
-        to: "high.desert.test165@gmail.com", // list of receivers
-        subject: `${company} ${phoneNumber}`, // Subject line
-        text: `${message}`, // plain text body
-        html: `<div>${message} </div>`, // html body
-    });
-  
-    console.log("Message sent: %s", info.messageId);
+      from: '"High Desert Test" <high.desert.test165@gmail.com>',
+      to: '"High Desert Test" <high.desert.test165@gmail.com',
+      subject: "Hello",
+      text: JSON.stringify(payload), // stringifying the payload as JSON
+    })
+    console.log("Message sent: %s", info.messageId)
+
+    return new Response('Email sent', { status: 200 })
   }
-  main().catch(console.error);
+  catch(e) {
+    console.log(e)
+    return new Response('Error', { status: 500})
+  }
 }

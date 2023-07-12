@@ -10,39 +10,36 @@ export default function ContactUs() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-      
-      
+
+
         const payload = {
-          firstName, 
-          lastName, 
-          company, 
-            phoneNumber, 
-            email, 
-            message 
+            firstName,
+            lastName,
+            company,
+            phoneNumber,
+            email,
+            message
         };
 
-        try {
-          const response = await fetch('/api/contact', { 
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json',
-              },
-              body: JSON.stringify(payload),
-          });
-    
-          if (response.ok) {
-              console.log('Payload sent successfully!');
-          } else {
-              console.error('Error sending payload:', response.status);
-          }
-      } catch (error) {
-          console.error('Error sending payload:', error);
-      }
+        console.log(payload);
+
+        fetch('http://localhost:3000/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(payload),
+        })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     }
 
-        
+
 
 
     return (
