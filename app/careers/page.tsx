@@ -1,3 +1,5 @@
+import Listing, { JobData } from "../Components/Job";
+
 export default function Careers() {
     return (
         <div className="text-home-blue">
@@ -18,35 +20,18 @@ export default function Careers() {
 
                 </div>
             </div>
-            <div className="bg bg-home-impactYellow p-36">
-            </div>
-            <div className="p-4 flex flex-col items-center">
-                <h1 className="text-4xl font-light p-4">
+            <div className=" bg-home-impactYellow flex justify-center align-middle p-16">
+                <h1 className="text-[5vw] p-4">
                     Current openings
                 </h1>
-                <div className="bg-slate-200 w-full p-4 rounded">
-                    <div className="flex justify-between">
-                        <div className="flex flex-col items-start">
-                            <h1 className="text-2xl">
-                                Research/developer
-                            </h1>
-                            <p>
-                                -requirements
-                            </p>
-                            <p>
-                                -wage
-                            </p>
-
-                        </div>
-                        <div className="self-center">
-                            <button className="bg-home-blue text-white p-2 hover:bg-blue-900 rounded active:text-home-blue active:bg-white">
-                                Details/Apply
-                            </button>
-                        </div>
-                    </div>
-
-                </div>
             </div>
+            
+            <div> 
+                {JobData.map((job) => (
+                    <Listing key={job.id} />
+                ))}
+            </div>
+
         </div>
     )
 }

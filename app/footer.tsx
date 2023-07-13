@@ -7,7 +7,7 @@ export default function Footer(){
             <div className="flex flex-col mt-7 mr-[20px] min-w-[170px]">
               <h6 className="text-center text-s leading-7 font-light">BUSINESS</h6>
               <Link href="" className="text-xs font-thin leading-7">Customer Portal (Businesses)</Link>
-              <Link href="" className="text-xs font-thin leading-7">Career</Link>
+              <Link href="/careers" className="text-xs font-thin leading-7">Career</Link>
               <Link href="" className="text-xs font-thin leading-7">Employee Login</Link>
               <Link href="" className="text-xs font-thin leading-7">Scholarship</Link>
               <Link href="/contact" className="text-xs font-thin leading-7">Contact</Link>
