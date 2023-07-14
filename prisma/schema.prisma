@@ -18,3 +18,11 @@ model Inquiry {
   message   String
   createdAt DateTime @default(now())
 }
+
+model Job {
+  id        Int      @id @default(autoincrement())
+  title     String
+  description   String@db.VarChar(5000)
+  wage  String
+  createdAt DateTime @default(now())
+}

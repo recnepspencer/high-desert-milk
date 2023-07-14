@@ -1,6 +1,21 @@
-import Listing, { JobData } from "../Components/Job";
 
-export default function Careers() {
+import prisma from "../lib/prisma"
+import Listing from "../Components/Job";
+
+export default async function Careers() {
+
+    interface Job {
+        "id": number;
+        "title": string;
+        "description": string;
+        "wage": string;
+    }
+
+    const jobs: Job[] =  await fetch('http://localhost:3000/api/careers').then((res) => res.json()
+    )
+
+   console.log(jobs)
+    console.log()
     return (
         <div className="text-home-blue">
             <div className="pt-[148px]"></div>
@@ -27,8 +42,8 @@ export default function Careers() {
             </div>
             
             <div> 
-                {JobData.map((job) => (
-                    <Listing key={job.id} />
+                {jobs.map((job) => (
+                    <Listing key={job.id} job={job}/>
                 ))}
             </div>
 
