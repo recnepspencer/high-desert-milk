@@ -5,7 +5,7 @@ import styles from "./NavMenu.module.css";
 export default function NavMenu() {
   return (
     <header>
-      <nav className={`${styles.nav} fixed`}>
+      <nav className="fixed flex bg-home-blue text-white w-full justify-between items-center h-[148px] z-50 ">
         <Link href={"/"} className="p-8 flex-shrink-0">
           <Image
             src="/logo.svg" // Route of the image file
@@ -14,7 +14,7 @@ export default function NavMenu() {
             alt="High Desert Milk Logo"
           />
         </Link>
-        <ul className={`${styles.links} text-2xl  font-light`}>
+        <ul className="flex text-2xl  font-light">
           <li>
             <Link
               href="/"
@@ -47,6 +47,7 @@ export default function NavMenu() {
               Contact
             </Link>
           </li>
+        
         </ul>
       </nav>
     </header>
