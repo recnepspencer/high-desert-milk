@@ -21,7 +21,7 @@ export default function OurProducts() {
               <img src="products/big-powder.png" alt="" className="w-[18vw] mb-4 ml-auto mr-auto"/>
             </div>
             <div>
-              <img src="products/bulk-butter.png" alt="" className="w-[20vw] mb-4 ml-auto mr-auto" />
+              <img src="products/bulk-buttermilk.png" alt="" className="w-[18vw] mb-4 ml-auto mr-auto" />
             </div>
             <div className="mb-4">
               <Link href="/products/butter">
@@ -41,28 +41,8 @@ export default function OurProducts() {
           </div>
         </div>
         <div className="grid grid-cols-2">
-        <div className="w-full bg-home-productYellow p-10">
-            <img
-              src="products/bulk-butter.png"
-              alt=""
-              className="align-middle"
-            />
-            <div className="flex justify-center mt-10">
-              <Link href="products/bulk" className="flex">
-                <label className="text-white text-2xl font-light justify-center pr-3 hover:underline cursor-pointer">
-                  Bulk
-                </label>
-                <SideArrowButton width="8"/>
-              </Link>
-            </div>
-          </div>
-          <div className="w-full flex justify-center items-center">
-            <img
-              src="products/bulk-butter-2.jpeg"
-              alt=""
-              className="w-full object-cover h-full"
-            />
-          </div>
+
+          
           <div className="w-full">
             <img
               src="products/caramel.png"
@@ -107,6 +87,28 @@ export default function OurProducts() {
               alt=""
               className="w-full object-cover h-full"
             />
+          </div>
+          <div className="w-full flex justify-center items-center">
+            <img
+              src="products/bulk-butter-2.jpeg"
+              alt=""
+              className="w-full object-cover h-full"
+            />
+          </div>
+          <div className="w-full bg-home-recipeRed p-10">
+            <img
+              src="products/bulk-butter.png"
+              alt=""
+              className="align-middle"
+            />
+            <div className="flex justify-center mt-10">
+              <Link href="products/bulk" className="flex">
+                <label className="text-white text-2xl font-light justify-center pr-3 hover:underline cursor-pointer">
+                  Bulk
+                </label>
+                <SideArrowButton width="8"/>
+              </Link>
+            </div>
           </div>
         </div>
         <div className="bg-home-productYellow ">
