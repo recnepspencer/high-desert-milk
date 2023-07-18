@@ -22,3 +22,12 @@
     align-items: center;
     padding: 0.25rem;
 }
+
+.menu {
+    display: none;
+  }
+  
+  #checkbox:checked ~ .menu {
+    display: fixed;
+    z-index: 100;
+  }

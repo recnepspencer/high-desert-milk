@@ -14,13 +14,13 @@ export default function Home() {
       </div>
       <div className="relative flex flex-col pt-[10px]">
       <AnimatedText className="self-center p-0 m-0 leading-none animate-pulse opacity-80 font-bold text-white xs:text-md sm:text-2xl md:text-4xl lg:text-5xl"/>
-          <p className="sm:mt-40 sm:ml-20 xs:mt-32 xs:ml-8 bg-white p-3 w-fit rounded xs:text-xl sm:text-3xl md:text-4xl lg:text-5xl">
+          <p className="sm:mt-40 sm:ml-20 xs:mt-32 xs:ml-8 bg-white p-3 w-fit rounded xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
           Pristine by Nature.
         </p>
-        <p className="sm:mt-40 sm:ml-20 xs:mt-32 xs:mr-8 bg-white p-3 w-fit rounded xs:text-xl sm:mr-20 sm:text-3xl md:text-4xl lg:text-5xl self-end">
+        <p className="sm:mt-40 sm:ml-20 xs:mt-32 xs:mr-8 bg-white p-3 w-fit rounded xs:text-2xl sm:mr-20 sm:text-3xl md:text-4xl lg:text-5xl self-end">
           Clean by Routine.
         </p>
-        <p className="sm:mt-40 sm:ml-20 xs:mt-32 xs:ml-8 bg-white p-3 w-fit rounded xs:text-xl sm:text-3xl md:text-4xl lg:text-5xl xs:mb-32 sm:mb-40">
+        <p className="sm:mt-40 sm:ml-20 xs:mt-32 xs:ml-8 bg-white p-3 w-fit rounded xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xs:mb-32 sm:mb-40">
           Consistent by Design.
         </p>
         
