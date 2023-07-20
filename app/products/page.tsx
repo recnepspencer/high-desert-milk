@@ -13,9 +13,10 @@ export default function OurProducts() {
           <h4 className="text-xl font-light mt-[20px]">
             Pristine by Nature. Clean by Routine. Consistent by Design.
           </h4>
-          <div className="grid xs:grid-cols-1 sm:grid-cols-3 pt-10 ml-12 mr-12 items-center align-middle">
-            <div>
+          <div className="grid grid-cols-3 pt-10 ml-12 mr-12 items-center align-middle">
+            <div className="grid grid-cols-1">
               <img src="products/butter.png" alt="" className="w-[40vw] mb-4 ml-auto mr-auto"/>
+              
             </div>
             <div>
               <img src="products/big-powder.png" alt="" className="w-[18vw] mb-4 ml-auto mr-auto"/>
@@ -95,7 +96,7 @@ export default function OurProducts() {
               className="w-full object-cover h-full"
             />
           </div>
-          <div className="w-full bg-home-recipeRed p-10">
+          <div className="w-full bg-home-recipeOrange p-10">
             <img
               src="products/bulk-butter.png"
               alt=""

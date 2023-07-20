@@ -53,7 +53,7 @@ export default function Home() {
               className="w-8/12 ml-auto mr-auto sm:mb-20 xs:mb-4 xs:w-10/12"
             />
             <Link href="/products">
-                        <button className="sm:absolute sm:top-[85%] sm:left-[-6%] sm:pl-[40%] sm:pr-2 flex sm:justify-center sm:align-middle bg-home-blue text-white font-light rounded hover:bg-blue-900 active:text-home-blue active:bg-white xs:m-auto xs:p-2 xs:mb-4 xs:pl-8 xs:pr-8">
+                        <button className="sm:absolute sm:top-[85%] sm:right-[-4%] sm:pr-[40%] sm:pl-2 flex sm:justify-center sm:align-middle bg-home-blue text-white font-light rounded hover:bg-blue-900 active:text-home-blue active:bg-white xs:m-auto xs:p-2 xs:mb-4 xs:pl-8 xs:pr-8">
               <span className="mt-auto mb-auto pr-2">Our Products </span>{" "}
               <span className="text-4xl mb-2"> &gt; </span>
             </button>

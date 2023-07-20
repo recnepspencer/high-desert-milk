@@ -5,7 +5,7 @@ import Listing from "../Components/Job";
 export default async function Careers() {
 
     interface Job {
-        "id": number;
+        "id": string;
         "title": string;
         "description": string;
         "wage": string;

@@ -5,7 +5,7 @@ export default function ProductButter() {
   const featuredButter = RecipeData.filter(recipe => recipe.isButterFeature)
   return (
     <>
-      <div className=" font-sans min-w-[640px] lg:pl-[5vw] lg:pr-[5vw]">
+      <div className=" font-sans w-[100vw] lg:pl-[5vw] lg:pr-[5vw]">
         <div className="pt-[148px]"></div>
         <div className="flex flex-col justify-center bg-white align-middle text-center text-home-blue">
             <div className="flex justify-center align-middle m-10">
@@ -13,10 +13,10 @@ export default function ProductButter() {
                 <img src="../down-arrow.svg" alt=""  className="bg-home-blue rounded h-5 ml-2"/>
 
             </div>
-            <div className="grid grid-cols-2 mt-16 mb-10 mr-28 ml-28">
-                <div className="flex flex-col align-middle">
-                    <h1 className="text-6xl mt-auto">Butter</h1>
-                    <h4 className="text-xl font-light mt-10 mb-auto">Always Fresh. Never Frozen.</h4>
+            <div className="grid grid-cols-2 mt-16 mb-10 items-center gap-3">
+                <div className="flex flex-col justify-center align-middle">
+                    <h1 className="text-[10vw] mt-auto">Butter</h1>
+                    <h4 className="text-[3vw] font-light mt-10 mb-auto">Always Fresh. Never Frozen.</h4>
                 </div>
                 <div className="flex justify-center align-middle">
                     <img src="../products/big-butter.png" alt="" className="w-90 object-contain"/>
