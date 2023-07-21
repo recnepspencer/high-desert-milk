@@ -133,7 +133,7 @@ export default function OurProducts() {
           <div className="flex justify-center">
             <Link href="products/recipes" className="flex pb-4">
               <button className="text-white bg-home-blue rounded p-2 text-xl hover:bg-blue-900 active:text-home-blue active:bg-white cursor-pointer">
-                See all recipes:
+                See all recipes
               </button>
             </Link>
             </div>
