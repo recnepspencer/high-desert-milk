@@ -23,8 +23,8 @@ export default function Impact() {
           <img src="side-arrow.png" alt="" className="w-8 bg-home-blue rounded mb-16 mt-4" />
         </Link>
       </div>
-      <div className="flex">
-        <div>
+      <div className="flex xs:flex-col sm:flex-row">
+        <div >
           <img src="impact/community.png" alt="" className="xs:object-fit sm:w-[140vh] " />
         </div>
         <div className="bg-home-orange flex flex-col items-center justify-center align-middle w-full pb-auto pt-auto xs:text-center xs:p-4">

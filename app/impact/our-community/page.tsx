@@ -1,4 +1,5 @@
 import Students from "@/app/Components/Scholarships";
+import Link from "next/link";
 
 export default function OurCommunity() {
 
@@ -13,7 +14,9 @@ export default function OurCommunity() {
                 <h1 className="text-4xl text-home-blue pl-8 mb-8">
                     High Desert Milk Scholarship
                 </h1>
+                <Link href="/impact/our-community/scholarship-application">
                 <button className="flex bg-home-blue items-center text-white text-md font-light pl-40 rounded-r-md hover:bg-blue-900 active:text-home-blue active:bg-white active:border-home-blue active:border-2">Apply For 2023 Here <img src="../side-arrow.png" className="w-8" /></button>
+                </Link>
             </div>
             <div className="p-24 grid sm:grid-cols-[150px_150px_150px] md:grid-cols-[250px_250px_250px] gap-5 text-[10px] leading-tight justify-center grid-cols- font-sans text-home-blue">
                 <Students />

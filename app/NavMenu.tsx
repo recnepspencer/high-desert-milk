@@ -49,7 +49,7 @@ export default function NavMenu() {
   <li className="md:block hidden">
     <Link
       href="/contact"
-      className="p-2 hover:bg-blue-900 rounded active:text-home-blue active:bg-white mr-4"
+      className="p-2 hover:bg-blue-900 rounded active:text-home-blue active:bg-white mr-8"
     >
       Contact
     </Link>

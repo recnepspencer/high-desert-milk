@@ -15,7 +15,7 @@ export default function ContactUs() {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setLoading(true)
-    
+
         const formData = new FormData();
         formData.append("firstName", firstName);
         formData.append("lastName", lastName);
@@ -23,31 +23,31 @@ export default function ContactUs() {
         formData.append("phoneNumber", phoneNumber);
         formData.append("email", email);
         formData.append("message", message);
-    
+
         fetch("http://localhost:3000/api", {
-          method: "POST",
-          body: formData,
+            method: "POST",
+            body: formData,
         })
-          .then((response) => response.json())
-          .then((data) => {
-            console.log(data);
-            // Reset the form
-            setFirstName("");
-            setLastName("");
-            setCompany("");
-            setPhoneNumber("");
-            setEmail("");
-            setMessage("");
-            // Set loading to false and submitted to true
-            setLoading(false);
-            setSubmitted(true);
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-            setLoading(false);
-          });
-          console.log(formData);
-      };
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                // Reset the form
+                setFirstName("");
+                setLastName("");
+                setCompany("");
+                setPhoneNumber("");
+                setEmail("");
+                setMessage("");
+                // Set loading to false and submitted to true
+                setLoading(false);
+                setSubmitted(true);
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+                setLoading(false);
+            });
+        console.log(formData);
+    };
 
 
 
@@ -89,14 +89,14 @@ export default function ContactUs() {
                                 <textarea name="Message:" value={message} onChange={e => setMessage(e.target.value)} placeholder="Message:" className="p-2  rounded-xl pt-2 placeholder:text-home-blue placeholder:text-xs text-home-blue text-xs w-full h-32"></textarea>
                             </div>
                             <button type="submit" disabled={isLoading || isSubmitted} >
-                {isLoading ? (
-                    <div>Loading...</div> 
-                ) : isSubmitted ? (
-                    <div>Message Sent &#10003;</div> 
-                ) : (
-                    <img src="../side-arrow.png" alt="" className="w-8 bg-home-blue rounded" />
-                )}
-            </button>
+                                {isLoading ? (
+                                    <div>Loading...</div>
+                                ) : isSubmitted ? (
+                                    <div>Message Sent &#10003;</div>
+                                ) : (
+                                    <img src="../side-arrow.png" alt="" className="w-8 bg-home-blue rounded" />
+                                )}
+                            </button>
 
 
 
