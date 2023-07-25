@@ -35,7 +35,7 @@ export default function ProductButter() {
                 Salted
               </Link>
               <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
-                &gt;
+                <a href="/products/butter/salted">&gt;</a>
               </button>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function ProductButter() {
                 Unsalted
               </Link>
               <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
-                &gt;
+              <a href="/products/butter/unsalted">&gt;</a>
               </button>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function ProductButter() {
               Try these butter recipes
             </label>
             <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 cursor-default">
-              &gt;
+            <a href="/products/recipes">&gt;</a>
             </button>
           </div>
 

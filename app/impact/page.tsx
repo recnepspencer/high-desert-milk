@@ -20,7 +20,7 @@ export default function Impact() {
 
         <h4 className="mt-16 text-white text-2xl">Our story</h4>
         <Link href="impact/our-story">
-          <img src="side-arrow.png" alt="" className="w-8 bg-home-blue rounded mb-16 mt-4" />
+          <img src="side-arrow.png" alt="" className="w-8 bg-home-blue rounded mb-16 mt-4 hover:bg-blue-900 active:bg-white" />
         </Link>
       </div>
       <div className="flex xs:flex-col sm:flex-row">

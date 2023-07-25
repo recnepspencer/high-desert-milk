@@ -275,9 +275,9 @@ export const RecipeData: Recipe[] = [
 const RecipeCard: React.FC<RecipeCardProps> = ({recipe}) => {
   return (
     <div className="flex flex-col">
-      <img src={recipe.imageUrl} alt="" className="w-full" />
-      <div className={`flex ${recipe.backgroundColor}  justify-center p-2`}>
-        <Link href={recipe.recipeUrl} className="text-l flex text-white font-light text-center p-2 hover:underline">
+      <img src={recipe.imageUrl} alt="" className="w-full rounded-t-md border-t-slate-300 border-t-[1px] border-l-slate-300 border-r-slate-300 border-l-[1px] border-r-[1px]" />
+      <div className={`flex ${recipe.backgroundColor}  justify-center p-2 rounded-b-md h-[15vh] border-b-slate-300 border-b-[1px] border-l-slate-300 border-r-slate-300 border-t-slate-300 border-t-[.25px] border-l-[1px] border-r-[1px]`}>
+        <Link href={recipe.recipeUrl} className="text-l flex text-white font-light mt-auto mb-auto text-center p-1 hover:underline">
             <p className="ml-4">{recipe.recipeName}</p>
             <button className="justify-right mt-auto mb-auto mr-3 ml-4 text-white">
               &gt;

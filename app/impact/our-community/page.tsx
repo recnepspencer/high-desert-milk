@@ -23,9 +23,9 @@ export default function OurCommunity() {
             </div>
             <div className="bg-home-orange text-home-blue">
                 <div className="grid grid-cols-1">
-                    <div className="flex flex-col p-8 xs:grid xs:grid-cols-2 justify-center items-center">
+                    <div className="flex flex-col p-8 xs:grid xs:grid-cols-1 justify-center items-center xs:text-center">
                         <h1 className="text-4xl font-light p-8 xs:p-2">Africa Outreach</h1>
-                        <p className="p-8 text-sm ">Every year, High Desert Milk donates pallets
+                        <p className="p-8 text-sm xs:p-2 ">Every year, High Desert Milk donates pallets
                             of our powdered milk in Zimbabwe. As you can
                             see from these photos, the natives love being
                             able to enjoy the flavor and nutrients that it
@@ -63,7 +63,7 @@ export default function OurCommunity() {
             <div className="bg-home-productBlue p-8 text-white h-[425px]">
                 <h1 className="text-3xl font-light p-4">High Desert Milk Golf Scramble</h1>
                 <div className="flex p-4">
-                    <p className="text-xs font-sans pt-12">
+                    <p className="text-xs font-sans pt-12 xs:p-2 xs:pt-2">
                         High Desert Milk puts together an annual Golf Scramble
                         event in the month of August for all our valued Customers and Vendors
                         to attend. This event is a two day event with plant tours and a Meet and
@@ -73,7 +73,7 @@ export default function OurCommunity() {
                         The money raised by this event goes towards the scholarships given to the
                         High Desert Milk Scholarship recipient winners.
                     </p>
-                    <img src="../impact/our-community-page/golf.png" alt="" className="w-[150px] pl-8 object-contain" />
+                    <img src="../impact/our-community-page/golf.png" alt="" className="w-[150px] pl-8 object-contain xs:p-2" />
                 </div>
             </div>
             <div className=" bg-home-orange p-4 text-home-blue">
