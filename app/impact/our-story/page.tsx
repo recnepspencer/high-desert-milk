@@ -3,14 +3,14 @@ import Link from "next/link";
 
 export default function OurStory() {
   return (
-    <div className="min-w-[640px] lg:pl-[5vw] lg:pr-[5vw] overflow-hidden">
+    <div className="w-[100vw] lg:pl-[5vw] lg:pr-[5vw] overflow-hidden">
       <div className="pt-[148px]"></div>
-      <div className="flex">
-        <div className="flex flex-col items-center w-full justify-center align-middle text-home-blue">
+      <div className="sm:flex xs:grid xs:grid-cols-1">
+        <div className="flex flex-col items-center w-full justify-center align-middle text-home-blue xs:p-12">
           <h1 className="text-4xl ">Our Story</h1>
           <h2 className="text-6xl font-serif">∨ ∨ ∨</h2>
         </div>
-        <div className="flex justify-end w-[100%]">
+        <div className="flex justify-end w-[100%] xs:p-12">
           <img
             src="../impact/our-story.png"
             alt="Nostalgic picture in front of a dairy"
@@ -19,8 +19,8 @@ export default function OurStory() {
         </div>
       </div>
       <div className="flex bg-home-productBlue justify-between">
-        <div className="grid grid-cols-[minmax(300px,_4fr)_20%] w-full justify-between pt-10  text-center text-white font-sans grid-rows-[200px_250px_100px_100px_180px_250px_150px_100px_140px]">
-          <div className="text-right pl-8 pr-8 h-[10px]">
+        <div className="grid grid-cols-[minmax(45vw,_20px)_10vw] w-full justify-between pt-10  text-center text-white font-sans grid-rows-[200px_250px_100px_100px_180px_250px_150px_100px_140px]">
+          <div className="text-right pl-8 pr-8 h-[10px] xs:pl-2 xs:pr-2">
             <p className="">
               Ray Robinson - one of the cofounders of High Desert Milk - begins
               his first dairy.
@@ -32,7 +32,7 @@ export default function OurStory() {
               <div className="w-[3px] bg-white h-[175px] self-center absolute ml-[2px]"></div>
             </div>
           </div>
-          <div className="text-right pl-8 pr-8">
+          <div className="text-right pl-8 pr-8 xs:pl-2 xs:pr-2">
             <p className="h-12">
               Six dairy producers found High Desert Milk - building a business of
               pharmaceuticals For their animals and creating a market for their
@@ -43,7 +43,7 @@ export default function OurStory() {
             <p>2001</p>
             <div className="w-[3px] bg-white h-full self-center ml-[2px]"></div>
           </div>
-          <div className="text-right pl-8 pr-8">
+          <div className="text-right pl-8 pr-8 xs:pl-2 xs:pr-2">
             <p className="h-12">
               After many years of planning, High Desert Milk breaks ground for a
               world-class milk plant.
@@ -53,7 +53,7 @@ export default function OurStory() {
             <p>2007</p>
             <div className="w-[3px] bg-white h-full self-center ml-[2px]"></div>
           </div>
-          <div className="text-right pl-8 pr-8">
+          <div className="text-right pl-8 pr-8 xs:pl-2 xs:pr-2">
             <p className="h-12">
               The milk plant receives its first truckload of milk, milk dryer is
               started
@@ -63,7 +63,7 @@ export default function OurStory() {
             <p>2008</p>
             <div className="w-[3px] bg-white h-full self-center ml-[2px]"></div>
           </div>
-          <div className="text-right pl-8 pr-8">
+          <div className="text-right pl-8 pr-8 xs:pl-2 xs:pr-2">
             <p className="h-12">
               After a few difficult years, High Desert overcomes the highest
               construction costs in history as well as very low milk prices
@@ -74,7 +74,7 @@ export default function OurStory() {
             <p>2009</p>
             <div className="w-[3px] bg-white h-full self-center ml-[2px]"></div>
           </div>
-          <div className="text-right pl-8 pr-8">
+          <div className="text-right pl-8 pr-8 xs:pl-2 xs:pr-2">
             <p className="h-12">
               Expansion complete - butter production begins.
             </p>
@@ -83,7 +83,7 @@ export default function OurStory() {
             <p>2012</p>
             <div className="w-[3px] bg-white h-full self-center ml-[2px]"></div>
           </div>
-          <div className="text-right pl-8 pr-8">
+          <div className="text-right pl-8 pr-8 xs:pl-2 xs:pr-2">
             <p className="h-12">
               Expansion continues - consumer line for butter begins
             </p>
@@ -92,7 +92,7 @@ export default function OurStory() {
             <p>2017</p>
             <div className="w-[3px] bg-white h-full self-center ml-[2px]"></div>
           </div>
-          <div className="text-right pl-8 pr-8">
+          <div className="text-right pl-8 pr-8 xs:pl-2 xs:pr-2">
             <p className="h-12">
               Plant expansion that includes MPC Dried Milk.
 
@@ -102,7 +102,7 @@ export default function OurStory() {
             <p>2020</p>
             <div className="w-[3px] bg-white h-full self-center ml-[2px]"></div>
           </div>
-          <div className="text-right pl-8 pr-8">
+          <div className="text-right pl-8 pr-8 xs:pl-2 xs:pr-2">
             <p className="h-12">
               High Desert Milk begins experimenting with direct-consumer sales by
               creating an R&D department that begins making new products.
@@ -116,7 +116,7 @@ export default function OurStory() {
 
         </div>
 
-        <div className="flex flex-col w-[80%] pl-8 min-w-[400px] max-w-[500px]">
+        <div className="flex flex-col w-[80%] pl-8 max-w-[500px] xs:w-[100%] xs:pl-2">
           <div className="mt-auto pt-[200px]"></div>
           <img src="../impact/groundbreaking.png" alt="" />
           <img src="../impact/timeline-2.png" alt="" />
@@ -141,7 +141,6 @@ export default function OurStory() {
             thus far.</p>
         </div>
         <Sustainability />
-        <p className="text-[10px] pl-32 w-16 text-gray-400">https://www.northwestfcs.com/ag-industries/industry-insights/dairy</p>
       </div>
       <div className="flex justify-end">
         <Link href="impact/our-community">

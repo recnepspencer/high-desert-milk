@@ -4,28 +4,28 @@ import Link from "next/link";
 export default function OurCommunity() {
 
     return (
-        <div className="min-w-[640px] lg:pl-[5vw] lg:pr-[5vw]">
+        <div className="w-[100vw] lg:pl-[5vw] lg:pr-[5vw]">
             <div className="pt-[148px]"></div>
             <div className="relative">
                 <img src="../impact/our-community-page/our-community-bg.png" alt="" className="w-full" />
-                <h1 className="absolute bg-home-blue rounded-xl text-white text-5xl top-[65%] left-[50%] -translate-x-[50%] font-light p-4 w-[400px] mb-12"> Our Community</h1>
+                <h1 className="absolute bg-home-blue rounded-xl text-white text-5xl top-[65%] left-[50%] -translate-x-[50%] font-light p-4 w-[400px] mb-12 xs:text-3xl xs:p-3 text-center xs:w-[300px]"> Our Community</h1>
             </div>
             <div className="mt-10 mb-10">
                 <h1 className="text-4xl text-home-blue pl-8 mb-8">
                     High Desert Milk Scholarship
                 </h1>
                 <Link href="/impact/our-community/scholarship-application">
-                <button className="flex bg-home-blue items-center text-white text-md font-light pl-40 rounded-r-md hover:bg-blue-900 active:text-home-blue active:bg-white active:border-home-blue active:border-2">Apply For 2023 Here <img src="../side-arrow.png" className="w-8" /></button>
+                    <button className="flex bg-home-blue items-center text-white text-md font-light pl-40 rounded-r-md hover:bg-blue-900 active:text-home-blue active:bg-white active:border-home-blue active:border-2">Apply For 2023 Here <img src="../side-arrow.png" className="w-8" /></button>
                 </Link>
             </div>
-            <div className="p-24 grid sm:grid-cols-[150px_150px_150px] md:grid-cols-[250px_250px_250px] gap-5 text-[10px] leading-tight justify-center grid-cols- font-sans text-home-blue">
+            <div className="p-24 grid sm:grid-cols-[150px_150px_150px] md:grid-cols-[250px_250px_250px] gap-5 text-[10px] leading-tight justify-center grid-cols- font-sans text-home-blue xs:grid-cols-2">
                 <Students />
             </div>
             <div className="bg-home-orange text-home-blue">
-                <div className="grid grid-cols-2">
-                    <div className="flex flex-col p-8 justify-center items-center max-w-[600px]">
-                        <h1 className="text-4xl font-light p-8 min-w-[270px]">Africa Outreach</h1>
-                        <p className="p-8 text-sm">Every year, High Desert Milk donates pallets
+                <div className="grid grid-cols-1">
+                    <div className="flex flex-col p-8 xs:grid xs:grid-cols-2 justify-center items-center">
+                        <h1 className="text-4xl font-light p-8 xs:p-2">Africa Outreach</h1>
+                        <p className="p-8 text-sm ">Every year, High Desert Milk donates pallets
                             of our powdered milk in Zimbabwe. As you can
                             see from these photos, the natives love being
                             able to enjoy the flavor and nutrients that it
@@ -42,15 +42,21 @@ export default function OurCommunity() {
 
             </div>
             <div>
-                <div className="relative min-w-[780px] p-4 h-[800px]">
-                    <div className="flex flex-col items-center p-4 w-6/12 ml-auto pt-16 text-home-blue">
-                        <h1 className="text-3xl mb-10">
-                            Community Giveaways</h1>
-                        <p className="text-sm">In a unique way of giving back to the community, thanking
-                            everyone for their support, and keeping up with the trends,
-                            High Desert Milk enjoys doing the occasional giveaway during
-                            important times of the year. Have you entered before?</p>
-                        <img src="../impact/our-community-page/giveaways.png" className="absolute w-9/12 left-0 top-0 " />
+                <div className="sm:relative sm:min-w-[780px] p-4 sm:h-[800px] xs:flex">
+                    <div className="flex sm:flex-col items-center p-4 w-6/12 ml-auto xs:mr-auto pt-16 text-home-blue xs:grid xs:grid-cols-1 xs:w-full">
+                        <div>
+                            <h1 className="text-3xl mb-10">
+                                Community Giveaways</h1>
+                            <p className="text-sm">In a unique way of giving back to the community, thanking
+                                everyone for their support, and keeping up with the trends,
+                                High Desert Milk enjoys doing the occasional giveaway during
+                                important times of the year. Have you entered before?</p>
+                        </div>
+                        <div>
+
+                            <img src="../impact/our-community-page/giveaways.png" className="sm:absolute sm:w-9/12 sm:left-0 sm:top-0 xs:w-full" />
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -79,69 +85,69 @@ export default function OurCommunity() {
 
                 <div className="grid grid-cols-5 pl-24 pr-24 text-xs gap-5">
                     <div>
-                    Shaelyn Young
+                        Shaelyn Young
 
                     </div>
                     <div>
-                    Shelbie Draper
-
-
-                    </div>
-                    <div>
-                    Karter Zampedri
-
-                    </div>
-                    <div>
-                    Makayla Scott
+                        Shelbie Draper
 
 
                     </div>
                     <div>
-                    Lee Nyblade
+                        Karter Zampedri
+
+                    </div>
+                    <div>
+                        Makayla Scott
 
 
                     </div>
                     <div>
-                    Randy Scott
+                        Lee Nyblade
 
 
                     </div>
                     <div>
-                    Kaelen Winnett
+                        Randy Scott
 
 
                     </div>
                     <div>
-                    Dalyce Davis
-
-                    </div>
-                    <div>
-                    Bailie Smith
+                        Kaelen Winnett
 
 
                     </div>
                     <div>
-                    MaKenna Winnett
+                        Dalyce Davis
+
+                    </div>
+                    <div>
+                        Bailie Smith
 
 
                     </div>
                     <div>
-                    Clarabell Evens
+                        MaKenna Winnett
 
 
                     </div>
                     <div>
-                    Mallory Scott
+                        Clarabell Evens
 
 
                     </div>
                     <div>
-                    Renee Scott
+                        Mallory Scott
 
 
                     </div>
                     <div>
-                    Stetson Rodgers
+                        Renee Scott
+
+
+                    </div>
+                    <div>
+                        Stetson Rodgers
 
 
                     </div>

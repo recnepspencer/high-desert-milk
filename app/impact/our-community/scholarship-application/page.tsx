@@ -17,11 +17,16 @@ export default function Scholarships() {
     const [date, setDate] = useState('');
     const [isLoading, setLoading] = useState(false);
     const [isSubmitted, setSubmitted] = useState(false);
+    const [file, setFile] = useState(null);
+
+const handleFileChange = (e: any) => {
+  setFile(e.target.files[0]);
+};
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setLoading(true)
-    
+
         const formData = new FormData();
         formData.append("name", name);
         formData.append("gender", gender);
@@ -32,32 +37,39 @@ export default function Scholarships() {
         formData.append("sig", sig);
         formData.append("date", date);
         formData.append("age", age);
-    
+        if (file) {
+            formData.append("attachment", file);
+        }
+
+        console.log(formData.get("attachment"));
+
+
+
         fetch("http://localhost:3000/api/scholarship-application", {
             method: "POST",
             body: formData,
         })
-        .then((response) => response.json())
-        .then((data) => {
-            console.log(data);
-            // Reset the form
-            setName("");
-            setGender("");
-            setAddress("");
-            setPhone("");
-            setBirthDate("");
-            setEmail("");
-            setSig("");
-            setDate("");
-            setAge("");
-            // Set loading to false and submitted to true
-            setLoading(false);
-            setSubmitted(true);
-        })
-        .catch((error) => {
-            console.error("Error:", error);
-            setLoading(false);
-        });
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                // Reset the form
+                setName("");
+                setGender("");
+                setAddress("");
+                setPhone("");
+                setBirthDate("");
+                setEmail("");
+                setSig("");
+                setDate("");
+                setAge("");
+                // Set loading to false and submitted to true
+                setLoading(false);
+                setSubmitted(true);
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+                setLoading(false);
+            });
         console.log(formData);
     };
 
@@ -65,19 +77,19 @@ export default function Scholarships() {
         (currentMonth > 12 || (currentMonth === 12 && currentDay >= 15)) ||
         (currentMonth < 4 || (currentMonth === 3 && currentDay <= 15));
 
-    if (!isOpen) {
-        return (
-            <div className="pt-[148px] pb-[100vh] flex flex-col items-center">
-                       <h1 className="text-4xl text-center mt-[10vh]">Application will be open Dec, 15th</h1>
-                       <Link href="impact/our-community">
-                       <button className="mt-20 p-4 text-2xl bg-home-blue text-white rounded hover:bg-blue-900 active:bg-white active:text-home-blue border-home-blue border-[1px] ">Go Back</button>
-                       </Link>
+    // if (!isOpen) {
+    //     return (
+    //         <div className="pt-[148px] pb-[100vh] flex flex-col items-center">
+    //                    <h1 className="text-4xl text-center mt-[10vh] p-8 text-home-blue">Application will be open Dec, 15th</h1>
+    //                    <Link href="impact/our-community">
+    //                    <button className="mt-20 p-4 text-2xl bg-home-blue text-white rounded hover:bg-blue-900 active:bg-white active:text-home-blue border-home-blue border-[1px] ">Go Back</button>
+    //                    </Link>
 
-            </div>
+    //         </div>
 
-        )
+    //     )
 
-    }
+    // }
 
     return (
         <div className="pt-[148px] ">
@@ -153,20 +165,22 @@ export default function Scholarships() {
                     <label htmlFor="date" >Date:</label>
                     <input type="text" id="date" className="w-[40%] border-black border-b-[1px] mr-4 ml-4" value={date} onChange={(e) => setDate(e.target.value)} />
                 </div>
-                <div className="mt-8 flex justify-center">
-                <button type="submit" >Submit</button>
+                <div className="flex text-home-blue w-full mt-8">
+                    <label htmlFor="attachment">Attachment:</label>
+                    <input type="file" id="attachment" onChange={handleFileChange} />
                 </div>
                 <button className="p-2 text-xl bg-home-blue text-white rounded hover:bg-blue-900 active:bg-white active:text-home-blue border-home-blue border-[1px] " type="submit" disabled={isLoading || isSubmitted} >
-                {isLoading ? (
-                    <div>Loading...</div> 
-                ) : isSubmitted ? (
-                    <div>Message Sent &#10003;</div> 
-                ) : (
-                    <div>Submit</div>
-                )}
-            </button>
+                    {isLoading ? (
+                        <div>Loading...</div>
+                    ) : isSubmitted ? (
+                        <div>Message Sent &#10003;</div>
+                    ) : (
+                        <div>Submit</div>
+                    )}
+                </button>
             </form>
 
         </div>
     )
 }
+
