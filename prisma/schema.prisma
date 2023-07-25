@@ -22,7 +22,7 @@ model Inquiry {
 model Job {
   id        Int      @id @default(autoincrement())
   title     String
-  description   String@db.VarChar(5000)
+  description   String @db.VarChar(5000)
   wage  String
   createdAt DateTime @default(now())
 }

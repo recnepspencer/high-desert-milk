@@ -1,5 +1,6 @@
 import prisma from "../../lib/prisma";
 
+
 async function fetchJobs() {
     const jobs = await prisma.job.findMany();
 
