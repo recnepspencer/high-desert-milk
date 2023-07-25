@@ -4,23 +4,23 @@ import Listing from "../Components/Job";
 
 export default async function Careers() {
 
-    interface Job {
-        "id": string;
-        "title": string;
-        "description": string;
-        "wage": string;
-    }
-    const baseUrl =
-        process.env.NODE_ENV === "development"
-            ? process.env.NEXT_PUBLIC_API_BASE_URL
-            : process.env.NEXT_PUBLIC_PRODUCTION_API_BASE_URL;
+    // interface Job {
+    //     "id": string;
+    //     "title": string;
+    //     "description": string;
+    //     "wage": string;
+    // }
+    // const baseUrl =
+    //     process.env.NODE_ENV === "development"
+    //         ? process.env.NEXT_PUBLIC_API_BASE_URL
+    //         : process.env.NEXT_PUBLIC_PRODUCTION_API_BASE_URL;
 
 
-    const jobs: Job[] = await fetch(`${baseUrl}/api/careers`).then((res) => res.json()
-    )
+    // const jobs: Job[] = await fetch(`${baseUrl}/api/careers`).then((res) => res.json()
+    // )
 
-    console.log(jobs)
-    console.log()
+    // console.log(jobs)
+    // console.log()
     return (
         <div className="text-home-blue">
             <div className="pt-[148px]"></div>
@@ -45,12 +45,12 @@ export default async function Careers() {
                     Current openings
                 </h1>
             </div>
-
+{/* 
             <div>
                 {jobs.map((job) => (
                     <Listing key={job.id} job={job} />
                 ))}
-            </div>
+            </div> */}
 
         </div>
     )

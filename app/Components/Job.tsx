@@ -1,17 +1,7 @@
 'use client'
 import React from 'react';
 import Link from 'next/link';
-import { PrismaClient } from '@prisma/client';
 
-// const prisma = new PrismaClient();
-
-// async function fetchJobs() {
-//     const jobs = await prisma.job.findMany();
-
-//     await prisma.$disconnect();
-
-//     return jobs;
-// }
 
 interface Job {
     "id": string;
