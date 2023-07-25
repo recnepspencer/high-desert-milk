@@ -32,13 +32,16 @@ Best regards,
 Your Contact Form
 `;
 
+const emailUsername = process.env.EMAIL_USERNAME;
+const emailPassword = process.env.EMAIL_PASSWORD;
+
     const transporter = nodeMailer.createTransport({
       host: "smtp.gmail.com",
       port: 465,
       secure: true,
       auth: {
-        user: 'high.desert.test165@gmail.com',
-        pass: "kakwvtonypqtzzji",
+        user: emailUsername,
+        pass: emailPassword,
       }
     })
 

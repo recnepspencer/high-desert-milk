@@ -24,7 +24,13 @@ export default function ContactUs() {
         formData.append("email", email);
         formData.append("message", message);
 
-        fetch("http://localhost:3000/api", {
+        const baseUrl =
+            process.env.NODE_ENV === "development"
+                ? process.env.NEXT_PUBLIC_API_BASE_URL
+                : process.env.NEXT_PUBLIC_PRODUCTION_API_BASE_URL;
+
+
+        fetch(`${baseUrl}/api`, {
             method: "POST",
             body: formData,
         })

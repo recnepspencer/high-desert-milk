@@ -19,9 +19,9 @@ export default function Scholarships() {
     const [isSubmitted, setSubmitted] = useState(false);
     const [file, setFile] = useState(null);
 
-const handleFileChange = (e: any) => {
-  setFile(e.target.files[0]);
-};
+    const handleFileChange = (e: any) => {
+        setFile(e.target.files[0]);
+    };
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -43,9 +43,13 @@ const handleFileChange = (e: any) => {
 
         console.log(formData.get("attachment"));
 
+        const baseUrl =
+            process.env.NODE_ENV === "development"
+                ? process.env.NEXT_PUBLIC_API_BASE_URL
+                : process.env.NEXT_PUBLIC_PRODUCTION_API_BASE_URL;
 
 
-        fetch("http://localhost:3000/api/scholarship-application", {
+        fetch(`${baseUrl}/api/scholarship-application`, {
             method: "POST",
             body: formData,
         })

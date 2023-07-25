@@ -7,8 +7,14 @@ interface Job {
     "wage": string;
 }
 
+
+const baseUrl =
+process.env.NODE_ENV === "development"
+    ? process.env.NEXT_PUBLIC_API_BASE_URL
+    : process.env.NEXT_PUBLIC_PRODUCTION_API_BASE_URL;
+
 export async function generateStaticParams() {
-    const jobs = await fetch('http://localhost:3000/api/careers').then((res) => res.json())
+    const jobs = await fetch(`${baseUrl}/api/careers`).then((res) => res.json())
    
     return jobs.map((job: Job) => ({
       slug: job.id,
@@ -17,7 +23,7 @@ export async function generateStaticParams() {
 
   export default async function Page({ params }: { params: { id: string } }) {
 
-    const jobs = await fetch('http://localhost:3000/api/careers').then((res) => res.json())
+    const jobs = await fetch(`${baseUrl}/api/careers`).then((res) => res.json())
     const job: Job = jobs.find((job: Job) => job.id.toString() === params.id.toString());
 
     return (
