@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 
@@ -77,7 +78,7 @@ import Link from 'next/link';
           <div key={index}>
             <div className="flex items-center">
               <h2 className="text-2xl pr-16 ">{sustainer.title}</h2>
-              <img src={sustainer.imgurl} alt={sustainer.title} className="w-20" />
+              <Image loading="lazy" width={1000} height={1000} alt={`${sustainer.title} icon`} src={sustainer.imgurl} className="w-20" />
             </div>
             <p className="pt-4 pl-8 pr-8 pb-4">
               {sustainer.text}

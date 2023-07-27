@@ -1,4 +1,6 @@
+import AnimatedText from "@/app/Components/AnimatedText";
 import Sustainability, { SustainData } from "@/app/Components/Sustainability";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function OurStory() {
@@ -7,12 +9,13 @@ export default function OurStory() {
       <div className="pt-[148px]"></div>
       <div className="sm:flex xs:grid xs:grid-cols-1">
         <div className="flex flex-col items-center w-full justify-center align-middle text-home-blue xs:p-12">
-          <h1 className="text-4xl ">Our Story</h1>
-          <h2 className="text-6xl font-serif">∨ ∨ ∨</h2>
+          <h1 className="text-4xl m-2">Our Story</h1>
+          <AnimatedText className="leading-[40px] text-6xl animate-pulse opacity-80" />
         </div>
         <div className="flex justify-end w-[100%] xs:p-12">
-          <img
-            src="../impact/our-story.png"
+          <Image loading="lazy"
+          width={4068} height={3052}
+            src="/impact/our-story.png"
             alt="Nostalgic picture in front of a dairy"
             className="mt-4 mb-4 "
           />
@@ -118,10 +121,10 @@ export default function OurStory() {
 
         <div className="flex flex-col w-[80%] pl-8 max-w-[500px] xs:w-[100%] xs:pl-2">
           <div className="mt-auto pt-[200px]"></div>
-          <img src="../impact/groundbreaking.png" alt="" />
-          <img src="../impact/timeline-2.png" alt="" />
-          <img src="../impact/timeline-3.png" alt="" />
-          <img src="../impact/timeline-4.png" alt="" />
+          <Image loading="lazy" width={7680} height={5164} src="/impact/groundbreaking.png" alt="Timeline photo 1" />
+          <Image loading="lazy" width={3484} height={2612} src="/impact/timeline-2.png" alt="Timeline photo 2" />
+          <Image loading="lazy" width={3972} height={2648} src="/impact/timeline-3.png" alt="Timeline photo 3" />
+          <Image loading="lazy" width={3516} height={4688} src="/impact/timeline-4.png" alt="Timeline photo 4" />
 
         </div>
       </div>

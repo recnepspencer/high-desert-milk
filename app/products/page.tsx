@@ -1,6 +1,7 @@
 import Link from "next/link";
 import RecipeCard, {RecipeData} from "@/app/Components/RecipeCard"
 import SideArrowButton from "../Components/Buttons";
+import Image from "next/image";
 
 export default function OurProducts() {
   const mainFeature = RecipeData.filter(recipe => recipe.isMainFeature)
@@ -15,14 +16,14 @@ export default function OurProducts() {
           </h4>
           <div className="grid grid-cols-3 pt-10 ml-12 mr-12 items-center align-middle">
             <div className="grid grid-cols-1">
-              <img src="products/butter.png" alt="" className="w-[40vw] mb-4 ml-auto mr-auto"/>
+              <Image loading="lazy" width={1180} height={844} src="/products/butter.png" alt="" className="w-[40vw] mb-4 ml-auto mr-auto"/>
               
             </div>
             <div>
-              <img src="products/big-powder.png" alt="" className="w-[18vw] mb-4 ml-auto mr-auto"/>
+              <Image loading="lazy" width={2956} height={3264} src="/products/big-powder.png" alt="Powder Milk" className="w-[18vw] mb-4 ml-auto mr-auto"/>
             </div>
             <div>
-              <img src="products/bulk-buttermilk.png" alt="" className="w-[18vw] mb-4 ml-auto mr-auto" />
+              <Image loading="lazy" width={2670} height={3560} alt="Bulk Powder Buttermilk" src="/products/bulk-buttermilk.png" className="w-[18vw] mb-4 ml-auto mr-auto" />
             </div>
             <div className="mb-4">
               <Link href="/products/butter">
@@ -45,16 +46,19 @@ export default function OurProducts() {
 
           
           <div className="w-full">
-            <img
-              src="products/caramel.png"
-              alt=""
+            <Image loading="lazy"
+            width={4108}
+            height={5000}
+              src="/products/caramel.png"
+              alt="Caramel"
               className="object-cover w-full h-full"
             />
           </div>
           <div className="w-full bg-home-orange p-10">
-            <img
-              src="products/big-butter.png"
-              alt=""
+            <Image loading="lazy"
+            width={4904} height={2880}
+              src="/products/big-butter.png"
+              alt="Butter"
               className="align-middle mt-[20%]"
             />
             <div className="flex justify-center mt-10">
@@ -68,9 +72,10 @@ export default function OurProducts() {
           </div>
 
           <div className="w-full bg-home-productBlue p-10">
-            <img
-              src="products/big-powder.png"
-              alt=""
+            <Image loading="lazy"
+            width={2956} height={3264}
+              src="/products/big-powder.png"
+              alt="Milk powder"
               className="align-middle"
             />
             <div className="flex justify-center mt-10">
@@ -83,23 +88,28 @@ export default function OurProducts() {
             </div>
           </div>
           <div className="w-full flex justify-center items-center">
-            <img
-              src="products/cake.png"
-              alt=""
+            <Image loading="lazy"
+            width={5444}
+            height={4212}
+              src="/products/cake.png"
+              alt="Cake"
               className="w-full object-cover h-full"
             />
           </div>
           <div className="w-full flex justify-center items-center">
-            <img
-              src="products/bulk-butter-2.jpeg"
-              alt=""
+            <Image loading="lazy" 
+            width={512}
+            height={512}
+              src="/products/bulk-butter-2.jpeg"
+              alt="Beautiful butter"
               className="w-full object-cover h-full"
             />
           </div>
           <div className="w-full bg-home-recipeOrange p-10">
-            <img
-              src="products/bulk-butter.png"
-              alt=""
+            <Image loading="lazy"
+              width={3340} height={2504}
+              src="/products/bulk-butter.png"
+              alt="Bulk Butter"
               className="align-middle"
             />
             <div className="flex justify-center mt-10">

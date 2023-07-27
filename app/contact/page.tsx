@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import React from "react";
 import { useState } from "react";
 export default function ContactUs() {
@@ -62,7 +63,7 @@ export default function ContactUs() {
         <div>
             <div className="pt-[148px] lg:pl-[5vw] lg:pr-[5vw] max-w-screen-xl xl:ml-auto xl:mr-auto w-[100vw]">
                 <div className="relative text-home-blue">
-                    <img src="../impact/our-community-page/map.png" alt="" className="pb-[430px] bg-home-productBlue" />
+                    <Image width={7680} height={7004} src="/impact/our-community-page/map.png" alt="Background image: Map" className="pb-[430px] bg-home-productBlue" />
                     <div className="absolute top-0 w-full ">
                         <div className="flex flex-col ml-auto m-4 p-2 mr-8 bg-white text-center rounded items-center w-[450px] xs:w-[350px] mt-16">
                             <h1 className="text-2xl font-light">How can we help you? </h1>

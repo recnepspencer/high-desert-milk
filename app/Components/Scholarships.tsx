@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface Student {
@@ -134,7 +135,7 @@ export default function Students() {
     return (
         StudentData.map((student, index) => (
             <div key={index} className="flex flex-col items-center">
-                <img src={`${student.imageUrl}`} className="w-48 pb-2"/>
+                <Image loading="lazy" width={1200} height={1200} alt={`picture of ${student.name}`} src={`${student.imageUrl}`} className="w-48 pb-2"/>
                 <p>{student.name}</p> 
                 <p>{student.highschoolName}</p> 
                 <p>{student.collegeName}</p> 

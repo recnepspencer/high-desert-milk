@@ -6,8 +6,10 @@ export default function Home() {
   return (
     <main className="flex flex-col w-full overflow-hidden xs:max-w-[100vw]">
       <div className="flex flex-col w-[100%] mt-[148px] sm:h-[100%] ">
-        <img src="background.svg" className="fixed w-[100vw] object-cover " />
-        <img
+        <Image src="background.svg" width={1920} height={1080} className="fixed w-[100vw] object-contain" alt="Background image of agricultural scenery" />
+        <Image
+        width={1047} height={719}
+        alt="High Desert Milk Logo"
           src="background-logo.svg"
           className="relative m-auto mt-[4%]  h-[100%] w-6/12"
         />
@@ -27,8 +29,10 @@ export default function Home() {
 
         <div className="flex justify-around bg-orange-500 w-[100%] m-0 pl-4 pr-4 xs:pt-4 xs:flex-col">
           <div className="relative sm:w-6/12 xs:mb-4 xs:border-b-home-blue xs:border-b-2 ">
-            <img
-              src="home-cows.png"
+            <Image
+            width={1035}
+            height={1381}
+              src="/home-cows.png"
               alt="cute cows"
               className="w-[100%] ml-auto mr-auto pb-4"
             />
@@ -42,14 +46,18 @@ export default function Home() {
           </div>
           
           <div className="relative flex flex-col justify-around sm:w-6/12">
-            <img
+            <Image
+            width={440} height={514}
               src="/home-milk.png"
-              alt="cows"
+              alt="powdered milk"
               className="w-6/12 ml-auto mr-auto xs:w-8/12"
+              loading="lazy"
             />
-            <img
+            <Image
+            width={562}
+            height={331}
               src="/home-butter.png"
-              alt="cows"
+              alt="butter"
               className="w-8/12 ml-auto mr-auto sm:mb-20 xs:mb-4 xs:w-10/12"
             />
             <Link href="/products">
@@ -63,13 +71,13 @@ export default function Home() {
         </div>
         <div className="bg-white sm:p-20 xs:p-8">
                   <div className="flex justify-center border-t-4 border-black pr-20 pl-20 pt-20 xs:pt-8">
-          <img src="idaho-preferred.svg" alt="" className="w-4/12"/>
-          <img src="brogs.svg" alt="" className="sm:ml-20 xs:ml-12 w-4/12"/>
-          <img src="real.svg" alt="" className="sm:ml-20 xs:ml-12 w-4/12"/>
+          <Image width={309} height={221} alt="Idaho preffered" src="/idaho-preferred.svg" className="w-4/12"/>
+          <Image width={323} height={253} alt="brogs logo" src="/brogs.svg" className="sm:ml-20 xs:ml-12 w-4/12"/>
+          <Image width={300} height={293} alt="Real logo" src="real.svg" className="sm:ml-20 xs:ml-12 w-4/12"/>
           </div>
           <div className="flex justify-center mt-10 pr-20 pl-20">
-          <img src="m.svg" alt="" className="w-4/12"/>
-          <img src="k.svg" alt="" className="sm:ml-20 xs:ml-12 w-4/12"/>
+          <Image width={260} height={260} alt="M Logo" src="m.svg" className="w-4/12"/>
+          <Image width={430} height={436} alt="K logo" src="k.svg" className="sm:ml-20 xs:ml-12 w-4/12"/>
           </div>
         </div>
       </div>

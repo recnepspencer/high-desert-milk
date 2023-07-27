@@ -1,4 +1,5 @@
 import RecipeCard, { RecipeData } from "@/app/Components/RecipeCard";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Salted() {
@@ -30,7 +31,7 @@ export default function Salted() {
           <p className="text-center align-middle font-light">Nutrition: </p>
         </div>
         <div className="bg-white text-home-blue p-8">
-          <img src="../../products/butter-nutrition.png" alt="" />
+          <Image loading="lazy" width={2346} height={459} src="/products/butter-nutrition.png" alt="butter nutrition facts" />
         </div>
         <div className="text-home-blue flex align-middle justify-center bg-home-productYellow p-4">
           <p className="text-center align-middle font-light">Ingredients &amp; Allergens:</p>
@@ -45,9 +46,9 @@ export default function Salted() {
           </div>
 
           <div className="grid grid-cols-3 gap-2 justify-between ml-20 mr-20">
-            <img src="../../stokes.png" alt="" className="object-contain w-full" />
-            <img src="../../walmart.png" alt="" className="h-36 w-full object-contain" />
-            <img src="../../ridleys.png" alt="" className="object-contain w-full" />
+          <Image loading="lazy" width={1900} height={936} src="/stokes.png" alt="Stokes" className="object-contain w-full" />
+            <Image loading="lazy" width={1900} height={1052} src="/walmart.png" alt="Walmart" className=" w-full object-contain"/>
+            <Image loading="lazy" width={1252} height={1084} src="/ridleys.png" alt="Ridleys" className="object-contain w-full"/>
           </div>
           <div className="flex justify-center  pt-6 pb-36">
             <Link href="products/bulk" className="text-xs underline text-home-blue cursor-pointer">

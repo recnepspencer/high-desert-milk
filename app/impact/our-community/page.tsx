@@ -1,4 +1,5 @@
 import Students from "@/app/Components/Scholarships";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function OurCommunity() {
@@ -7,7 +8,7 @@ export default function OurCommunity() {
         <div className="w-[100vw] lg:pl-[5vw] lg:pr-[5vw]">
             <div className="pt-[148px]"></div>
             <div className="relative">
-                <img src="../impact/our-community-page/our-community-bg.png" alt="" className="w-full" />
+                <Image loading="lazy" width={7680} height={4740} src="/impact/our-community-page/our-community-bg.png" alt="Our community" className="w-full" />
                 <h1 className="absolute bg-home-blue rounded-xl text-white text-5xl top-[65%] left-[50%] -translate-x-[50%] font-light p-4 w-[400px] mb-12 xs:text-3xl xs:p-3 text-center xs:w-[300px]"> Our Community</h1>
             </div>
             <div className="mt-10 mb-10">
@@ -36,12 +37,12 @@ export default function OurCommunity() {
 
                     </div>
                     <div>
-                        <img src="../impact/our-community-page/africa.png" alt="" />
+                        <Image loading="lazy" width={4300} height={4612} src="/impact/our-community-page/africa.png" alt="Africa Service Projects" />
                     </div>
                 </div>
 
             </div>
-            <div>
+            <div className="lg:clear-both ">
                 <div className="sm:relative sm:min-w-[780px] p-4 sm:h-[800px] xs:flex">
                     <div className="flex sm:flex-col items-center p-4 w-6/12 ml-auto xs:mr-auto pt-16 text-home-blue xs:grid xs:grid-cols-1 xs:w-full">
                         <div>
@@ -54,7 +55,7 @@ export default function OurCommunity() {
                         </div>
                         <div>
 
-                            <img src="../impact/our-community-page/giveaways.png" className="sm:absolute sm:w-9/12 sm:left-0 sm:top-0 xs:w-full" />
+                            <Image loading="lazy" width={5400} height={6380}  alt="giveaways" src="/impact/our-community-page/giveaways.png" className="sm:absolute sm:w-9/12 sm:left-0 sm:top-0 xs:w-full" />
                         </div>
 
                     </div>
@@ -73,7 +74,7 @@ export default function OurCommunity() {
                         The money raised by this event goes towards the scholarships given to the
                         High Desert Milk Scholarship recipient winners.
                     </p>
-                    <img src="../impact/our-community-page/golf.png" alt="" className="w-[150px] pl-8 object-contain xs:p-2" />
+                    <Image loading="lazy" width={1200} height={1200} src="/impact/our-community-page/golf.png" alt="Golf Sponsorship" className="w-[150px] pl-8 object-contain xs:p-2" />
                 </div>
             </div>
             <div className=" bg-home-orange p-4 text-home-blue">

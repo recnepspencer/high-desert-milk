@@ -14,10 +14,14 @@ export default function Footer(){
             </div>
             <div className="flex flex-col mt-7 mr-[40px] min-w-[170px]">
               <h6 className="text-center text-s leading-7 font-light">DAIRY MARKET INFORMATION</h6>
-              <Link href="https://www.cmegroup.com/trading/agricultural/spot-call-data.html" className="text-xs font-thin leading-7 ml-5">CME Group</Link>
-              <Link href="https://www.northwestfcs.com/ag-industries/industry-insights/dairy" className="text-xs font-thin leading-7 ml-5">Daily Dairy Report</Link>
-              <Link href="https://www.cheesemarketnews.com/" className="text-xs font-thin leading-7 ml-5">Cheese Market News</Link>
-              <Link href="https://member.northwestfcs.com/" className="text-xs font-thin leading-7 ml-5">Northwest Farm Credit Services</Link>
+              <Link href="https://www.cmegroup.com/trading/agricultural/spot-call-data.html" target="_blank"
+        rel="noopener noreferrer" className="text-xs font-thin leading-7 ml-5">CME Group</Link>
+              <Link href="https://www.northwestfcs.com/ag-industries/industry-insights/dairy" target="_blank"
+        rel="noopener noreferrer" className="text-xs font-thin leading-7 ml-5">Daily Dairy Report</Link>
+              <Link href="https://www.cheesemarketnews.com/" target="_blank"
+        rel="noopener noreferrer" className="text-xs font-thin leading-7 ml-5">Cheese Market News</Link>
+              <Link href="https://member.northwestfcs.com/" target="_blank"
+        rel="noopener noreferrer" className="text-xs font-thin leading-7 ml-5">Northwest Farm Credit Services</Link>
             </div>
             <div className="w-1/3 mt-[20px]">
 
@@ -26,8 +30,10 @@ export default function Footer(){
             </div>
           </div>
           <div className="flex justify-center align-middle mt-10 mb-10">
-            <Link href="https://www.facebook.com/profile.php?id=100058249872750" className="mr-10 w-8"><img src="facebook-icon.svg" alt="" /></Link>
-            <Link href="https://www.instagram.com/highdesertmilk/" className="mr-10 w-8"><img src="instagram-icon.svg" alt="" /></Link>
+            <Link href="https://www.facebook.com/profile.php?id=100058249872750" target="_blank"
+        rel="noopener noreferrer" className="mr-10 w-8"><img src="facebook-icon.svg" alt="" /></Link>
+            <Link href="https://www.instagram.com/highdesertmilk/" target="_blank"
+        rel="noopener noreferrer" className="mr-10 w-8"><img src="instagram-icon.svg" alt="" /></Link>
             
             <Link href="/contact"><img src="email-icon.svg" alt="" className="w-8"/></Link>
           </div>

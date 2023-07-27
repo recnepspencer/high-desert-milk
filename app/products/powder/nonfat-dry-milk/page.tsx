@@ -1,4 +1,5 @@
 import RecipeCard, { RecipeData } from "@/app/Components/RecipeCard";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Nonfat() {
@@ -20,9 +21,10 @@ export default function Nonfat() {
               <h1 className="text-6xl mt-auto mb-auto">Nonfat Dry Milk</h1>
             </div>
             <div className="flex justify-center align-middle">
-              <img
-                src="../../products/nonfat-dry.png"
-                alt=""
+              <Image loading="lazy"
+              width={1760} height={2053}
+                src="/products/nonfat-dry.png"
+                alt="Nonfat Dry Milk"
                 className="w-[40vw] object-contain"
               />
             </div>
@@ -40,7 +42,7 @@ export default function Nonfat() {
           <p className="text-center align-middle font-light">Nutrition: </p>
         </div>
         <div className="bg-white text-home-blue p-8">
-          <img src="../../products/butter-nutrition.png" alt="" />
+          <Image loading="lazy" width={2346} height={459} src="/products/butter-nutrition.png" alt="Nonfat dry milk nutrition" />
         </div>
         <div className="text-home-blue flex align-middle justify-center bg-home-productYellow p-4">
           <p className="text-center align-middle font-light">Ingredients &amp; Allergens:</p>
@@ -59,15 +61,19 @@ export default function Nonfat() {
           </div>
 
           <div className="ml-20 mr-20 flex">
-            <img
-              src="../../amazon.png"
-              alt=""
+            <Link href="https://www.amazon.com/High-Desert-Milk-Buttermilk-Powder/dp/B094T666WM/ref=sr_1_2?crid=3L1N1307Nhttps://www.amazon.com/High-Desert-Milk-Nonfat-Powder/dp/B094S5DC52/ref=sr_1_1?crid=74WL9Y274ZX2&keywords=high+desert+milk&qid=1690417514&sprefix=high+desert+milk%2Caps%2C137&sr=8-1OOUD&keywords=high+desert+milk&qid=1690417380&sprefix=high+desert+milk%2Caps%2C158&sr=8-2">
+                        <Image loading="lazy"
+            width={2404} height={724}
+              src="/amazon.png"
+              alt="Amazon link"
               className="object-contain w-[50%] ml-auto mr-auto"
             />
+            </Link>
+
           </div>
           <div className="flex justify-center  pt-6 pb-36">
             <Link
-              href="/"
+              href="/products/bulk"
               className="text-xs underline text-home-blue cursor-pointer"
             >
               <p>Click here to see business options.</p>

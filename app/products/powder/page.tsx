@@ -1,4 +1,5 @@
 import RecipeCard, { RecipeData } from "@/app/Components/RecipeCard";
+import Image from "next/image";
 import Link from "next/link";
 export default function ProductPowder() {
 
@@ -13,7 +14,6 @@ export default function ProductPowder() {
           <div className="flex justify-center align-middle m-10">
             <h4>Powder</h4>
             <img src="../down-arrow.svg" alt="" className="bg-home-blue rounded h-5 ml-2" />
-
           </div>
           <div className="grid grid-cols-2 mt-16 mb-10 mr-28 ml-28">
             <div className="flex flex-col align-middle">
@@ -21,15 +21,16 @@ export default function ProductPowder() {
               <h4 className="text-xl font-light mt-10 mb-auto">Fresh milk never lasted so long.</h4>
             </div>
             <div className="flex justify-center align-middle">
-              <img src="../products/big-powder.png" alt="" className="w-72 object-contain" />
+              <Image loading="lazy" width={2956} height={3264} src="/products/big-powder.png" alt="Buttermilk Powder" className="w-72 object-contain" />
             </div>
           </div>
         </div>
         <div className="grid grid-cols-2">
           <div className="w-full bg-home-productBlue p-10">
-            <img
-              src="../products/big-powder.png"
-              alt=""
+            <Image loading="lazy"
+              width={2956} height={3264}
+              src="/products/big-powder.png"
+              alt="Buttermilk Powder"
               className="align-middle mt-[20%]"
             />
             <div className="flex justify-center mt-10">
@@ -37,16 +38,17 @@ export default function ProductPowder() {
                 Buttermilk
               </Link>
               <Link href="products/powder/buttermilk">
-                            <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
-                &gt;
-              </button>
+                <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
+                  &gt;
+                </button>
               </Link>
 
             </div>
           </div>
           <div className="w-full bg-home-orange p-10">
-            <img
-              src="../products/nonfat-dry.png"
+            <Image loading="lazy"
+            width={1760} height={2053}
+              src="/products/nonfat-dry.png"
               alt=""
               className="align-middle mt-[20%]"
             />
@@ -82,8 +84,8 @@ export default function ProductPowder() {
               <RecipeCard key={index} recipe={recipe} />
             ))}
           </div>
-          <Link href="products/bulk">
-                    <button className="relative mb-10 pl-32 bg-home-blue text-white rounded pr-3 pt-1 pb-1 font-light hover:underline cursor-pointer">Powder for your business <span className="ml-2 font-bold text-xl">&gt;</span></button>
+          <Link href="../products/bulk">
+            <button className="relative mb-10 pl-32 bg-home-blue text-white rounded pr-3 pt-1 pb-1 font-light hover:underline cursor-pointer">Powder for your business <span className="ml-2 font-bold text-xl">&gt;</span></button>
           </Link>
 
         </div>

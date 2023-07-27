@@ -6,10 +6,11 @@ export default function Impact() {
     <div className="font-sans xs:pl-0 xs:pr-0 sm:pl-8 sm:pr-8 xs:w-[100vw] sm:min-w-[640px] lg:pl-[5vw] lg:pr-[5vw]">
       <div className="pt-[148px]"></div>
       <div>
-        <img
-          src="impact/groundbreaking.png"
+      <Image loading="lazy"
+          src="/impact/groundbreaking.png"
+          width={4068} height={3052}
           alt="High Desert Milk Groundbreaking"
-          className="w-full"
+          className="w-full object-contain"
         />
       </div>
       <div className="flex flex-col items-center bg-home-productBlue">
@@ -34,7 +35,7 @@ export default function Impact() {
           </Link>
         </div>
       </div>
-      <img src="impact/community-2.png" className="w-full bg-home-impactYellow p-8" />
+      <Image loading="lazy" width={7088} height={5060} alt="Community impact" src="/impact/community-2.png" className="w-full bg-home-impactYellow p-8" />
     </div>
   );
 }

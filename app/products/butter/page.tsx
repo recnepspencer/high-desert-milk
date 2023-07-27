@@ -1,4 +1,5 @@
 import RecipeCard, { RecipeData } from "@/app/Components/RecipeCard";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function ProductButter() {
@@ -19,15 +20,13 @@ export default function ProductButter() {
                     <h4 className="text-[3vw] font-light mt-10 mb-auto">Always Fresh. Never Frozen.</h4>
                 </div>
                 <div className="flex justify-center align-middle">
-                    <img src="../products/big-butter.png" alt="" className="w-90 object-contain"/>
+                    <Image loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter" className="w-90 object-contain"/>
                 </div>
             </div>
         </div>
         <div className="grid grid-cols-2">
         <div className="w-full bg-home-productBlue p-10">
-            <img
-              src="../products/big-butter.png"
-              alt=""
+            <Image loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter"
               className="align-middle mt-[20%]"
             />
             <div className="flex justify-center mt-10">
@@ -40,9 +39,10 @@ export default function ProductButter() {
             </div>
           </div>
           <div className="w-full bg-home-orange p-10">
-            <img
-              src="../products/unsalted-butter.png"
-              alt=""
+            <Image loading="lazy"
+            width={4628} height={2496}
+              src="/products/unsalted-butter.png"
+              alt="Unstalted butter"
               className="align-middle mt-[20%]"
             />
             <div className="flex justify-center mt-10">

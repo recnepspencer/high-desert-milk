@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from "next/image";
 
 
 export default async function Bulk({user }: any) {
@@ -44,16 +45,18 @@ export default async function Bulk({user }: any) {
               <h1 className="text-6xl mt-auto mb-auto">Buttermilk Powder</h1>
             </div>
             <div className="flex justify-center align-middle flex-shrink">
-              <img
-                src="../../products/bulk-buttermilk.png"
-                alt=""
+              <Image loading="lazy"
+              width={2672} height={3560}
+                src="/products/bulk-buttermilk.png"
+                alt="Bulk Buttermilk powder"
                 className="w-76 object-contain"
               />
             </div>
             <div className="flex flex-shrink justify-center align-middle">
-              <img
-                src="../../products/bulk-nonfat-dry.png"
-                alt=""
+              <Image loading="lazy"
+              width={2660} height={3548}
+                src="/products/bulk-nonfat-dry.png"
+                alt="Bulk Nonfat Dry Milk powder"
                 className="w-76 object-contain"
               />
             </div>
@@ -64,17 +67,19 @@ export default async function Bulk({user }: any) {
               <h1 className="text-6xl mt-auto mb-auto">Skim Milk Powder</h1>
             </div>
             <div className="flex flex-shrink justify-center align-middle">
-              <img
-                src="../../products/bulk-skim-powder.png"
-                alt=""
+              <Image loading="lazy" 
+              width={2676} height={3564}
+                src="/products/bulk-skim-powder.png"
+                alt="Bulk Skim Milk Powder"
                 className="w-76 object-contain"
               />
             </div>
 
             <div className="flex flex-shrink justify-center align-middle">
-              <img
-                src="../../products/bulk-butter.png"
-                alt=""
+              <Image loading="lazy"
+              width={3440} height={2504}
+                src="/products/bulk-butter.png"
+                alt="Bulk Butter"
                 className="w-76 object-contain min-w-[250px]"
               />
             </div>
@@ -95,7 +100,7 @@ export default async function Bulk({user }: any) {
           />
         </div>
         <div className="bg-white text-home-blue">
-          <p className="text-center h-32 m-10">PACEHOLDER</p>
+          <p className="text-center h-32 m-10">Varies by product</p>
         </div>
         <div className="text-home-blue flex align-middle justify-center bg-home-productYellow p-4">
           <p className="text-center align-middle font-light">Ingredients</p>
@@ -107,9 +112,7 @@ export default async function Bulk({user }: any) {
         </div>
         <div className="flex bg-white text-home-blue justify-center">
           <p className="text-center h-32 m-10 w-64">
-            Always fresh. Never frozen. <br />
-            Our natural butter has a flavor that stands out, enhancing any
-            recipe. Pinky promise.
+           Varies by product
           </p>
         </div>
         <div className="bg-home-productBlue flex flex-col">
