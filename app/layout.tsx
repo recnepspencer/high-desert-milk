@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${rslab.className}`}>
+      <body className={`${rslab.className} w-[100vw] overflow-x-hidden`}>
         <NavMenu/>
         {children}
         <Footer/>

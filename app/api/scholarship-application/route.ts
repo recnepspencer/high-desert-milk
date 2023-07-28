@@ -13,8 +13,9 @@ export async function POST(req: NextRequest, res: NextResponse) {
     const phoneNumber = formData.get("phoneNumber");
     const email = formData.get("email");
     const message = formData.get("message");
+    const file = formData.get("file");
 
-    console.log(firstName, lastName, company, phoneNumber, email, message)
+    console.log(firstName, lastName, company, phoneNumber, email, message, file)
     let mailText = `
 Hello,
 
@@ -27,6 +28,7 @@ Phone Number: ${phoneNumber}
 Email: ${email}
 Message:
 ${message}
+Atts: ${file}
 
 Best regards,
 Your Contact Form
@@ -50,7 +52,14 @@ const emailPassword = process.env.EMAIL_PASSWORD;
       to: '"High Desert Test" <high.desert.test165@gmail.com>',
       subject: `New message from ${firstName} ${lastName}`,
       text: mailText, 
-    });
+      attachments: [
+        {
+          filename: "file.txt", // This should be the file name from the client
+          content: file, // This should be the base64 string from the client
+          encoding: 'base64' // Specify the encoding
+      }
+      ]
+    })
     
     console.log("Message sent: %s", info.messageId);
 

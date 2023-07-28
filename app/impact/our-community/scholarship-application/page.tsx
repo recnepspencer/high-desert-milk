@@ -17,10 +17,19 @@ export default function Scholarships() {
     const [date, setDate] = useState('');
     const [isLoading, setLoading] = useState(false);
     const [isSubmitted, setSubmitted] = useState(false);
-    const [file, setFile] = useState(null);
+    const [file, setFile] = useState<string | null>(null);
 
     const handleFileChange = (e: any) => {
-        setFile(e.target.files[0]);
+        const file = e.target.files[0];
+        const reader = new FileReader();
+    
+        reader.onloadend = () => {
+            // Remove the data:*/*;base64, part of the result
+            const base64String = (reader.result as string).replace(/.*;base64,/, '');
+            setFile(base64String);
+        };
+    
+        reader.readAsDataURL(file);
     };
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -38,7 +47,7 @@ export default function Scholarships() {
         formData.append("date", date);
         formData.append("age", age);
         if (file) {
-            formData.append("attachment", file);
+            formData.append("fileBase64", file);
         }
 
         console.log(formData.get("attachment"));
@@ -97,7 +106,7 @@ export default function Scholarships() {
 
     return (
         <div className="pt-[148px] ">
-            <form onSubmit={handleSubmit} className="p-8 border-black m-8 border-[1px]">
+            <form onSubmit={handleSubmit} encType="multipart/form-data" className="p-8 border-black m-8 border-[1px]">
                 <div className="flex justify-between ">
                     <img src="../../logo.svg" alt="" className="w-40 p-4 rounded bg-slate-600" />
                     <div>
@@ -170,10 +179,11 @@ export default function Scholarships() {
                     <input type="text" id="date" className="w-[40%] border-black border-b-[1px] mr-4 ml-4" value={date} onChange={(e) => setDate(e.target.value)} />
                 </div>
                 <div className="flex text-home-blue w-full mt-8">
-                    <label htmlFor="attachment">Attachment:</label>
-                    <input type="file" id="attachment" onChange={handleFileChange} />
+                    <label htmlFor="attachment" className="mr-2">Attachment:</label>
+                    <input type="file" id="attachment" accept="image/" multiple onChange={handleFileChange} />
                 </div>
-                <button className="p-2 text-xl bg-home-blue text-white rounded hover:bg-blue-900 active:bg-white active:text-home-blue border-home-blue border-[1px] " type="submit" disabled={isLoading || isSubmitted} >
+                <div className="w-full items-center justify-center align-middle text-center">
+                     <button className="p-2 mt-8 text-xl bg-home-blue text-white rounded hover:bg-blue-900 active:bg-white active:text-home-blue border-home-blue border-[1px] " type="submit" disabled={isLoading || isSubmitted} >
                     {isLoading ? (
                         <div>Loading...</div>
                     ) : isSubmitted ? (
@@ -182,6 +192,8 @@ export default function Scholarships() {
                         <div>Submit</div>
                     )}
                 </button>
+                </div>
+               
             </form>
 
         </div>

@@ -42,7 +42,7 @@ export default function OurCommunity() {
                 </div>
 
             </div>
-            <div className="lg:clear-both ">
+            <div>
                 <div className="sm:relative sm:min-w-[780px] p-4 sm:h-[800px] xs:flex">
                     <div className="flex sm:flex-col items-center p-4 w-6/12 ml-auto xs:mr-auto pt-16 text-home-blue xs:grid xs:grid-cols-1 xs:w-full">
                         <div>
@@ -55,7 +55,7 @@ export default function OurCommunity() {
                         </div>
                         <div>
 
-                            <Image loading="lazy" width={5400} height={6380}  alt="giveaways" src="/impact/our-community-page/giveaways.png" className="sm:absolute sm:w-9/12 sm:left-0 sm:top-0 xs:w-full" />
+                            <Image loading="lazy" width={5400} height={6380}  alt="giveaways" src="/impact/our-community-page/giveaways.png" className="sm:absolute sm:w-9/12 sm:left-0 sm:top-0 xs:w-full max-w-[650px]" />
                         </div>
 
                     </div>
@@ -63,7 +63,8 @@ export default function OurCommunity() {
             </div>
             <div className="bg-home-productBlue p-8 text-white h-[425px]">
                 <h1 className="text-3xl font-light p-4">High Desert Milk Golf Scramble</h1>
-                <div className="flex p-4">
+                <div className="p-4">
+                <Image loading="lazy" width={1200} height={1200} src="/impact/our-community-page/golf.png" alt="Golf Sponsorship" className="float-right w-[20vw] m-4" />
                     <p className="text-xs font-sans pt-12 xs:p-2 xs:pt-2">
                         High Desert Milk puts together an annual Golf Scramble
                         event in the month of August for all our valued Customers and Vendors
@@ -74,7 +75,7 @@ export default function OurCommunity() {
                         The money raised by this event goes towards the scholarships given to the
                         High Desert Milk Scholarship recipient winners.
                     </p>
-                    <Image loading="lazy" width={1200} height={1200} src="/impact/our-community-page/golf.png" alt="Golf Sponsorship" className="w-[150px] pl-8 object-contain xs:p-2" />
+
                 </div>
             </div>
             <div className=" bg-home-orange p-4 text-home-blue">
