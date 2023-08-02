@@ -19,7 +19,7 @@ export default function OurCommunity() {
                     <button className="flex bg-home-blue items-center text-white text-md font-light pl-40 rounded-r-md hover:bg-blue-900 active:text-home-blue active:bg-white active:border-home-blue active:border-2">Apply For 2023 Here <img src="../side-arrow.png" className="w-8" /></button>
                 </Link>
             </div>
-            <div className="p-24 grid sm:grid-cols-[150px_150px_150px] md:grid-cols-[250px_250px_250px] gap-5 text-[10px] leading-tight justify-center grid-cols- font-sans text-home-blue xs:grid-cols-2">
+            <div className="p-24 grid sm:grid-cols-[150px_150px_150px] md:grid-cols-[250px_250px_250px] gap-5 text-[10px] leading-tight justify-center grid-cols-  text-home-blue xs:grid-cols-2">
                 <Students />
             </div>
             <div className="bg-home-orange text-home-blue">
@@ -65,7 +65,7 @@ export default function OurCommunity() {
                 <h1 className="text-3xl font-light p-4">High Desert Milk Golf Scramble</h1>
                 <div className="p-4">
                 <Image loading="lazy" width={1200} height={1200} src="/impact/our-community-page/golf.png" alt="Golf Sponsorship" className="float-right w-[20vw] m-4" />
-                    <p className="text-xs font-sans pt-12 xs:p-2 xs:pt-2">
+                    <p className="text-xs  pt-12 xs:p-2 xs:pt-2">
                         High Desert Milk puts together an annual Golf Scramble
                         event in the month of August for all our valued Customers and Vendors
                         to attend. This event is a two day event with plant tours and a Meet and
@@ -80,7 +80,7 @@ export default function OurCommunity() {
             </div>
             <div className=" bg-home-orange p-4 text-home-blue">
                 <h1 className="text-3xl font-light p-12">Mini-Cassia/Minidoka FFA Sales</h1>
-                <p className="text-xs font-sans p-4">High Desert Milk supports our area 4-H and FFA members and to
+                <p className="text-xs  p-4">High Desert Milk supports our area 4-H and FFA members and to
                     show our support, we take great pride in attending the Livestock Sales
                     each year and taking part in buying some of the great livestock that the
                     area’s younger generation raise. Here is who we have supported recently:</p>

@@ -1,5 +1,3 @@
-const {fontFamily } = require("tailwindcss/defaultTheme")
-
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -31,7 +29,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        home: "var(--rslab)",
+        rslab: ["Roboto Slab", "serif"],
       },
     },
   },

@@ -25,10 +25,10 @@ const Listing: React.FC<JobProps> = ({ job }) => {
                                 {job.title}
                             </h1>
                             <p className='max-w-[80%] pt-2'>
-                                <span className='pr-1 font-bold font-sans leading-none'>Description:</span> {job.description}
+                                <span className='pr-1 font-bold  leading-none'>Description:</span> {job.description}
                             </p>
                             <p className='pt-2'>
-                                <span className='pr-1 font-bold font-sans leading-none'>Wage/ Salary</span> {job.wage}
+                                <span className='pr-1 font-bold  leading-none'>Wage/ Salary</span> {job.wage}
                             </p>
                         </div>
                         <div className="self-center p-2 text-white bg-home-blue hover:bg-blue-900 rounded active:text-home-blue active:bg-white">

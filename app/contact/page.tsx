@@ -67,7 +67,7 @@ export default function ContactUs() {
                     <div className="absolute top-0 w-full ">
                         <div className="flex flex-col ml-auto m-4 p-2 mr-8 bg-white text-center rounded items-center w-[450px] xs:w-[350px] mt-16">
                             <h1 className="text-2xl font-light">How can we help you? </h1>
-                            <p className="text-sm font-sans w-8/12">Have a question or suggestion? Feel free to reach us through our form below!
+                            <p className="text-sm  w-8/12">Have a question or suggestion? Feel free to reach us through our form below!
                             </p>
                         </div>
                         <div className="flex flex-col ml-auto m-4 mr-8 p-2 bg-white text-center rounded items-end w-[250px]">

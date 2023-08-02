@@ -8,7 +8,7 @@ export default function Recipes({ }) {
   return (
     <>
       <div className="pt-[148px] w-[100vw] p-8 lg:pl-[5vw] lg:pr-[5vw]">
-      <div className="bg-white grid grid-cols-1 m-10 xs:m-2 font-sans text-home-blue">
+      <div className="bg-white grid grid-cols-1 m-10 xs:m-2  text-home-blue">
         <div className="text-center xs:text-left ml-0 mr-auto">
           <h1 className="text-4xl">Recipes</h1>
           <p className="text-sm">(compiled from tasteofhome.com)</p>
@@ -24,7 +24,7 @@ export default function Recipes({ }) {
           <RecipeCard key={index} recipe={recipe} />
         ))}
       </div>
-      <div className="bg-white grid grid-cols-1 m-10 font-sans text-home-blue">
+      <div className="bg-white grid grid-cols-1 m-10 text-home-blue">
         <div className="text-left mr-auto xs:text-center">
           <h1 className="text-2xl sm:mb-4">Buttermilk Recipes</h1>
           <p className="text-sm sm:w-[50%] xs:w-full"> Discover the versatile potential of High Desert&apos;s buttermilk and non-fat milk. The udderly wonderful balance of these dairy products brings both depth and complexity to a diverse array of dishes.</p>

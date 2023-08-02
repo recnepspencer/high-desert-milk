@@ -58,7 +58,7 @@ export default function NavMenu() {
   <button onClick={() => setIsChecked(!isChecked)} className="text-5xl font-arial md:hidden mr-8 hover:bg-blue-900 rounded active:text-home-blue active:bg-white align-middle pb-2">☰</button>
   {isChecked && (
     <div className={`fixed top-0 bottom-0 left-0 right-0 bg-home-blue text-center`}>
-      <button onClick={() => setIsChecked(!isChecked)} className="text-2xl font-sans absolute top-4 right-4 p-1 pr-2 pl-2 cursor-pointer rounded hover:bg-blue-900 active:text-home-blue active:bg-white text-white">X</button>
+      <button onClick={() => setIsChecked(!isChecked)} className="text-2xl font-rslab absolute top-4 right-4 p-1 pr-2 pl-2 cursor-pointer rounded hover:bg-blue-900 active:text-home-blue active:bg-white text-white">X</button>
       {/* Dropdown menu items */}
       <div className="flex flex-col justify-center gap-4 h-full">
         <Link href="/" onClick={() => setIsChecked(false)} className="p-2 w-[200px] ml-auto mr-auto hover:bg-blue-900 rounded active:text-home-blue active:bg-white">Home</Link>

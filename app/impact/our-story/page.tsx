@@ -22,7 +22,7 @@ export default function OurStory() {
         </div>
       </div>
       <div className="flex bg-home-productBlue justify-between">
-        <div className="grid grid-cols-[minmax(45vw,_20px)_10vw] w-full justify-between pt-10  text-center text-white font-sans grid-rows-[200px_250px_100px_100px_180px_250px_150px_100px_140px]">
+        <div className="grid grid-cols-[minmax(45vw,_20px)_10vw] w-full justify-between pt-10  text-center text-white  grid-rows-[200px_250px_100px_100px_180px_250px_150px_100px_140px]">
           <div className="text-right pl-8 pr-8 h-[10px] xs:pl-2 xs:pr-2">
             <p className="">
               Ray Robinson - one of the cofounders of High Desert Milk - begins
@@ -113,7 +113,7 @@ export default function OurStory() {
           </div>
           <div className="flex flex-col text-center">
             <p>2020</p>
-            <p className="text-5xl font-serif">&#8595;</p>
+            <p className="text-5xl">&#8595;</p>
           </div>
 
 
@@ -129,10 +129,10 @@ export default function OurStory() {
         </div>
       </div>
       <div className="bg-home-orange p-4">
-        <p className="text-white pl-8 text-2xl font-sans font-light">Our People</p>
+        <p className="text-white pl-8 text-2xl  font-light">Our People</p>
         <img src="../impact/our-people.png" alt="" />
       </div>
-      <div className="flex flex-col font-sans text-home-sustainGreen p-8">
+      <div className="flex flex-col  text-home-sustainGreen p-8">
         <div className="p-4">
           <h1 className="text-4xl font-light">
             Sustainability
@@ -147,7 +147,7 @@ export default function OurStory() {
       </div>
       <div className="flex justify-end">
         <Link href="impact/our-community">
-          <button className="flex bg-home-blue pl-6 pr-12 pt-1 pb-1 text-white font-light text-xl mt-10 mb-20 rounded font-sans hover:underline decoration-white">
+          <button className="flex bg-home-blue pl-6 pr-12 pt-1 pb-1 text-white font-light text-xl mt-10 mb-20 rounded  hover:underline decoration-white">
             See How We Impact Our Community <img src="../side-arrow.png" className="w-8" />
           </button>
         </Link>

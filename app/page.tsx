@@ -3,6 +3,8 @@ import Link from "next/link";
 import AnimatedText from "./Components/AnimatedText";
 
 export default function Home() {
+
+
   return (
     <main className="flex flex-col w-full overflow-hidden xs:max-w-[100vw]">
       <div className="flex flex-col w-[100%] mt-[148px] sm:h-[100%] ">

@@ -28,7 +28,7 @@ export default async function Careers() {
                 <img src="careers.png" alt="" className="w-7/12" />
                 <div className="flex flex-col p-4 text-center w-full justify-center">
                     <h1 className="text-4xl font-light pb-8">Careers</h1>
-                    <p className="font-sans text-sm">High Desert Milk is expanding and we
+                    <p className=" text-sm">High Desert Milk is expanding and we
                         would love for you to join in our growth
                         and success! Our employees are proud
                         of the products that we make and we

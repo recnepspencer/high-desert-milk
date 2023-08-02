@@ -7,7 +7,7 @@ export default function OurProducts() {
   const mainFeature = RecipeData.filter(recipe => recipe.isMainFeature)
   return (
     <>
-      <div className=" font-sans w-[100vw] lg:pl-[5vw] lg:pr-[5vw] overflow-hidden">
+      <div className="w-[100vw] lg:pl-[5vw] lg:pr-[5vw] overflow-hidden">
         <div className="pt-[148px]"></div>
         <div className="flex flex-col justify-center bg-white align-middle text-center text-home-blue">
           <h1 className="text-5xl font-light mt-[20px]">Our Products</h1>

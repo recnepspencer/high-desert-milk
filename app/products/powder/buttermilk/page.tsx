@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Buttermilk() {
   return (
     <>
-      <div className=" font-sans w-[100vw] lg:pl-[5vw] lg:pr-[5vw]">
+      <div className="  w-[100vw] lg:pl-[5vw] lg:pr-[5vw]">
         <div className="pt-[148px]"></div>
         <div className="flex flex-col justify-center bg-white align-middle text-center text-home-blue">
           <div className="flex justify-center align-middle m-10">

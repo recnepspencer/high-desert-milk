@@ -17,7 +17,7 @@ export default function Scholarships() {
     const [date, setDate] = useState('');
     const [isLoading, setLoading] = useState(false);
     const [isSubmitted, setSubmitted] = useState(false);
-    const [file, setFile] = useState<string | null>(null);
+    const [image, setImage] = useState<string | null>(null);
 
     const handleFileChange = (e: any) => {
         const file = e.target.files[0];
@@ -25,8 +25,13 @@ export default function Scholarships() {
     
         reader.onloadend = () => {
             // Remove the data:*/*;base64, part of the result
-            const base64String = (reader.result as string).replace(/.*;base64,/, '');
-            setFile(base64String);
+            const base64String = (reader.result as any).replace(/.*;base64,/, '');
+    
+            // JSON.stringify the base64String
+            const jsonString = JSON.stringify({ base64String });
+    
+            // setImage could be replaced with your function that handles the JSON string.
+            setImage(jsonString);
         };
     
         reader.readAsDataURL(file);
@@ -46,8 +51,8 @@ export default function Scholarships() {
         formData.append("sig", sig);
         formData.append("date", date);
         formData.append("age", age);
-        if (file) {
-            formData.append("fileBase64", file);
+        if (image) {
+            formData.append("image", image);
         }
 
         console.log(formData.get("attachment"));
@@ -75,6 +80,7 @@ export default function Scholarships() {
                 setSig("");
                 setDate("");
                 setAge("");
+                setImage(null);
                 // Set loading to false and submitted to true
                 setLoading(false);
                 setSubmitted(true);

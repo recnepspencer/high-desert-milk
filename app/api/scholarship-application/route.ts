@@ -13,7 +13,8 @@ export async function POST(req: NextRequest, res: NextResponse) {
     const phoneNumber = formData.get("phoneNumber");
     const email = formData.get("email");
     const message = formData.get("message");
-    const file = formData.get("file");
+    const file = formData.get("image")
+
 
     console.log(firstName, lastName, company, phoneNumber, email, message, file)
     let mailText = `
@@ -28,14 +29,14 @@ Phone Number: ${phoneNumber}
 Email: ${email}
 Message:
 ${message}
-Atts: ${file}
+att: ${file} 
 
 Best regards,
 Your Contact Form
 `;
 
-const emailUsername = process.env.EMAIL_USERNAME;
-const emailPassword = process.env.EMAIL_PASSWORD;
+    const emailUsername = process.env.EMAIL_USERNAME;
+    const emailPassword = process.env.EMAIL_PASSWORD;
 
     const transporter = nodeMailer.createTransport({
       host: "smtp.gmail.com",
@@ -51,20 +52,20 @@ const emailPassword = process.env.EMAIL_PASSWORD;
       from: '"High Desert Test" <high.desert.test165@gmail.com>',
       to: '"High Desert Test" <high.desert.test165@gmail.com>',
       subject: `New message from ${firstName} ${lastName}`,
-      text: mailText, 
+      text: mailText,
       attachments: [
         {
-          filename: "file.txt", // This should be the file name from the client
+          filename: "file.png", // This should be the file name from the client
           content: file, // This should be the base64 string from the client
           encoding: 'base64' // Specify the encoding
-      }
+        }
       ]
     })
-    
+
     console.log("Message sent: %s", info.messageId);
 
     return new NextResponse(JSON.stringify('Email sent'), { status: 200 });
-  } catch(e) {
+  } catch (e) {
     console.log(e);
     return new NextResponse(JSON.stringify('Error'), { status: 500 });
   }
