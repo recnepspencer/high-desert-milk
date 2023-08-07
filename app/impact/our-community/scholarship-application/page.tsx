@@ -96,19 +96,19 @@ export default function Scholarships() {
         (currentMonth > 12 || (currentMonth === 12 && currentDay >= 15)) ||
         (currentMonth < 4 || (currentMonth === 3 && currentDay <= 15));
 
-    // if (!isOpen) {
-    //     return (
-    //         <div className="pt-[148px] pb-[100vh] flex flex-col items-center">
-    //                    <h1 className="text-4xl text-center mt-[10vh] p-8 text-home-blue">Application will be open Dec, 15th</h1>
-    //                    <Link href="impact/our-community">
-    //                    <button className="mt-20 p-4 text-2xl bg-home-blue text-white rounded hover:bg-blue-900 active:bg-white active:text-home-blue border-home-blue border-[1px] ">Go Back</button>
-    //                    </Link>
+    if (!isOpen) {
+        return (
+            <div className="pt-[148px] pb-[100vh] flex flex-col items-center">
+                       <h1 className="text-4xl text-center mt-[10vh] p-8 text-home-blue">Application will be open Dec, 15th</h1>
+                       <Link href="/impact/our-community">
+                       <button className="mt-20 p-4 text-2xl bg-home-blue text-white rounded hover:bg-blue-900 active:bg-white active:text-home-blue border-home-blue border-[1px] ">Go Back</button>
+                       </Link>
 
-    //         </div>
+            </div>
 
-    //     )
+        )
 
-    // }
+    }
 
     return (
         <div className="pt-[148px] ">

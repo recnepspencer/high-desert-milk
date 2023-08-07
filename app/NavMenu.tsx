@@ -1,7 +1,6 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./NavMenu.module.css";
 import { useEffect, useState } from "react";
 
 const useWindowDimensions = () => {
@@ -85,7 +84,7 @@ export default function NavMenu() {
       <nav className="fixed flex bg-home-blue text-white w-[100vw] justify-between items-center h-[148px] z-50">
         {width > 768 ? (
           <div className="fixed flex bg-home-blue text-white w-[100vw] justify-between items-center h-[148px] z-50">
-            <Link href={"/"} className="p-8 flex-shrink-0">
+            <Link href="/" className="p-8 flex-shrink-0">
               <Image
                 src="/logo.svg" // Route of the image file
                 width={161}
@@ -216,7 +215,7 @@ export default function NavMenu() {
       <button className="hover:bg-blue-900 active:text-home-blue active:bg-white rounded p-2 text-2xl" onClick={handleProductClick}>Products</button>
       {productIsActive && (
         <div className="absolute top-0 left-28 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5" onClick={handleProductClick}>
-          <div className="py-1 z-51" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+          <div className="py-1 z-50 relative" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             
                     <Link onClick={() => setMenuOpen(false)}
                         href="/products"
@@ -231,8 +230,8 @@ export default function NavMenu() {
                         Butter
                       </Link>
                       <Link onClick={() => setMenuOpen(false)}
-                        href="products/powder"
-                        className="block px-4 py-2 text-sm text-home-blue hover:bg-blue-300 hover:text-gray-900" role="menuitem"
+                        href="/products/powder"
+                        className="block px-4 py-2 text-sm text-home-blue hover:bg-blue-300 hover:text-gray-900 z-[53]" role="menuitem"
                       >
                         Powder
                       </Link>
@@ -250,7 +249,7 @@ export default function NavMenu() {
       <button className="hover:bg-blue-900 active:text-home-blue active:bg-white rounded p-2 text-2xl" onClick={handleClick}>Impact</button>
       {impactIsActive && (
         <div className="absolute top-0 left-28 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5" onClick={handleClick}>
-          <div className="py-1 z-51" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+          <div className="py-1 z-49" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
             
                     <Link onClick={() => setMenuOpen(false)}
                         href="/impact"

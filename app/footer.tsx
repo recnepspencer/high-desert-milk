@@ -6,9 +6,8 @@ export default function Footer(){
           <div className="xs:flex-col xs: xs:items-center xs:flex sm:flex text-white border-white border-t-2">
             <div className="flex flex-col mt-7 mr-[20px] min-w-[170px]">
               <h6 className="text-center text-s leading-7 font-light">BUSINESS</h6>
-              <Link href="" className="text-xs font-thin leading-7">Customer Portal (Businesses)</Link>
+              <Link href="https://highdesertmilk-my.sharepoint.com/:f:/p/coakes/Ej7LAMahyoZCkLc8iQMQiJMBBIwOWRHUK934R9t4epOsoQ?e=ubUwYL" className="text-xs font-thin leading-7">Customer Portal (Businesses)</Link>
               <Link href="/careers" className="text-xs font-thin leading-7">Career</Link>
-              <Link href="/home" className="text-xs font-thin leading-7">Employee Login</Link>
               <Link href="/impact/our-community/scholarship-application" className="text-xs font-thin leading-7">Scholarship</Link>
               <Link href="/contact" className="text-xs font-thin leading-7">Contact</Link>
             </div>

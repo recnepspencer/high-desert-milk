@@ -45,13 +45,13 @@ export default function ProductButter() {
               </div>
             )}
           </div>
-          <div className="grid grid-cols-2 mt-16 mb-10 items-center gap-3">
+          <div className="grid grid-cols-2 mt-16 mb-10">
             <div className="flex flex-col justify-center align-middle">
               <h1 className="text-[10vw] mt-auto">Butter</h1>
               <h4 className="text-[3vw] font-light mt-10 mb-auto">Always Fresh. Never Frozen.</h4>
             </div>
             <div className="flex justify-center align-middle">
-              <Image loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter" className="w-90 object-contain" />
+              <Image loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter" className="w-[42vw] object-contain" />
             </div>
           </div>
         </div>

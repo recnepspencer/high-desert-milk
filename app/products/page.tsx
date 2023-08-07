@@ -1,3 +1,4 @@
+'use client'
 import Link from "next/link";
 import RecipeCard, {RecipeData} from "@/app/Components/RecipeCard"
 import SideArrowButton from "../Components/Buttons";
@@ -16,14 +17,20 @@ export default function OurProducts() {
           </h4>
           <div className="grid grid-cols-3 pt-10 ml-12 mr-12 items-center align-middle">
             <div className="grid grid-cols-1">
+            <Link href="/products/butter">
               <Image loading="lazy" width={1180} height={844} src="/products/butter.png" alt="" className="w-[40vw] mb-4 ml-auto mr-auto"/>
+              </Link>
               
             </div>
             <div>
+            <Link href="/products/powder">
               <Image loading="lazy" width={2956} height={3264} src="/products/big-powder.png" alt="Powder Milk" className="w-[18vw] mb-4 ml-auto mr-auto"/>
+              </Link>
             </div>
             <div>
+              <Link href="/products/bulk">
               <Image loading="lazy" width={2670} height={3560} alt="Bulk Powder Buttermilk" src="/products/bulk-buttermilk.png" className="w-[18vw] mb-4 ml-auto mr-auto" />
+              </Link>
             </div>
             <div className="mb-4">
               <Link href="/products/butter">
@@ -124,8 +131,8 @@ export default function OurProducts() {
         </div>
         <div className="bg-home-productYellow ">
           <div className="flex justify-center p-4 pt-8">
-            <Link href="products/recipes" className="flex">
-                          <label className="pr-2 text-home-blue text-xl ">
+            <Link href="products/recipes" className="flex cursor-pointer">
+                          <label className="pr-2 text-home-blue text-xl cursor-pointer ">
               Try these recipes
             </label>
             <SideArrowButton width="8"/>
