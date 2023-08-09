@@ -41,8 +41,16 @@ export default function ProductPowder() {
             {isActive && (
               <div className="absolute mt-8 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                 <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                  <a href="/products/powder/buttermilk" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Buttermilk Powder</a>
-                  <a href="/products/powder/nonfat-dry-milk" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Nonfat Dry Milk</a>
+                <Link href="/products/powder/buttermilk" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                    Salted Butter
+                    <Image loading="lazy" width={4904} height={2880} src="/products/big-powder.png" alt="buttermilk"
+                      className="w-20 ml-auto"
+                    /> </Link>
+                  <Link href="/products/powder/nonfat-dry-milk" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                    Salted Butter
+                    <Image loading="lazy" width={4904} height={2880} src="/products/nonfat-dry.png" alt="nonfat dry milk"
+                      className="w-20 ml-auto"
+                    /> </Link>
                 </div>
               </div>
             )}
@@ -69,7 +77,7 @@ export default function ProductPowder() {
               <Link href="/products/powder/buttermilk" className="text-white text-2xl font-light justify-center pr-3 hover:underline decoration-white">
                 Buttermilk
               </Link>
-              <Link href="products/powder/buttermilk">
+              <Link href="/products/powder/buttermilk">
                 <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
                   &gt;
                 </button>
@@ -85,10 +93,10 @@ export default function ProductPowder() {
               className="align-middle mt-[20%]"
             />
             <div className="flex justify-center mt-10">
-              <Link href="products/powder/nonfat-dry-milk" className="text-white text-2xl font-light justify-center pr-3 hover:underline decoration-white">
+              <Link href="/products/powder/nonfat-dry-milk" className="text-white text-2xl font-light justify-center pr-3 hover:underline decoration-white">
                 Nonfat Dry Milk
               </Link>
-              <Link href="products/powder/nonfat-dry-milk">
+              <Link href="/products/powder/nonfat-dry-milk">
                 <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
                   &gt;
                 </button>
@@ -102,9 +110,12 @@ export default function ProductPowder() {
             <label className="pr-2 text-home-blue text-xl ">
               Try these buttermilk recipes
             </label>
-            <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 cursor-default">
-              &gt;
-            </button>
+            <Link href="/products/recipes">
+              <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 cursor-default">
+                &gt;
+              </button>
+            </Link>
+
           </div>
 
           <div className="grid grid-cols-3 gap-2 p-3">
@@ -116,7 +127,7 @@ export default function ProductPowder() {
               <RecipeCard key={index} recipe={recipe} />
             ))}
           </div>
-          <Link href="../products/bulk">
+          <Link href="/products/bulk">
             <button className="relative mb-10 pl-32 bg-home-blue text-white rounded pr-3 pt-1 pb-1 font-light hover:underline cursor-pointer">Powder for your business <span className="ml-2 font-bold text-xl">&gt;</span></button>
           </Link>
 

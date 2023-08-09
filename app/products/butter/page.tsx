@@ -37,10 +37,18 @@ export default function ProductButter() {
               <img src="../down-arrow.svg" alt="" className="bg-home-blue rounded h-5 ml-2" />
             </button>
             {isActive && (
-              <div className="absolute mt-8 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+              <div className="flex absolute mt-8 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 justify-around align-middle">
                 <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                  <a href="/products/butter/salted" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Salted Butter</a>
-                  <a href="/products/butter/unsalted" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Unsalted Butter</a>
+                  <Link href="/products/butter/salted" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                    Salted Butter
+                    <Image loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter"
+                      className="w-20 ml-auto"
+                    /> </Link>
+                  <Link href="/products/butter/unsalted" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+                    Salted Butter
+                    <Image loading="lazy" width={4904} height={2880} src="/products/unsalted-butter.png" alt="Butter"
+                      className="w-20 ml-auto"
+                    /> </Link>
                 </div>
               </div>
             )}
@@ -92,7 +100,7 @@ export default function ProductButter() {
               Try these butter recipes
             </label>
             <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 cursor-default">
-              <a href="/products/recipes">&gt;</a>
+              <Link href="/products/recipes">&gt;</Link>
             </button>
           </div>
 

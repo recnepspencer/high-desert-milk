@@ -82,15 +82,17 @@ export default function Buttermilk() {
 
         <div className="bg-home-productBlue">
           <div className="flex align-middle text-center justify-center">
+          <Link target="_blank" href="https://www.amazon.com/High-Desert-Milk-Buttermilk-Powder/dp/B094T666WM/ref=sr_1_2?crid=3L1N1307Nhttps://www.amazon.com/High-Desert-Milk-Nonfat-Powder/dp/B094S5DC52/ref=sr_1_1?crid=74WL9Y274ZX2&keywords=high+desert+milk&qid=1690417514&sprefix=high+desert+milk%2Caps%2C137&sr=8-1OOUD&keywords=high+desert+milk&qid=1690417380&sprefix=high+desert+milk%2Caps%2C158&sr=8-2">
             <h1 className="flex justify-center text-center text-home-blue pt-20 pb-2 w-60 border-b-2 border-b-home-blue mb-5">
-             BUY NOW 
-             <img src="../../side-arrow.png" className="bg-home-blue rounded h-5 ml-2"/>
+              BUY NOW
+              <img src="../../side-arrow.png" className="bg-home-blue rounded h-5 ml-2" />
             </h1>
+            </Link>
   
           </div>
 
           <div className="ml-20 mr-20 flex">
-          <Link href="https://www.amazon.com/High-Desert-Milk-Buttermilk-Powder/dp/B094T666WM/ref=sr_1_2?crid=3L1N1307NOOUD&keywords=high+desert+milk&qid=1690417380&sprefix=high+desert+milk%2Caps%2C158&sr=8-2">
+          <Link target="_blank" href="https://www.amazon.com/High-Desert-Milk-Buttermilk-Powder/dp/B094T666WM/ref=sr_1_2?crid=3L1N1307NOOUD&keywords=high+desert+milk&qid=1690417380&sprefix=high+desert+milk%2Caps%2C158&sr=8-2">
                         <Image loading="lazy"
             width={2404} height={724}
               src="/amazon.png"
@@ -102,7 +104,7 @@ export default function Buttermilk() {
           <div className="flex justify-center  pt-6 pb-36">
             <Link
               href="products/bulk"
-              className="text-xs underline text-home-blue cursor-pointer"
+              className="text-sm underline text-home-blue cursor-pointer"
             >
               <p>Click here to see business options.</p>
             </Link>

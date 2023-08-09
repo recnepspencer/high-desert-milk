@@ -65,7 +65,7 @@ export default function OurCommunity() {
                 <h1 className="text-3xl font-light p-4">High Desert Milk Golf Scramble</h1>
                 <div className="p-4">
                 <Image loading="lazy" width={1200} height={1200} src="/impact/our-community-page/golf.png" alt="Golf Sponsorship" className="float-right w-[20vw] m-4" />
-                    <p className="text-xs  pt-12 xs:p-2 xs:pt-2">
+                    <p className="text-sm  pt-12 xs:p-2 xs:pt-2">
                         High Desert Milk puts together an annual Golf Scramble
                         event in the month of August for all our valued Customers and Vendors
                         to attend. This event is a two day event with plant tours and a Meet and
@@ -80,12 +80,12 @@ export default function OurCommunity() {
             </div>
             <div className=" bg-home-orange p-4 text-home-blue">
                 <h1 className="text-3xl font-light p-12">Mini-Cassia/Minidoka FFA Sales</h1>
-                <p className="text-xs  p-4">High Desert Milk supports our area 4-H and FFA members and to
+                <p className="text-sm  p-4">High Desert Milk supports our area 4-H and FFA members and to
                     show our support, we take great pride in attending the Livestock Sales
                     each year and taking part in buying some of the great livestock that the
                     area’s younger generation raise. Here is who we have supported recently:</p>
 
-                <div className="grid grid-cols-5 pl-24 pr-24 text-xs gap-5">
+                <div className="grid xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 text-sm gap-5">
                     <div>
                         Shaelyn Young
 

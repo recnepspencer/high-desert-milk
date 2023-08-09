@@ -21,7 +21,8 @@ export default function OurStory() {
           />
         </div>
       </div>
-      <div className="flex bg-home-productBlue justify-between">
+      
+      <div className="flex bg-home-productBlue justify-between pb-8">
         <div className="grid grid-cols-[minmax(45vw,_20px)_10vw] w-full justify-between pt-10  text-center text-white  grid-rows-[200px_250px_100px_100px_180px_250px_150px_100px_140px]">
           <div className="text-right pl-8 pr-8 h-[10px] xs:pl-2 xs:pr-2">
             <p className="">
@@ -128,16 +129,20 @@ export default function OurStory() {
 
         </div>
       </div>
+      <div className="flex flex-col bg-home-recipeBlue border-t-white border-t-[1px] p-4">
+        <h1 className="p-4 pl-8 font-light text-2xl text-white">Virtual Plant Tour:</h1>
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/jPPaZZcO4lU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      </div>
       <div className="bg-home-orange p-4">
         <p className="text-white pl-8 text-2xl  font-light">Our People</p>
         <img src="../impact/our-people.png" alt="" />
       </div>
       <div className="flex flex-col  text-home-sustainGreen p-8">
-        <div className="p-4">
-          <h1 className="text-4xl font-light">
+        <div className="">
+          <h1 className="text-4xl font-bold">
             Sustainability
           </h1>
-          <p className="p-4 text-sm">As stewards of the land, high desert owners not only
+          <p className="p-4 text-md">As stewards of the land, high desert owners not only
             use the most environmental practices with their land and animals,
             but also in the process of making their milk products. Here is a brief mention of the
             ways that High Desert and its owners have been able to take care of our planet Earth

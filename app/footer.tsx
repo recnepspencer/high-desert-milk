@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Footer(){
     return (
         <footer className="bg-home-blue relative pt-10 pl-12 pr-12 w-[100vw]">
-          <div className="xs:flex-col xs: xs:items-center xs:flex sm:flex text-white border-white border-t-2">
+          <div className="xs:flex-col xs: xs:items-center xs:flex sm:flex text-white border-white border-t-2 sm:justify-around">
             <div className="flex flex-col mt-7 mr-[20px] min-w-[170px]">
               <h6 className="text-center text-s leading-7 font-light">BUSINESS</h6>
               <Link href="https://highdesertmilk-my.sharepoint.com/:f:/p/coakes/Ej7LAMahyoZCkLc8iQMQiJMBBIwOWRHUK934R9t4epOsoQ?e=ubUwYL" className="text-xs font-thin leading-7">Customer Portal (Businesses)</Link>

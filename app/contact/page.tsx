@@ -62,8 +62,8 @@ export default function ContactUs() {
     return (
         <div>
             <div className="pt-[148px] lg:pl-[5vw] lg:pr-[5vw] max-w-screen-xl xl:ml-auto xl:mr-auto w-[100vw]">
-                <div className="relative text-home-blue">
-                    <Image width={7680} height={7004} src="/impact/our-community-page/map.png" alt="Background image: Map" className="pb-[430px] bg-home-productBlue" />
+                <div className="relative text-home-blue bg-home-productBlue xs:pb-[60vh] sm:pb-[40vh] md:pb-[27vh] lg:pb-[10vh] xl:pb-[8vh]">
+                    <Image width={7680} height={7004} src="/impact/our-community-page/map.png" alt="Background image: Map" className=" bg-home-productBlue" />
                     <div className="absolute top-0 w-full ">
                         <div className="flex flex-col ml-auto m-4 p-2 mr-8 bg-white text-center rounded items-center w-[450px] xs:w-[350px] mt-16">
                             <h1 className="text-2xl font-light">How can we help you? </h1>
@@ -79,21 +79,21 @@ export default function ContactUs() {
                             <p className="text-sm p-2">208.878.milk
                             </p>
                         </div>
-                        <div className="w-full border-[1px] border-dashed border-slate-600 mt-20 mb-20"></div>
+                        <div className="w-full border-[1px] border-dashed border-slate-600 mt-20"></div>
                         <form onSubmit={handleSubmit} className="flex flex-col m-4 p-2 text-center rounded-lg items-center ml-auto mr-auto w-[275px] bg-slate-300">
                             <img src="../email-icon.svg" alt="" />
-                            <p className="text-xs p-3">
+                            <p className="text-sm p-3">
                                 We would love to hear from you!
                                 Feel free to leave us a detailed
                                 message through this form:
                             </p>
                             <div className="p-4">
-                                <input type="text" placeholder="First Name:" value={firstName} onChange={e => setFirstName(e.target.value)} className="p-2 rounded-full placeholder:text-home-blue placeholder:text-xs mb-[8px] text-home-blue text-xs w-full " />
-                                <input type="text" placeholder="Last Name:" value={lastName} onChange={e => setLastName(e.target.value)} className="p-2 rounded-full placeholder:text-home-blue placeholder:text-xs mb-[8px] text-home-blue text-xs w-full" />
-                                <input type="text" placeholder="Company:" value={company} onChange={e => setCompany(e.target.value)} className="p-2 rounded-full placeholder:text-home-blue placeholder:text-xs mb-[8px] text-home-blue text-xs w-full" />
-                                <input type="text" placeholder="Phone Number:" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} className="p-2 rounded-full placeholder:text-home-blue placeholder:text-xs mb-[8px] text-home-blue text-xs w-full" />
-                                <input type="text" placeholder="Email:" value={email} onChange={e => setEmail(e.target.value)} className="p-2 rounded-full placeholder:text-home-blue placeholder:text-xs mb-[8px] text-home-blue text-xs w-full" />
-                                <textarea name="Message:" value={message} onChange={e => setMessage(e.target.value)} placeholder="Message:" className="p-2  rounded-xl pt-2 placeholder:text-home-blue placeholder:text-xs text-home-blue text-xs w-full h-32"></textarea>
+                                <input type="text" placeholder="First Name:" value={firstName} onChange={e => setFirstName(e.target.value)} className="p-2 rounded-full placeholder:text-home-blue placeholder:text-sm mb-[8px] text-home-blue text-sm w-full " />
+                                <input type="text" placeholder="Last Name:" value={lastName} onChange={e => setLastName(e.target.value)} className="p-2 rounded-full placeholder:text-home-blue placeholder:text-sm mb-[8px] text-home-blue text-sm w-full" />
+                                <input type="text" placeholder="Company:" value={company} onChange={e => setCompany(e.target.value)} className="p-2 rounded-full placeholder:text-home-blue placeholder:text-sm mb-[8px] text-home-blue text-sm w-full" />
+                                <input type="text" placeholder="Phone Number:" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} className="p-2 rounded-full placeholder:text-home-blue placeholder:text-sm mb-[8px] text-home-blue text-sm w-full" />
+                                <input type="text" placeholder="Email:" value={email} onChange={e => setEmail(e.target.value)} className="p-2 rounded-full placeholder:text-home-blue placeholder:text-sm mb-[8px] text-home-blue text-sm w-full" />
+                                <textarea name="Message:" value={message} onChange={e => setMessage(e.target.value)} placeholder="Message:" className="p-2  rounded-xl pt-2 placeholder:text-home-blue placeholder:text-sm text-home-blue text-sm w-full h-32"></textarea>
                             </div>
                             <button type="submit" disabled={isLoading || isSubmitted} >
                                 {isLoading ? (
@@ -111,7 +111,6 @@ export default function ContactUs() {
 
                     </div>
                 </div>
-                <div className="bg-home-productBlue h-60"></div>
             </div>
 
         </div>
