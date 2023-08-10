@@ -56,18 +56,19 @@ export default function Strap() {
 
     return (
         <div className="pt-[148px] text-home-blue">
-                        
-            <div>
-            <Image loading="lazy" width={1900} height={936} src="/download.jpeg" alt="Stokes" className="object-contain w-40 m-8 float-right" />
-                <h1 className="text-[10vw] p-4">
-                    S.T.R.A.P.
-                </h1>
-                <h2 className="text-[6vw] p-6">(School To Registered Apprenticeship Program)</h2>
+            <div className="flex flex-col items-center">
+                            <h1 className="text-[10vw] p-4 mb-8 border-b-home-blue border-b-[4px]">
+                S.T.R.A.P.
+            </h1>
+                <Image loading="lazy" width={1900} height={936} src="/download.jpeg" alt="Stokes" className="object-contain w-80 rounded" />
+
+                <h2 className="text-[5vw] p-6 font-light text-center">(School To Registered Apprenticeship Program)</h2>
                 <p className="p-6 text-[2.25vw]">
                     A program for High School Students to gain experience in the workforce. For additional information check out the video below and send us your contact information in the form.
                 </p>
-
             </div>
+
+
 
 
             <iframe width="100%" height="400" src="https://www.youtube.com/embed/jPPaZZcO4lU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
