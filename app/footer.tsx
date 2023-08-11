@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 export default function Footer(){
@@ -24,17 +25,23 @@ export default function Footer(){
             </div>
             <div className="w-1/3 mt-[20px]">
 
-                <img src="logo.svg" alt="" className="w-full"/>
+                <Image src="/logo.svg" width={151} height={110} alt="" className="w-full max-w-[20vw]"/>
               
             </div>
           </div>
           <div className="flex justify-center align-middle mt-10 mb-10">
             <Link href="https://www.facebook.com/profile.php?id=100058249872750" target="_blank"
-        rel="noopener noreferrer" className="mr-10 w-8"><img src="facebook-icon.svg" alt="" /></Link>
+        rel="noopener noreferrer" className="mr-10 w-8">
+          <Image src="/facebook-icon.svg" width={659} height={655} alt="" />
+          </Link>
             <Link href="https://www.instagram.com/highdesertmilk/" target="_blank"
-        rel="noopener noreferrer" className="mr-10 w-8"><img src="instagram-icon.svg" alt="" /></Link>
+        rel="noopener noreferrer" className="mr-10 w-8">
+          <Image src="/instagram-icon.svg" width={450} height={450} alt="" />
+          </Link>
             
-            <Link href="/contact"><img src="email-icon.svg" alt="" className="w-8"/></Link>
+            <Link href="/contact">
+              <Image src="/email-icon.svg" width={489} height={483} alt="" className="w-8 "/>
+              </Link>
           </div>
           <div className="flex justify-around text-white text-[10px] font-extralight text-center pb-5">
             <div className="mr-[20px]">

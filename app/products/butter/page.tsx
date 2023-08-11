@@ -28,7 +28,7 @@ export default function ProductButter() {
   const featuredButter = RecipeData.filter(recipe => recipe.isButterFeature)
   return (
     <>
-      <div className="  w-[100vw] lg:pl-[5vw] lg:pr-[5vw]">
+      <div className="  w-[100vw]">
         <div className="pt-[148px]"></div>
         <div className="flex flex-col justify-center bg-white align-middle text-center text-home-blue">
           <div className="flex justify-center align-middle m-10">
@@ -39,16 +39,17 @@ export default function ProductButter() {
             {isActive && (
               <div className="flex absolute mt-8 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 justify-around align-middle">
                 <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+
                   <Link href="/products/butter/salted" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
-                    Salted Butter
+
                     <Image loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter"
-                      className="w-20 ml-auto"
-                    /> </Link>
+                      className="w-20 mr-auto"
+                    /> Salted Butter</Link>
                   <Link href="/products/butter/unsalted" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
-                    Salted Butter
+                    
                     <Image loading="lazy" width={4904} height={2880} src="/products/unsalted-butter.png" alt="Butter"
-                      className="w-20 ml-auto"
-                    /> </Link>
+                      className="w-20 mr-auto"
+                    /> Unsalted Butter </Link>
                 </div>
               </div>
             )}

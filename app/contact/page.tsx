@@ -61,7 +61,7 @@ export default function ContactUs() {
 
     return (
         <div>
-            <div className="pt-[148px] lg:pl-[5vw] lg:pr-[5vw] max-w-screen-xl xl:ml-auto xl:mr-auto w-[100vw]">
+            <div className="pt-[148px] max-w-screen-xl xl:ml-auto xl:mr-auto w-[100vw]">
                 <div className="relative text-home-blue bg-home-productBlue xs:pb-[60vh] sm:pb-[40vh] md:pb-[27vh] lg:pb-[10vh] xl:pb-[8vh]">
                     <Image width={7680} height={7004} src="/impact/our-community-page/map.png" alt="Background image: Map" className=" bg-home-productBlue" />
                     <div className="absolute top-0 w-full ">

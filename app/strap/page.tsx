@@ -70,8 +70,10 @@ export default function Strap() {
 
 
 
-
-            <iframe width="100%" height="400" src="https://www.youtube.com/embed/jPPaZZcO4lU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <div className="px-[20vw]">
+             <iframe width="100%" height="400" src="https://www.youtube.com/embed/jPPaZZcO4lU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>   
+            </div>
+            
 
             <div className="p-4">
                 <h1 className="text-[6vw]">Interested? Send us your contact info.</h1>

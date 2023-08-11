@@ -30,7 +30,7 @@ export default function ProductPowder() {
 
   return (
     <>
-      <div className="  w-[100vw] lg:pl-[5vw] lg:pr-[5vw]">
+      <div className="  w-[100vw]">
         <div className="pt-[148px]"></div>
         <div className="flex flex-col justify-center bg-white align-middle text-center text-home-blue">
           <div className="flex justify-center align-middle m-10">
@@ -39,15 +39,15 @@ export default function ProductPowder() {
               <img src="../down-arrow.svg" alt="" className="bg-home-blue rounded h-5 ml-2" />
             </button>
             {isActive && (
-              <div className="absolute mt-8 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+              <div className="absolute mt-8 w-68 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                 <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                 <Link href="/products/powder/buttermilk" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
-                    Salted Butter
+                    Buttermilk
                     <Image loading="lazy" width={4904} height={2880} src="/products/big-powder.png" alt="buttermilk"
                       className="w-20 ml-auto"
                     /> </Link>
                   <Link href="/products/powder/nonfat-dry-milk" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
-                    Salted Butter
+                    Non-fat Dry Milk
                     <Image loading="lazy" width={4904} height={2880} src="/products/nonfat-dry.png" alt="nonfat dry milk"
                       className="w-20 ml-auto"
                     /> </Link>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Impact() {
   return (
-    <div className=" xs:pl-0 xs:pr-0 sm:pl-8 sm:pr-8 xs:w-[100vw] sm:min-w-[640px] lg:pl-[5vw] lg:pr-[5vw]">
+    <div className=" xs:pl-0 xs:pr-0 sm:pl-8 sm:pr-8 xs:w-[100vw] sm:min-w-[640px]">
       <div className="pt-[148px]"></div>
       <div>
       <Image loading="lazy"

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function OurCommunity() {
 
     return (
-        <div className="w-[100vw] lg:pl-[5vw] lg:pr-[5vw]">
+        <div className="w-[100vw]">
             <div className="pt-[148px]"></div>
             <div className="relative">
                 <Image loading="lazy" width={7680} height={4740} src="/impact/our-community-page/our-community-bg.png" alt="Our community" className="w-full" />

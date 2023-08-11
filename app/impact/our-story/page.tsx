@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function OurStory() {
   return (
-    <div className="w-[100vw] lg:pl-[5vw] lg:pr-[5vw] overflow-hidden">
+    <div className="w-[100vw] overflow-hidden">
       <div className="pt-[148px]"></div>
       <div className="sm:flex xs:grid xs:grid-cols-1">
         <div className="flex flex-col items-center w-full justify-center align-middle text-home-blue xs:p-12">
@@ -23,7 +23,10 @@ export default function OurStory() {
       </div>
       <div className="flex flex-col bg-home-recipeBlue border-t-white border-t-[1px] p-4 mt-8">
         <h1 className="text-center p-4 pl-8 font-light text-4xl text-home-blue">How we began:</h1>
-        <iframe width="100%" height="400" src="https://www.youtube.com/embed/FMS3e2vlkQ4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div className="px-[20vw]">
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/KaQT6xUKGXQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        </div>
+    
       </div>
       
       <div className="flex bg-home-productBlue justify-between pb-8">
@@ -162,7 +165,10 @@ export default function OurStory() {
       </div>
       <div className="flex flex-col bg-home-recipeBlue border-t-white border-t-[1px] p-4 mt-8">
         <h1 className="text-center p-4 pl-8 font-light text-4xl text-white">Virtual Plant Tour:</h1>
-        <iframe width="100%" height="400" src="https://www.youtube.com/embed/xMtlE4v3H9Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div className="px-[20vw]">
+                  <iframe width="100%" height="400" src="https://www.youtube.com/embed/xMtlE4v3H9Q" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        </div>
+
       </div>
 
 

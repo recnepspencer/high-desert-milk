@@ -27,10 +27,10 @@ export default function Salted() {
   }, []);
   return (
     <>
-      <div className="  w-[100vw] lg:pl-[5vw] lg:pr-[5vw]">
+      <div className="  w-[100vw]">
         <div className="pt-[148px]"></div>
         <div className="flex flex-col justify-center bg-white align-middle text-center text-home-blue">
-        <div className="flex justify-center align-middle m-10">
+          <div className="flex justify-center align-middle m-10">
             <h4>Butter</h4>
             <button onClick={handleClick}>
               <img src="../../down-arrow.svg" alt="" className="bg-home-blue rounded h-5 ml-2" />
@@ -38,8 +38,17 @@ export default function Salted() {
             {isActive && (
               <div className="absolute mt-8 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                 <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                  <a href="/products/butter/salted" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Salted Butter</a>
-                  <a href="/products/butter/unsalted" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Unsalted Butter</a>
+
+                  <Link href="/products/butter/salted" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+
+                    <Image loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter"
+                      className="w-20 mr-auto"
+                    /> Salted Butter</Link>
+                  <Link href="/products/butter/unsalted" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
+
+                    <Image loading="lazy" width={4904} height={2880} src="/products/unsalted-butter.png" alt="Butter"
+                      className="w-20 mr-auto"
+                    /> Unsalted Butter </Link>
                 </div>
               </div>
             )}
@@ -49,7 +58,7 @@ export default function Salted() {
               <h1 className="text-[8vw] mt-auto mb-auto">Unsalted Butter</h1>
             </div>
             <div className="flex justify-center align-middle">
-            <Image loading="lazy" width={4628} height={2496}
+              <Image loading="lazy" width={4628} height={2496}
                 src="/products/unsalted-butter.png"
                 alt="Unsalted butter"
                 className="w-[42vw] object-contain"
@@ -82,9 +91,9 @@ export default function Salted() {
           </div>
 
           <div className="grid grid-cols-3 gap-2 justify-between ml-20 mr-20">
-          <Image loading="lazy" width={1900} height={936} src="/stokes.png" alt="Stokes" className="object-contain w-full" />
-            <Image loading="lazy" width={1900} height={1052} src="/walmart.png" alt="Walmart" className=" w-full object-contain"/>
-            <Image loading="lazy" width={1252} height={1084} src="/ridleys.png" alt="Ridleys" className="object-contain w-full"/>
+            <Image loading="lazy" width={1900} height={936} src="/stokes.png" alt="Stokes" className="object-contain w-full" />
+            <Image loading="lazy" width={1900} height={1052} src="/walmart.png" alt="Walmart" className=" w-full object-contain" />
+            <Image loading="lazy" width={1252} height={1084} src="/ridleys.png" alt="Ridleys" className="object-contain w-full" />
           </div>
           <div className="flex justify-center  pt-6 pb-36">
             <Link href="products/bulk" className="text-sm underline text-home-blue cursor-pointer">

@@ -7,7 +7,7 @@ export default function Recipes({ }) {
 
   return (
     <>
-      <div className="pt-[148px] w-[100vw] p-8 lg:pl-[5vw] lg:pr-[5vw]">
+      <div className="pt-[148px] w-[100vw] p-8">
       <div className="bg-white grid grid-cols-1 m-10 xs:m-2  text-home-blue">
         <div className="text-center xs:text-left ml-0 mr-auto">
           <h1 className="text-4xl">Recipes</h1>
