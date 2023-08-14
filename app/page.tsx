@@ -16,7 +16,7 @@ const handleTouch = () => {
   return ( 
     <main onTouchStart={handleTouch} className="flex flex-col w-full overflow-hidden xs:max-w-[100vw]">
       <div className="flex flex-col w-[100%] mt-[148px] sm:h-[100%] ">
-        <video src="high-desert-video.mp4" ref={videoRef} autoPlay={true} loop={true} muted className="fixed w-[100vw] object-contain">
+        <video src="high-desert-video.mp4" ref={videoRef} autoPlay={true} playsInline={true} controls={false} loop={true} muted className="fixed w-[100vw] object-contain">
           Sorry, your browser does not support HTML5 video tag.
         </video>
         <Image
