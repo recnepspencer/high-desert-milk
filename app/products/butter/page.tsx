@@ -42,12 +42,12 @@ export default function ProductButter() {
 
                   <Link href="/products/butter/salted" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
 
-                    <Image loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter"
+                    <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter"
                       className="w-20 mr-auto"
                     /> Salted Butter</Link>
                   <Link href="/products/butter/unsalted" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
                     
-                    <Image loading="lazy" width={4904} height={2880} src="/products/unsalted-butter.png" alt="Butter"
+                    <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={4904} height={2880} src="/products/unsalted-butter.png" alt="Butter"
                       className="w-20 mr-auto"
                     /> Unsalted Butter </Link>
                 </div>
@@ -60,13 +60,13 @@ export default function ProductButter() {
               <h4 className="text-[3vw] font-light mt-10 mb-auto">Always Fresh. Never Frozen.</h4>
             </div>
             <div className="flex justify-center align-middle">
-              <Image loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter" className="w-[42vw] object-contain" />
+              <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter" className="w-[42vw] object-contain" />
             </div>
           </div>
         </div>
         <div className="grid grid-cols-2">
           <div className="w-full bg-home-productBlue p-10">
-            <Image loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter"
+            <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter"
               className="align-middle mt-[20%]"
             />
             <div className="flex justify-center mt-10">
@@ -79,7 +79,7 @@ export default function ProductButter() {
             </div>
           </div>
           <div className="w-full bg-home-orange p-10">
-            <Image loading="lazy"
+            <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
               width={4628} height={2496}
               src="/products/unsalted-butter.png"
               alt="Unstalted butter"

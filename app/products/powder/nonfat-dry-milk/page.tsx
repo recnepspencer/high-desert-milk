@@ -49,7 +49,7 @@ export default function Nonfat() {
               <h1 className="text-[8vw] p-2 mt-auto mb-auto">Nonfat Dry Milk</h1>
             </div>
             <div className="flex justify-center align-middle">
-              <Image loading="lazy"
+              <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
               width={1760} height={2053}
                 src="/products/nonfat-dry.png"
                 alt="Nonfat Dry Milk"
@@ -68,7 +68,7 @@ export default function Nonfat() {
           <p className="text-center align-middle font-light">Nutrition: </p>
         </div>
         <div className="bg-white text-home-blue p-8">
-          <Image loading="lazy" width={2346} height={459} src="/products/butter-nutrition.png" alt="Nonfat dry milk nutrition" />
+          <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={2346} height={459} src="/products/butter-nutrition.png" alt="Nonfat dry milk nutrition" />
         </div>
         <div className="text-home-blue flex align-middle justify-center bg-home-productYellow p-4">
           <p className="text-center align-middle font-light">Ingredients &amp; Allergens:</p>
@@ -91,7 +91,7 @@ export default function Nonfat() {
 
           <div className="ml-20 mr-20 flex">
             <Link target="_blank" href="https://www.amazon.com/High-Desert-Milk-Buttermilk-Powder/dp/B094T666WM/ref=sr_1_2?crid=3L1N1307Nhttps://www.amazon.com/High-Desert-Milk-Nonfat-Powder/dp/B094S5DC52/ref=sr_1_1?crid=74WL9Y274ZX2&keywords=high+desert+milk&qid=1690417514&sprefix=high+desert+milk%2Caps%2C137&sr=8-1OOUD&keywords=high+desert+milk&qid=1690417380&sprefix=high+desert+milk%2Caps%2C158&sr=8-2">
-                        <Image loading="lazy"
+                        <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
             width={2404} height={724}
               src="/amazon.png"
               alt="Amazon link"

@@ -8,7 +8,7 @@ export default function OurCommunity() {
         <div className="w-[100vw]">
             <div className="pt-[148px]"></div>
             <div className="relative">
-                <Image loading="lazy" width={7680} height={4740} src="/impact/our-community-page/our-community-bg.png" alt="Our community" className="w-full" />
+                <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={7680} height={4740} src="/impact/our-community-page/our-community-bg.png" alt="Our community" className="w-full" />
                 <h1 className="absolute bg-home-blue rounded-xl text-white text-5xl top-[65%] left-[50%] -translate-x-[50%] font-light p-4 w-[400px] mb-12 xs:text-3xl xs:p-3 text-center xs:w-[300px]"> Our Community</h1>
             </div>
             <div className="mt-10 mb-10">
@@ -25,8 +25,8 @@ export default function OurCommunity() {
             <div className="bg-home-orange text-home-blue">
                 <div className="grid grid-cols-1">
                     <div className="flex flex-col p-8 xs:grid xs:grid-cols-1 justify-center items-center xs:text-center">
-                        <h1 className="text-4xl font-light p-8 xs:p-2">Africa Outreach</h1>
-                        <p className="p-8 text-md xs:p-2 lg:px-[17vw] xl:px-[20vw] ">Every year, High Desert Milk donates pallets
+                        <h1 className="text-6xl font-light p-4 xs:p-2">Africa Outreach</h1>
+                        <p className="p-4 text-md xs:p-2 lg:px-[17vw] xl:px-[20vw] ">Every year, High Desert Milk donates pallets
                             of our powdered milk in Zimbabwe. As you can
                             see from these photos, the natives love being
                             able to enjoy the flavor and nutrients that it
@@ -36,36 +36,42 @@ export default function OurCommunity() {
                             milk today?</p>
 
                     </div>
-                    <div>
-                        <Image loading="lazy" width={4300} height={4612} src="/impact/our-community-page/africa.png" alt="Africa Service Projects" />
+                    <div className="flex justify-center">
+                        <Image loading="lazy" width={4300} height={4612} src="/impact/our-community-page/africa.png" alt="Africa Service Projects" className="sm:max-w-[66%] pr-12" />
                     </div>
                 </div>
 
             </div>
             <div>
-                <div className="sm:relative sm:min-w-[780px] p-4 sm:h-[800px] xs:flex">
-                    <div className="flex sm:flex-col items-center p-4 w-6/12 ml-auto xs:mr-auto pt-16 text-home-blue xs:grid xs:grid-cols-1 xs:w-full">
-                        <div className="flex flex-col lg:px-20">
-                            <h1 className="text-3xl mb-10">
-                                Community Giveaways</h1>
-                            <p className="text-md  ">In a unique way of giving back to the community, thanking
-                                everyone for their support, and keeping up with the trends,
-                                High Desert Milk enjoys doing the occasional giveaway during
-                                important times of the year. Have you entered before?</p>
-                        </div>
-                        <div>
-
-                            <Image loading="lazy" width={5400} height={6380}  alt="giveaways" src="/impact/our-community-page/giveaways.png" className="sm:absolute sm:w-9/12 sm:left-0 sm:top-0 xs:w-full max-w-[650px]" />
-                        </div>
-
+                <div className="flex xs:flex-col p-4">
+                <div className="w-[50%] xs:w-full p-8 text-home-blue sm:hidden">
+                        <h1 className="text-[5vw]">
+                            Community Giveaways</h1>
+                        <p className="">In a unique way of giving back to the community, thanking
+                            everyone for their support, and keeping up with the trends,
+                            High Desert Milk enjoys doing the occasional giveaway during
+                            important times of the year. Have you entered before?</p>
                     </div>
+                    <div className="w-[50%] xs:w-full">
+
+                        <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={5400} height={6380} alt="giveaways" src="/impact/our-community-page/giveaways.png" className="w-full" />
+                    </div>
+                    <div className="w-[50%] xs:w-full p-8 text-home-blue xs:hidden">
+                        <h1 className="text-[5vw] pb-12">
+                            Community Giveaways</h1>
+                        <p className="text-md">In a unique way of giving back to the community, thanking
+                            everyone for their support, and keeping up with the trends,
+                            High Desert Milk enjoys doing the occasional giveaway during
+                            important times of the year. Have you entered before?</p>
+                    </div>
+
                 </div>
             </div>
-            <div className="bg-home-productBlue text-white h-[425px] p-8 text-md xs:p-2 lg:px-[17vw] xl:px-[20vw]">
-                <h1 className="text-3xl font-light p-4">High Desert Milk Golf Scramble</h1>
+            <div className="bg-home-productBlue p-8 text-white md:pb-[20vh] md:px-[5vw] lg:px-[10vw]">
+                <h1 className="text-6xl font-light p-4">High Desert Milk Golf Scramble</h1>
                 <div className="p-4">
-                <Image loading="lazy" width={1200} height={1200} src="/impact/our-community-page/golf.png" alt="Golf Sponsorship" className="float-right w-[20vw] m-4" />
-                    <p className="text-sm  pt-12 xs:p-2 xs:pt-2 ">
+                    <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={1200} height={1200} src="/impact/our-community-page/golf.png" alt="Golf Sponsorship" className="float-right w-[20vw] m-4 max-w-[200px]" />
+                    <p className="text-md  pt-12 xs:p-2 xs:pt-2">
                         High Desert Milk puts together an annual Golf Scramble
                         event in the month of August for all our valued Customers and Vendors
                         to attend. This event is a two day event with plant tours and a Meet and

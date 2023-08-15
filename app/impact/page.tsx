@@ -6,7 +6,7 @@ export default function Impact() {
     <div className=" xs:pl-0 xs:pr-0 sm:pl-8 sm:pr-8 xs:w-[100vw] sm:min-w-[640px]">
       <div className="pt-[148px]"></div>
       <div>
-      <Image loading="lazy"
+      <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
           src="/impact/groundbreaking.png"
           width={4068} height={3052}
           alt="High Desert Milk Groundbreaking"
@@ -35,7 +35,7 @@ export default function Impact() {
           </Link>
         </div>
       </div>
-      <Image loading="lazy" width={7088} height={5060} alt="Community impact" src="/impact/community-2.png" className="w-full bg-home-impactYellow p-8" />
+      <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={7088} height={5060} alt="Community impact" src="/impact/community-2.png" className="w-full bg-home-impactYellow p-8" />
     </div>
   );
 }

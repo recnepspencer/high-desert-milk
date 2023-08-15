@@ -44,12 +44,12 @@ export default function Salted() {
 
                   <Link href="/products/butter/salted" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
 
-                    <Image loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter"
+                    <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={4904} height={2880} src="/products/big-butter.png" alt="Butter"
                       className="w-20 mr-auto"
                     /> Salted Butter</Link>
                   <Link href="/products/butter/unsalted" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
 
-                    <Image loading="lazy" width={4904} height={2880} src="/products/unsalted-butter.png" alt="Butter"
+                    <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={4904} height={2880} src="/products/unsalted-butter.png" alt="Butter"
                       className="w-20 mr-auto"
                     /> Unsalted Butter </Link>
                 </div>
@@ -61,7 +61,7 @@ export default function Salted() {
               <h1 className="text-[8vw] p-2 mt-auto mb-auto">Salted Butter</h1>
             </div>
             <div className="flex justify-center align-middle">
-              <Image loading="lazy" width={4094} height={2880} src="/products/big-butter.png" alt="butter" className="w-[42vw] object-contain" />
+              <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={4094} height={2880} src="/products/big-butter.png" alt="butter" className="w-[42vw] object-contain" />
             </div>
             <div></div>
             <div className="text-right mt-10 text-[2vw] ml-auto mr-16">
@@ -75,7 +75,7 @@ export default function Salted() {
           <p className="text-center align-middle font-light">Nutrition: </p>
         </div>
         <div className="bg-white text-home-blue p-8">
-          <Image loading="lazy" width={2346} height={459} src="/products/butter-nutrition.png" alt="Butter Nutrition facts" />
+          <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={2346} height={459} src="/products/butter-nutrition.png" alt="Butter Nutrition facts" />
         </div>
         <div className="text-home-blue flex align-middle justify-center bg-home-productYellow p-4">
           <p className="text-center align-middle font-light">Ingredients &amp; Allergens:</p>
@@ -91,13 +91,13 @@ export default function Salted() {
 
           <div className="grid grid-cols-3 gap-2 justify-between ml-20 mr-20">
             <Link href="https://www.stokesmarket.com/">
-              <Image loading="lazy" width={1900} height={936} src="/stokes.png" alt="Stokes" className="object-contain w-full" />
+              <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={1900} height={936} src="/stokes.png" alt="Stokes" className="object-contain w-full" />
             </Link>
             <Link href="https://www.walmart.com/">
-                          <Image loading="lazy" width={1900} height={1052} src="/walmart.png" alt="Walmart" className=" w-full object-contain" />
+                          <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={1900} height={1052} src="/walmart.png" alt="Walmart" className=" w-full object-contain" />
             </Link>
             <Link href="https://shopridleys.com/athome/">
-                          <Image loading="lazy" width={1252} height={1084} src="/ridleys.png" alt="Ridleys" className="object-contain w-full" />
+                          <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={1252} height={1084} src="/ridleys.png" alt="Ridleys" className="object-contain w-full" />
             </Link>
 
           </div>

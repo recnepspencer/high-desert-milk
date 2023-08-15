@@ -99,7 +99,7 @@ export default function Bulk({ user }: any) {
                   <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                     <Link href="#bpm" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
                       Buttermilk Powder
-                      <Image loading="lazy"
+                      <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
                 width={2672} height={3560}
                 src="/products/bulk-buttermilk.png"
                 alt="Bulk Buttermilk powder"
@@ -107,7 +107,7 @@ export default function Bulk({ user }: any) {
               /> </Link>
                     <Link href="#nfdmp" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
                       Non-fat Dry Milk Powder
-                      <Image loading="lazy"
+                      <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
                 width={2660} height={3548}
                 src="/products/bulk-nonfat-dry.png"
                 alt="Bulk Nonfat Dry Milk powder"
@@ -115,7 +115,7 @@ export default function Bulk({ user }: any) {
               /> </Link>
                     <Link href="#smp" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
                       Skim Milk Powder
-                      <Image loading="lazy"
+                      <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
                 width={2676} height={3564}
                 src="/products/bulk-skim-powder.png"
                 alt="Bulk Skim Milk Powder"
@@ -123,7 +123,7 @@ export default function Bulk({ user }: any) {
               /> </Link>
                     <Link href="#bb" className="flex items-center gap-8 align-middle px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">
                       Butter
-                      <Image loading="lazy"
+                      <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
                 width={3440} height={2504}
                 src="/products/bulk-butter.png"
                 alt="Bulk Butter"
@@ -139,7 +139,7 @@ export default function Bulk({ user }: any) {
               <h1 className="text-[10vw] p-2 mt-auto mb-auto" >Buttermilk Powder</h1>
             </div>
             <div className="flex justify-center align-middle flex-shrink">
-              <Image loading="lazy"
+              <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
                 width={2672} height={3560}
                 src="/products/bulk-buttermilk.png"
                 alt="Bulk Buttermilk powder"
@@ -147,7 +147,7 @@ export default function Bulk({ user }: any) {
               />
             </div>
             <div className="flex flex-shrink justify-center align-middle">
-              <Image loading="lazy"
+              <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
                 width={2660} height={3548}
                 src="/products/bulk-nonfat-dry.png"
                 alt="Bulk Nonfat Dry Milk powder"
@@ -161,7 +161,7 @@ export default function Bulk({ user }: any) {
               <h1 className="text-[10vw] mt-auto mb-auto">Skim Milk Powder</h1>
             </div>
             <div className="flex flex-shrink justify-center align-middle">
-              <Image loading="lazy"
+              <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
                 width={2676} height={3564}
                 src="/products/bulk-skim-powder.png"
                 alt="Bulk Skim Milk Powder"
@@ -170,7 +170,7 @@ export default function Bulk({ user }: any) {
             </div>
 
             <div className="flex flex-shrink justify-center align-middle">
-              <Image loading="lazy"
+              <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
                 width={3440} height={2504}
                 src="/products/bulk-butter.png"
                 alt="Bulk Butter"

@@ -50,7 +50,7 @@ export default function Buttermilk() {
               <h1 className="text-[8vw] mt-auto mb-auto ">Buttermilk</h1>
             </div>
             <div className="flex justify-center align-middle">
-              <Image loading="lazy" width={2956} height={3264}
+              <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={2956} height={3264}
                 src="/products/big-powder.png"
                 alt="Dry Milk Powder"
                 className="w-[36vw] object-contain"
@@ -70,7 +70,7 @@ export default function Buttermilk() {
           <p className="text-center align-middle font-light">Nutrition: </p>
         </div>
         <div className="bg-white text-home-blue p-8">
-          <Image loading="lazy" width={2346} height={459}  src="/products/butter-nutrition.png" alt="buttermilk nutrition facts" />
+          <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={2346} height={459}  src="/products/butter-nutrition.png" alt="buttermilk nutrition facts" />
         </div>
         <div className="text-home-blue flex align-middle justify-center bg-home-productYellow p-4">
           <p className="text-center align-middle font-light">Ingredients &amp; Allergens:</p>
@@ -93,7 +93,7 @@ export default function Buttermilk() {
 
           <div className="ml-20 mr-20 flex">
           <Link target="_blank" href="https://www.amazon.com/High-Desert-Milk-Buttermilk-Powder/dp/B094T666WM/ref=sr_1_2?crid=3L1N1307NOOUD&keywords=high+desert+milk&qid=1690417380&sprefix=high+desert+milk%2Caps%2C158&sr=8-2">
-                        <Image loading="lazy"
+                        <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
             width={2404} height={724}
               src="/amazon.png"
               alt="Amazon link"

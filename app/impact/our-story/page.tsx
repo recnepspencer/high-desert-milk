@@ -130,10 +130,10 @@ export default function OurStory() {
 
         <div className="flex flex-col w-[80%] pr-8 pl-8 max-w-[500px] xs:w-[100%] xs:pl-2">
           <div className="mt-auto pt-[200px]"></div>
-          <Image loading="lazy" width={7680} height={5164} src="/impact/groundbreaking.png" alt="Timeline photo 1" />
-          <Image loading="lazy" width={3484} height={2612} src="/impact/timeline-2.png" alt="Timeline photo 2" />
-          <Image loading="lazy" width={3972} height={2648} src="/impact/timeline-3.png" alt="Timeline photo 3" />
-          <Image loading="lazy" width={3516} height={4688} src="/impact/timeline-4.png" alt="Timeline photo 4" />
+          <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={7680} height={5164} src="/impact/groundbreaking.png" alt="Timeline photo 1" />
+          <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={3484} height={2612} src="/impact/timeline-2.png" alt="Timeline photo 2" />
+          <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={3972} height={2648} src="/impact/timeline-3.png" alt="Timeline photo 3" />
+          <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={3516} height={4688} src="/impact/timeline-4.png" alt="Timeline photo 4" />
 
         </div>
       </div>

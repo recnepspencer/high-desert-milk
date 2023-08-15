@@ -61,9 +61,10 @@ export default function ContactUs() {
 
     return (
         <div>
-            <div className="pt-[148px] max-w-screen-xl xl:ml-auto xl:mr-auto w-[100vw]">
-                <div className="relative text-home-blue bg-home-productBlue xs:pb-[60vh] sm:pb-[40vh] md:pb-[27vh] lg:pb-[10vh] xl:pb-[8vh]">
-                    <Image width={7680} height={7004} src="/impact/our-community-page/map.png" alt="Background image: Map" className=" bg-home-productBlue" />
+            <div className="pt-[148px] max-w-screen-xl xl:ml-auto xl:mr-auto">
+                <div className="relative text-home-blue bg-home-productBlue xs:pb-[70vh] sm:pb-[50vh] md:pb-[37vh] lg:pb-[10vh] xl:pb-[8vh]">
+                    <Image width={7680} height={7004} src="/impact/our-community-page/map.png" alt="Background image: Map" className=" bg-home-productBlue"
+                    sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px"  />
                     <div className="absolute top-0 w-full ">
                         <div className="flex flex-col ml-auto m-4 p-2 mr-8 bg-white text-center rounded items-center w-[450px] xs:w-[350px] mt-16">
                             <h1 className="text-2xl font-light">How can we help you? </h1>
