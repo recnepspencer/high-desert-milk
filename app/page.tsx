@@ -14,7 +14,7 @@ const handleTouch = () => {
 
 
   return ( 
-    <main onTouchStart={handleTouch} className="flex flex-col w-full overflow-hidden xs:max-w-[100vw]">
+    <main onTouchStart={handleTouch} className="flex flex-col w-full">
       <div className="flex flex-col w-[100%] mt-[148px] sm:h-[100%] ">
         <video src="high-desert-video.mp4" ref={videoRef} autoPlay={true} playsInline={true} controls={false} loop={true} muted className="fixed w-[100vw] object-contain">
           Sorry, your browser does not support HTML5 video tag.
@@ -24,6 +24,7 @@ const handleTouch = () => {
           alt="High Desert Milk Logo"
           src="background-logo.svg"
           className="relative m-auto mt-[4%]  h-[100%] w-6/12"
+          sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" 
         />
       </div>
       <div className="relative flex flex-col pt-[10px]">
@@ -48,7 +49,7 @@ const handleTouch = () => {
               alt="cute cows"
               className="w-[100%] ml-auto mr-auto pb-4"
             />
-            <Link href="/impact">
+            <Link href="/impact/our-story">
               <button className="sm:absolute sm:top-[85%] sm:left-[-6%] sm:pl-[40%] sm:pr-2 flex sm:justify-center sm:align-middle bg-home-blue text-white font-light rounded hover:bg-blue-900 active:text-home-blue active:bg-white xs:m-auto xs:p-2 xs:mb-4 xs:pl-8 xs:pr-8">
                 <span className="mt-auto mb-auto pr-2">Our Story </span>{" "}
                 <span className="text-4xl mb-2"> &gt; </span>
@@ -64,6 +65,7 @@ const handleTouch = () => {
               alt="powdered milk"
               className="w-6/12 ml-auto mr-auto xs:w-8/12"
               loading="lazy"
+              sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" 
             />
             <Image
               width={562}
@@ -71,6 +73,7 @@ const handleTouch = () => {
               src="/home-butter.png"
               alt="butter"
               className="w-8/12 ml-auto mr-auto sm:mb-20 xs:mb-4 xs:w-10/12"
+              sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" 
             />
             <Link href="/products">
               <button className="sm:absolute sm:top-[85%] sm:right-[-4%] sm:pr-[40%] sm:pl-2 flex sm:justify-center sm:align-middle bg-home-blue text-white font-light rounded hover:bg-blue-900 active:text-home-blue active:bg-white xs:m-auto xs:p-2 xs:mb-4 xs:pl-8 xs:pr-8">
@@ -83,13 +86,13 @@ const handleTouch = () => {
         </div>
         <div className="bg-white sm:p-20 xs:p-8">
           <div className="flex justify-center border-t-4 border-black pr-20 pl-20 pt-20 xs:pt-8">
-            <Image width={309} height={221} alt="Idaho preffered" src="/idaho-preferred.svg" className="w-4/12 max-w-[400px]" />
-            <Image width={323} height={253} alt="brogs logo" src="/brogs.svg" className="sm:ml-20 xs:ml-12 w-4/12 max-w-[400px]" />
-            <Image width={300} height={293} alt="Real logo" src="real.svg" className="sm:ml-20 xs:ml-12 w-4/12 max-w-[400px]" />
+            <Image width={309} height={221} alt="Idaho preffered" src="/idaho-preferred.svg" className="w-4/12 max-w-[400px]" sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" />
+            <Image width={323} height={253} alt="brogs logo" src="/brogs.svg" className="sm:ml-20 xs:ml-12 w-4/12 max-w-[400px]" sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" />
+            <Image width={300} height={293} alt="Real logo" src="real.svg" className="sm:ml-20 xs:ml-12 w-4/12 max-w-[400px]" sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" />
           </div>
           <div className="flex justify-center mt-10 pr-20 pl-20">
-            <Image width={260} height={260} alt="M Logo" src="m.svg" className="w-4/12 max-w-[400px]" />
-            <Image width={430} height={436} alt="K logo" src="k.svg" className="sm:ml-20 xs:ml-12 w-4/12 max-w-[400px]" />
+            <Image width={260} height={260} alt="M Logo" src="m.svg" className="w-4/12 max-w-[400px]" sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" />
+            <Image width={430} height={436} alt="K logo" src="k.svg" className="sm:ml-20 xs:ml-12 w-4/12 max-w-[400px]" sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px"  />
           </div>
         </div>
       </div>

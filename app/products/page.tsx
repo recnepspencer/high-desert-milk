@@ -18,18 +18,22 @@ export default function OurProducts() {
           <div className="grid grid-cols-3 pt-10 ml-12 mr-12 items-center align-middle">
             <div className="grid grid-cols-1">
             <Link href="/products/butter">
-              <Image loading="lazy" width={1180} height={844} src="/products/butter.png" alt="" className="w-[40vw] mb-4 ml-auto mr-auto"/>
+              <Image loading="lazy" width={1180} height={844} src="/products/butter.png" alt="" className="w-[40vw] mb-4 ml-auto mr-auto"
+              sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" 
+              />
               </Link>
               
             </div>
             <div>
             <Link href="/products/powder">
-              <Image loading="lazy" width={2956} height={3264} src="/products/big-powder.png" alt="Powder Milk" className="w-[18vw] mb-4 ml-auto mr-auto"/>
+              <Image loading="lazy" width={2956} height={3264} src="/products/big-powder.png" alt="Powder Milk" className="w-[18vw] mb-4 ml-auto mr-auto"
+              sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" />
               </Link>
             </div>
             <div>
               <Link href="/products/bulk">
-              <Image loading="lazy" width={2670} height={3560} alt="Bulk Powder Buttermilk" src="/products/bulk-buttermilk.png" className="w-[18vw] mb-4 ml-auto mr-auto" />
+              <Image loading="lazy" width={2670} height={3560} alt="Bulk Powder Buttermilk" src="/products/bulk-buttermilk.png" className="w-[18vw] mb-4 ml-auto mr-auto" 
+              sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px"  />
               </Link>
             </div>
             <div className="mb-4">
@@ -59,6 +63,7 @@ export default function OurProducts() {
               src="/products/caramel.png"
               alt="Caramel"
               className="object-cover w-full h-full"
+              sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" 
             />
           </div>
           <div className="w-full bg-home-orange p-10">
@@ -67,6 +72,7 @@ export default function OurProducts() {
               src="/products/big-butter.png"
               alt="Butter"
               className="align-middle mt-[20%]"
+              sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" 
             />
             <div className="flex justify-center mt-10">
               <Link href="products/butter" className="flex">
@@ -84,6 +90,7 @@ export default function OurProducts() {
               src="/products/big-powder.png"
               alt="Milk powder"
               className="align-middle"
+              sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" 
             />
             <div className="flex justify-center mt-10">
               <Link href="products/powder" className="flex">
@@ -101,6 +108,7 @@ export default function OurProducts() {
               src="/products/cake.png"
               alt="Cake"
               className="w-full object-cover h-full"
+              sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" 
             />
           </div>
           <div className="w-full flex justify-center items-center">
@@ -110,6 +118,7 @@ export default function OurProducts() {
               src="/products/bulk-butter-2.jpeg"
               alt="Beautiful butter"
               className="w-full object-cover h-full"
+              sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" 
             />
           </div>
           <div className="w-full bg-home-recipeOrange p-10">
@@ -118,6 +127,7 @@ export default function OurProducts() {
               src="/products/bulk-butter.png"
               alt="Bulk Butter"
               className="align-middle"
+              sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" 
             />
             <div className="flex justify-center mt-10">
               <Link href="products/bulk" className="flex">

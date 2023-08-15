@@ -242,7 +242,7 @@ export const RecipeData: Recipe[] = [
     recipeName: 'Avacado Salad Dressing',
     imageUrl: '/recipes/salad-dressing.png',
     backgroundColor: 'bg-home-recipeBlue',
-    recipeUrl: 'https://www.tasteofhome.com/recipes/bake-sale-lemon-bars/',
+    recipeUrl: 'https://www.tasteofhome.com/recipes/avocado-salad-dressing/',
     isMainFeature: true,
     isButterFeature: false,
     isButtermilkFeature: false,
@@ -280,7 +280,7 @@ const RecipeCard: React.FC<RecipeCardProps> = ({recipe}) => {
         <Link href={recipe.recipeUrl} target="_blank"
         rel="noopener noreferrer" className="text-l flex text-white font-light mt-auto mb-auto text-center p-1 hover:underline">
             <p className="ml-4">{recipe.recipeName}</p>
-            <button className="justify-right mt-auto mb-auto mr-3 ml-4 text-white">
+            <button className="justify-right mt-auto mb-auto mr-4 ml-4 text-white">
               &gt;
             </button>
         </Link>

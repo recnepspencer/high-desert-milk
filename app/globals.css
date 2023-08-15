@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-#checkbox:checked ~ #menu {
-    display: block;
-  }
-  
-  #menu {
-    display: none;
-  }
 
+* {
+  box-sizing: border-box;
+}

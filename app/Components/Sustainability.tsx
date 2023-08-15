@@ -73,7 +73,7 @@ import Image from 'next/image';
 
   const Sustainability: React.FC = () => {
     return (
-      <div>
+      <div className='xs:px-[5vw] sm:px-[9vw] md:px-[12vw] lg:px-[16vw] xl:px-[24vw] '>
         {SustainData.map((sustainer, index) => (
           <div key={index}>
             <div className="flex items-center">

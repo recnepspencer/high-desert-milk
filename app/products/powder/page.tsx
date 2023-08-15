@@ -30,7 +30,7 @@ export default function ProductPowder() {
 
   return (
     <>
-      <div className="  w-[100vw]">
+      <div className="w-[100%]">
         <div className="pt-[148px]"></div>
         <div className="flex flex-col justify-center bg-white align-middle text-center text-home-blue">
           <div className="flex justify-center align-middle m-10">

@@ -91,9 +91,15 @@ export default function Salted() {
           </div>
 
           <div className="grid grid-cols-3 gap-2 justify-between ml-20 mr-20">
-            <Image loading="lazy" width={1900} height={936} src="/stokes.png" alt="Stokes" className="object-contain w-full" />
-            <Image loading="lazy" width={1900} height={1052} src="/walmart.png" alt="Walmart" className=" w-full object-contain" />
-            <Image loading="lazy" width={1252} height={1084} src="/ridleys.png" alt="Ridleys" className="object-contain w-full" />
+          <Link href="https://www.stokesmarket.com/">
+              <Image loading="lazy" width={1900} height={936} src="/stokes.png" alt="Stokes" className="object-contain w-full" />
+            </Link>
+            <Link href="https://www.walmart.com/">
+                          <Image loading="lazy" width={1900} height={1052} src="/walmart.png" alt="Walmart" className=" w-full object-contain" />
+            </Link>
+            <Link href="https://shopridleys.com/athome/">
+                          <Image loading="lazy" width={1252} height={1084} src="/ridleys.png" alt="Ridleys" className="object-contain w-full" />
+            </Link>
           </div>
           <div className="flex justify-center  pt-6 pb-36">
             <Link href="products/bulk" className="text-sm underline text-home-blue cursor-pointer">

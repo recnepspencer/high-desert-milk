@@ -3,16 +3,16 @@ import Link from "next/link"
 
 export default function Footer(){
     return (
-        <footer className="bg-home-blue relative pt-10 pl-12 pr-12 w-[100vw]">
-          <div className="xs:flex-col xs: xs:items-center xs:flex sm:flex text-white border-white border-t-2 sm:justify-around">
-            <div className="flex flex-col mt-7 mr-[20px] min-w-[170px]">
+        <footer className="bg-home-blue relative pt-10 pl-12 pr-12 w-[100%]">
+          <div className="xs:flex-col xs: xs:items-center xs:flex sm:grid sm:grid-cols-3 items-center text-white border-white border-t-2 sm:justify-around text-center gap-8">
+            <div className="flex flex-col mt-7 items-center">
               <h6 className="text-center text-s leading-7 font-light">BUSINESS</h6>
-              <Link href="https://highdesertmilk-my.sharepoint.com/:f:/p/coakes/Ej7LAMahyoZCkLc8iQMQiJMBBIwOWRHUK934R9t4epOsoQ?e=ubUwYL" className="text-xs font-thin leading-7">Customer Portal (Businesses)</Link>
+              <Link href="https://highdesertmilk-my.sharepoint.com/:f:/p/coakes/Ej7LAMahyoZCkLc8iQMQiJMBBIwOWRHUK934R9t4epOsoQ?e=ubUwYL" target="_blank" className="text-xs font-thin leading-7">Customer Portal (Businesses)</Link>
               <Link href="/careers" className="text-xs font-thin leading-7">Career</Link>
               <Link href="/impact/our-community/scholarship-application" className="text-xs font-thin leading-7">Scholarship</Link>
               <Link href="/contact" className="text-xs font-thin leading-7">Contact</Link>
             </div>
-            <div className="flex flex-col mt-7 mr-[40px] min-w-[170px]">
+            <div className="flex align-middle justify-center flex-col mt-7 items-center">
               <h6 className="text-center text-s leading-7 font-light">DAIRY MARKET INFORMATION</h6>
               <Link href="https://www.cmegroup.com/trading/agricultural/spot-call-data.html" target="_blank"
         rel="noopener noreferrer" className="text-xs font-thin leading-7 ml-5">CME Group</Link>
@@ -23,14 +23,14 @@ export default function Footer(){
               <Link href="https://member.northwestfcs.com/" target="_blank"
         rel="noopener noreferrer" className="text-xs font-thin leading-7 ml-5">Northwest Farm Credit Services</Link>
             </div>
-            <div className="w-1/3 mt-[20px]">
+            <div className="flex mt-[20px] items-center justify-center ">
 
-                <Image src="/logo.svg" width={151} height={110} alt="" className="w-full max-w-[20vw]"/>
+                <Image src="/logo.svg" width={151} height={110} alt="" className="xs:w-[50vw] sm:w-[50vw] md:w-[20vw]"/>
               
             </div>
           </div>
           <div className="flex justify-center align-middle mt-10 mb-10">
-            <Link href="https://www.facebook.com/profile.php?id=100058249872750" target="_blank"
+            <Link href="https://www.facebook.com/highdesertmilk" target="_blank"
         rel="noopener noreferrer" className="mr-10 w-8">
           <Image src="/facebook-icon.svg" width={659} height={655} alt="" />
           </Link>

@@ -81,7 +81,7 @@ export default function NavMenu() {
 
   return (
     <header>
-      <nav className="fixed flex bg-home-blue text-white w-[100vw] justify-between items-center h-[148px] z-50">
+      <nav className="fixed flex bg-home-blue text-white w-[100%] justify-between items-center h-[148px] z-50">
         {width > 768 ? (
           <div className="fixed flex bg-home-blue text-white w-[100vw] justify-between items-center h-[148px] z-50">
             <Link href="/" className="p-8 flex-shrink-0">

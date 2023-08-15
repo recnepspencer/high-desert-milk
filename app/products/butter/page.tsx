@@ -95,7 +95,7 @@ export default function ProductButter() {
             </div>
           </div>
         </div>
-        <div className="bg-home-productYellow ">
+        <div className="bg-home-productYellow p-4 ">
           <div className="flex justify-center p-4 pt-8">
             <label className="pr-2 text-home-blue text-xl ">
               Try these butter recipes

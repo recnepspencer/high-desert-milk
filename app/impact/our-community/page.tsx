@@ -26,7 +26,7 @@ export default function OurCommunity() {
                 <div className="grid grid-cols-1">
                     <div className="flex flex-col p-8 xs:grid xs:grid-cols-1 justify-center items-center xs:text-center">
                         <h1 className="text-4xl font-light p-8 xs:p-2">Africa Outreach</h1>
-                        <p className="p-8 text-sm xs:p-2 ">Every year, High Desert Milk donates pallets
+                        <p className="p-8 text-md xs:p-2 lg:px-[17vw] xl:px-[20vw] ">Every year, High Desert Milk donates pallets
                             of our powdered milk in Zimbabwe. As you can
                             see from these photos, the natives love being
                             able to enjoy the flavor and nutrients that it
@@ -45,10 +45,10 @@ export default function OurCommunity() {
             <div>
                 <div className="sm:relative sm:min-w-[780px] p-4 sm:h-[800px] xs:flex">
                     <div className="flex sm:flex-col items-center p-4 w-6/12 ml-auto xs:mr-auto pt-16 text-home-blue xs:grid xs:grid-cols-1 xs:w-full">
-                        <div>
+                        <div className="flex flex-col lg:px-20">
                             <h1 className="text-3xl mb-10">
                                 Community Giveaways</h1>
-                            <p className="text-sm">In a unique way of giving back to the community, thanking
+                            <p className="text-md  ">In a unique way of giving back to the community, thanking
                                 everyone for their support, and keeping up with the trends,
                                 High Desert Milk enjoys doing the occasional giveaway during
                                 important times of the year. Have you entered before?</p>
@@ -61,11 +61,11 @@ export default function OurCommunity() {
                     </div>
                 </div>
             </div>
-            <div className="bg-home-productBlue p-8 text-white h-[425px]">
+            <div className="bg-home-productBlue text-white h-[425px] p-8 text-md xs:p-2 lg:px-[17vw] xl:px-[20vw]">
                 <h1 className="text-3xl font-light p-4">High Desert Milk Golf Scramble</h1>
                 <div className="p-4">
                 <Image loading="lazy" width={1200} height={1200} src="/impact/our-community-page/golf.png" alt="Golf Sponsorship" className="float-right w-[20vw] m-4" />
-                    <p className="text-sm  pt-12 xs:p-2 xs:pt-2">
+                    <p className="text-sm  pt-12 xs:p-2 xs:pt-2 ">
                         High Desert Milk puts together an annual Golf Scramble
                         event in the month of August for all our valued Customers and Vendors
                         to attend. This event is a two day event with plant tours and a Meet and

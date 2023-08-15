@@ -31,7 +31,7 @@ export default function Recipes({ }) {
         </div>
       </div>
       <div className="grid grid-cols-3 gap-3 mb-20 xs:grid-cols-2">
-        {butterRecipes.map((recipe, index) => (
+        {buttermilkRecipes.map((recipe, index) => (
           <RecipeCard key={index} recipe={recipe} />
         ))}
       </div>
