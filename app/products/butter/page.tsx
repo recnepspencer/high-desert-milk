@@ -86,7 +86,7 @@ export default function ProductButter() {
               className="align-middle mt-[20%]"
             />
             <div className="flex justify-center mt-10">
-              <Link href="products/butter/unsalted" className="text-white text-2xl font-light justify-center pr-3">
+              <Link href="/products/butter/unsalted" className="text-white text-2xl font-light justify-center pr-3">
                 Unsalted
               </Link>
               <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 hover:bg-blue-900 active:bg-white active:text-home-blue">
@@ -111,7 +111,7 @@ export default function ProductButter() {
             ))}
 
           </div>
-          <Link href="products/bulk">
+          <Link href="/products/bulk">
             <button className="relative mb-10 pl-32 bg-home-blue text-white rounded pr-3 pt-1 pb-1 font-light hover:underline cursor-pointer">Butter for your business <span className="ml-2 font-bold text-xl">&gt;</span></button>
           </Link>
 

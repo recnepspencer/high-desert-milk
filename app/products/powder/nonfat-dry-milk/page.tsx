@@ -74,8 +74,8 @@ export default function Nonfat() {
           <p className="text-center align-middle font-light">Ingredients &amp; Allergens:</p>
         </div>
         <div className="flex flex-col align-middle items-center bg-white text-home-blue justify-center">
-          <p className="text-center m-10 w-64">Non-fat Dry Milk. </p>
-          <p className="font-bold mb-10">Contains Milk</p>
+          <p className="font-bold text-center m-10 w-64">Non-fat Dry Milk. </p>
+          <p className=" mb-10">Contains Milk</p>
         </div>
         <div className="bg-home-productBlue">
           <div className="flex align-middle text-center justify-center">
@@ -89,7 +89,7 @@ export default function Nonfat() {
 
           </div>
 
-          <div className="ml-20 mr-20 flex">
+          <div className="ml-20 mr-20 justify-center flex">
             <Link target="_blank" href="https://www.amazon.com/High-Desert-Milk-Buttermilk-Powder/dp/B094T666WM/ref=sr_1_2?crid=3L1N1307Nhttps://www.amazon.com/High-Desert-Milk-Nonfat-Powder/dp/B094S5DC52/ref=sr_1_1?crid=74WL9Y274ZX2&keywords=high+desert+milk&qid=1690417514&sprefix=high+desert+milk%2Caps%2C137&sr=8-1OOUD&keywords=high+desert+milk&qid=1690417380&sprefix=high+desert+milk%2Caps%2C158&sr=8-2">
                         <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy"
             width={2404} height={724}

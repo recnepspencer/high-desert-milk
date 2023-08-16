@@ -30,7 +30,7 @@ export default function Recipes({ }) {
           <p className="text-sm sm:w-[50%] xs:w-full"> Discover the versatile potential of High Desert&apos;s buttermilk and non-fat milk. The udderly wonderful balance of these dairy products brings both depth and complexity to a diverse array of dishes.</p>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-3 mb-20 xs:grid-cols-2">
+      <div className="grid grid-cols-3 gap-3 mb-20 xs:grid-cols-2" id="buttermilk-recipes">
         {buttermilkRecipes.map((recipe, index) => (
           <RecipeCard key={index} recipe={recipe} />
         ))}

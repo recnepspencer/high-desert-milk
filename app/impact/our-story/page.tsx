@@ -9,22 +9,21 @@ export default function OurStory() {
       <div className="pt-[148px]"></div>
       <div className="sm:flex xs:grid xs:grid-cols-1">
         <div className="flex flex-col items-center w-full justify-center align-middle text-home-blue xs:p-12">
-          <h1 className="text-4xl m-2">Our Story</h1>
-          <AnimatedText className="leading-[40px] text-6xl animate-pulse opacity-80" />
+          <h1 className="text-6xl m-2">Our Story</h1>
         </div>
-        <div className="flex justify-end w-[100%] xs:p-12">
+        <div className="flex justify-end w-[100%] xs:p-12 p-4">
           <Image loading="lazy"
           width={4068} height={3052}
             src="/impact/our-story.png"
             alt="Nostalgic picture in front of a dairy"
-            className="mt-4 mb-4 "
+            className="mt-4 mb-4 rounded-3xl"
           />
         </div>
       </div>
       <div className="flex flex-col bg-home-recipeBlue border-t-white border-t-[1px] p-4 mt-8">
         <h1 className="text-center p-4 pl-8 font-light text-4xl text-home-blue">How we began:</h1>
         <div className="px-[20vw]">
-              <iframe width="100%" height="400" src="https://www.youtube.com/embed/KaQT6xUKGXQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/KaQT6xUKGXQ" className="rounded" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
     
       </div>

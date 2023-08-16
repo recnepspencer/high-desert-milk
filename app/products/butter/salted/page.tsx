@@ -63,8 +63,7 @@ export default function Salted() {
             <div className="flex justify-center align-middle">
               <Image sizes="(max-width: 640px) 640px, (max-width: 750px) 750px, (max-width: 828px) 828px, 1000px" loading="lazy" width={4094} height={2880} src="/products/big-butter.png" alt="butter" className="w-[42vw] object-contain" />
             </div>
-            <div></div>
-            <div className="text-right mt-10 text-[2vw] ml-auto mr-16">
+            <div className="text-[2vw] mb-12 ml-auto mr-auto">
               <p className="w-[30vw]">Always fresh. Never frozen.
                 Our natural butter has a flavor that stands
                 out, enhancing any recipe. Pinky promise.</p>
@@ -81,8 +80,8 @@ export default function Salted() {
           <p className="text-center align-middle font-light">Ingredients &amp; Allergens:</p>
         </div>
         <div className="flex flex-col align-middle items-center bg-white text-home-blue justify-center">
-          <p className="text-center m-10 w-64">Grade A Pasteurized Sweet Cream (milk). </p>
-          <p className="font-bold mb-10">Contains Milk</p>
+          <p className="font-bold text-center m-10 w-64">Grade A Pasteurized Sweet Cream (milk). </p>
+          <p className=" mb-10">Contains Milk</p>
         </div>
         <div className="bg-home-productBlue">
           <div className="flex align-middle text-center justify-center">
@@ -102,7 +101,7 @@ export default function Salted() {
 
           </div>
           <div className="flex justify-center  pt-6 pb-36">
-            <Link href="products/bulk" className="text-sm underline text-home-blue cursor-pointer">
+            <Link href="/products/bulk" className="text-sm underline text-home-blue cursor-pointer">
               <p>Click here to see business options.</p>
             </Link>
           </div>

@@ -110,7 +110,7 @@ export default function ProductPowder() {
             <label className="pr-2 text-home-blue text-xl ">
               Try these buttermilk recipes
             </label>
-            <Link href="/products/recipes">
+            <Link href="/products/recipes#buttermilk-recipes">
               <button className="text-white text-2xl font-bold bg-home-blue rounded pr-3 pl-3 align-middle pb-1 cursor-default">
                 &gt;
               </button>
